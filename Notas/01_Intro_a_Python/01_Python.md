@@ -10,7 +10,7 @@ Python fue creado por Guido van Rossum a principios de la década del '90 y lo n
 
 ### ¿Dónde conseguir Python?
 
-Te recomendamos instalar Python 3.6 o más nuevo. En la documentación previa hablamos sobre [cómo instalar Python para este curso](../Instalacion.md).
+Te recomendamos instalar Python 3.9 o más nuevo. En la documentación previa hablamos sobre [cómo instalar Python para este curso](../Instalacion.md).
 
 ### ¿Para qué fue creado Python?
 
