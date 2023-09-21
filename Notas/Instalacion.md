@@ -20,7 +20,7 @@ Sí te recomendamos bajarte y descomprimir el archivo [Ejercicios.zip](./Ejercic
 
 El intérprete de Python puede descargarse de [Python.org](https://www.python.org/). La idea es comenzar usando esta instalación básica las primeras clases.
 
-Si estás en Windows, seguí estos pasos para poder instalarlo correctamente ya que hay que agregar la instalación de Python al PATH. Podés seguir uno de estos 2 caminos (el primero es el más sencillo): agregándolo desde el inicio de la instalación o manualmente una vez instalado.
+Si estás en Windows, seguí estos pasos para poder instalarlo correctamente ya que hay que agregar la instalación de Python al PATH para que el sistema operativo sepa dónde está instalado, sino es posible que te encuentres con algun error como, por ejemplo, que no reconozca el comando "python" o te mande al Windows Store para que descargues python. Podés seguir uno de estos 2 caminos (el primero es el más sencillo): agregándolo desde el inicio de la instalación o manualmente una vez instalado.
 
 ### Agregándolo desde el inicio de la instalación
 
@@ -36,13 +36,17 @@ Si estás en Windows, seguí estos pasos para poder instalarlo correctamente ya 
 
    ![Instalacion de Python 3](./img/python_ins3.png)
 
+4. Al final de la instalación va a aparecer una opción para deshabilitar el límite de longitud de los PATH. Podemos darle click si vamos a usar rutas de archivos que tengan más de 260 caracteres. Sino lo dejamos como está.
+
+   ![Instalacion de Python 4](./img/python_ins4.png)
+
 ### Agregándolo manualmente una vez instalado
 
 1. Lo primero que hacemos va a ser ir al explorar de Windows, tocar en “Vista” que está en al barra superior y le damos en “Elementos ocultos” (es un casillero que está ahí a la derecha).
 
    ![Untitled](./img/python_path1.png)
 
-2. Lo siguiente va a ser copiar la ruta donde está instalado Python, para eso nos metemos en el disco C (o donde tengan instalado el sistema operativo). Vamos a “usuarios”, nos metemos ahí en la carpeta de nuestrx usuarie. Después vamos a AppData\Local\Programs\Python\Python310\Scripts. Debería quedarles una ruta así: `C:\Users\Joaco\AppData\Local\Programs\Python\Python310\Scripts`. En vez de Python310 les puede decir 311 o alguna otra versión que hayan bajado.
+2. Lo siguiente va a ser copiar la ruta donde está instalado Python, para eso nos metemos en el disco C (o donde tengan instalado el sistema operativo). Vamos a “usuarios”, nos metemos ahí en la carpeta de nuestrx usuarie. Después vamos a `AppData\Local\Programs\Python\Python310\Scripts`. Debería quedarles una ruta así: `C:\Users\Joaco\AppData\Local\Programs\Python\Python310\Scripts`. En vez de Python310 les puede decir 311 o alguna otra versión que hayan bajado.
 3. Copiamos la ruta y vamos al entorno de variables del sistema. En el buscador ponemos “var” y ya nos aparece. Tocamos ahí.
 
    ![Untitled](./img/python_path2.png)

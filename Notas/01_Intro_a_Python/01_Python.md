@@ -18,9 +18,9 @@ El objetivo original de su autor fue crear un lenguaje de programación con el q
 
 ### ¿Cómo ejecuto Python en mi máquina?
 
-Existen diferentes entornos en los que podés correr Python en tu computadora. Es importante saber que Python está instalado normalmente como un programa que se ejecuta desde la consola. Desde la terminal deberías poder ejecutar `python` así:
+Existen diferentes entornos en los que podés correr Python en tu computadora. Es importante saber que Python está instalado normalmente como un programa que se ejecuta desde la consola. Desde la terminal deberías poder ejecutar `python` utilizando el comando `python` o `python3` dependiendo tu sistema operativo:
 
-```
+```bash
 bash $ python
 Python 3.8.1 (default, Feb 20 2020, 09:29:22)
 [Clang 10.0.0 (clang-1000.10.44.4)] on darwin
@@ -73,7 +73,7 @@ Esta forma de escribir código (en una consola del lenguaje) que se evalúa inme
 Veamos en mayor detalle cómo funciona este REPL:
 
 - `>>>` es el símbolo del intérprete para comenzar un nuevo comando.
-- `...` es el símbolo del intérprete para continuar con un comando comenzado antes. Dejá una línea en blanco para terminar lo que ya ingresaste.
+- `...` es el símbolo del intérprete para continuar con un comando comenzado antes. Dejá una línea en blanco (tocá enter) para terminar lo que ya ingresaste.
 
 El símbolo `...` puede mostrarse o no dependiendo de tu entorno. En este curso lo mostraremos como líneas en blanco para facilitar el copy-paste de fragmentos de código (del que no hay que abusar).
 
