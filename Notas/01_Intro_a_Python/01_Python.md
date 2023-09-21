@@ -4,13 +4,13 @@
 
 ### ¿Qué es Python?
 
-Python es un lenguaje interpretado de alto nivel. Frecuentemente se lo clasifica como lenguaje de ["scripting"](https://es.wikipedia.org/wiki/Script). La sintaxis del Python tiene elementos de lenguaje C de programación.
+Python es un lenguaje interpretado de alto nivel. Frecuentemente se lo clasifica como lenguaje de ["scripting"](https://es.wikipedia.org/wiki/Script). La sintaxis de Python tiene elementos de lenguaje C de programación.
 
-Python fue creado por Guido van Rossum a principios de la década del '90 y lo nombró así en honor de  Monty Python.
+Python fue creado por Guido van Rossum a principios de la década del '90 y lo nombró así en honor de Monty Python.
 
 ### ¿Dónde conseguir Python?
 
-Te recomendamos instalar Python 3.6 o más nuevo. En la documentación previa  hablamos sobre [cómo instalar Python para este curso](../Instalacion.md).
+Te recomendamos instalar Python 3.6 o más nuevo. En la documentación previa hablamos sobre [cómo instalar Python para este curso](../Instalacion.md).
 
 ### ¿Para qué fue creado Python?
 
@@ -32,7 +32,7 @@ hello world
 
 Si es la primera vez que ves una consola o terminal, sería conveniente que pares aquí, leas [un tutorial corto](https://tutorial.djangogirls.org/es/intro_to_command_line/) sobre cómo usar la consola de tu sistema operativo y luego vuelvas para seguir leyendo.
 
-Existen diversos entornos fuera de la terminal en los que se puede escribir y ejecutar código Python. Pero para nosotres es importante que primero aprendas a usarlo desde la terminal: si lo sabés usar bien desde la terminal (que es su entorno natural) lo podrás usar en cualquier otro entorno. Ya en la próxima clase usarás Python dentro de un entorno de desarrollo. Por ahora, te recomendamos usarlo de esta manera que  acabamos de explicar.
+Existen diversos entornos fuera de la terminal en los que se puede escribir y ejecutar código Python. Pero para nosotres es importante que primero aprendas a usarlo desde la terminal: si lo sabés usar bien desde la terminal (que es su entorno natural) lo podrás usar en cualquier otro entorno. Ya en la próxima clase usarás Python dentro de un entorno de desarrollo. Por ahora, te recomendamos usarlo de esta manera que acabamos de explicar.
 
 El intérprete es una aplicación que funciona en la consola y se ejecuta desde la terminal.
 
@@ -48,7 +48,7 @@ Les programadores no suelen tener problemas en usar el intérprete de esta forma
 
 ### Modo interactivo
 
-Cuando ejecutás Python, entrás al modo *interactivo* en el que podés experimentar.
+Cuando ejecutás Python, entrás al modo _interactivo_ en el que podés experimentar.
 
 Si escribís un comando, se va a ejecutar inmediatamente. No hay ningún ciclo de edición-compilación-ejecución-debug en Python, como hay en otros lenguajes.
 
@@ -68,7 +68,7 @@ hello world
 >>>
 ```
 
-Esta forma de escribir código (en una consola del lenguaje) que se evalúa inmediatamente e imprime el resultado, se denomina *bucle de Lectura-Evaluación-Impresión* (REPL por las siglas en inglés de «Read-Eval-Print-Loop»). Asegurate de poder interactuar con el intérprete antes de seguir.
+Esta forma de escribir código (en una consola del lenguaje) que se evalúa inmediatamente e imprime el resultado, se denomina _bucle de Lectura-Evaluación-Impresión_ (REPL por las siglas en inglés de «Read-Eval-Print-Loop»). Asegurate de poder interactuar con el intérprete antes de seguir.
 
 Veamos en mayor detalle cómo funciona este REPL:
 
@@ -79,12 +79,12 @@ El símbolo `...` puede mostrarse o no dependiendo de tu entorno. En este curso 
 
 ## Ejercicios
 
-### Ejercicio 1.1: Python como  calculadora
+### Ejercicio 1.1: Python como calculadora
+
 En tu máquina, iniciá Python y usalo como calculadora para resolver el siguiente problema:
 
-* ¿Cuántas horas son 105 minutos?
-* ¿Cuántos kilómetros son 20 millas? (un kilómetro corresponde a 0,6214 millas)
-
+- ¿Cuántas horas son 105 minutos?
+- ¿Cuántos kilómetros son 20 millas? (un kilómetro corresponde a 0,6214 millas)
 
 ```python
 >>> 105/60
@@ -93,7 +93,7 @@ En tu máquina, iniciá Python y usalo como calculadora para resolver el siguien
 32.1853878339234
 ```
 
-* Si alguien corre una carrera de 20 millas en 105 minutos, ¿cuál fue su velocidad promedio en km/h?
+- Si alguien corre una carrera de 20 millas en 105 minutos, ¿cuál fue su velocidad promedio en km/h?
 
 tip: Usá el guión bajo (underscore, \_) para referirte al resultado del último cálculo.
 
@@ -101,16 +101,19 @@ tip: Usá el guión bajo (underscore, \_) para referirte al resultado del últim
 >>> _/1.75
 18.391650190813372
 ```
-*Esto solo es válido en el modo interactivo que estamos viendo. No uses el guión bajo en un programa.*
+
+_Esto solo es válido en el modo interactivo que estamos viendo. No uses el guión bajo en un programa._
 
 ### Ejercicio 1.2: Obtener ayuda
-Usá el comando `help()` para obtener ayuda sobre la función  `abs()`. Luego, usá el `help()` para obtener la ayuda sobre la función `round()`. Tipeá `help()` sólo para entrar en la ayuda en modo  interactivo. Con `q` salís del help.
 
-El `help()` no funciona con los comandos básicos de Python como `for`, `if`, `while`, etc. Si tipeás `help(for)` vas a obtener un error. Podés probar usando comillas como en  `help("for")`, en algunos entornos funciona bien. Si no, siempre podés hacer una búsqueda en internet.
+Usá el comando `help()` para obtener ayuda sobre la función `abs()`. Luego, usá el `help()` para obtener la ayuda sobre la función `round()`. Tipeá `help()` sólo para entrar en la ayuda en modo interactivo. Con `q` salís del help.
+
+El `help()` no funciona con los comandos básicos de Python como `for`, `if`, `while`, etc. Si tipeás `help(for)` vas a obtener un error. Podés probar usando comillas como en `help("for")`, en algunos entornos funciona bien. Si no, siempre podés hacer una búsqueda en internet.
 
 La documentación oficial en inglés de Python se encuentra en <http://docs.python.org>. Por ejemplo, encontrá ahí la documentación sobre la función `abs()` (ayuda: está dentro de "library reference" y relacionado a las "built-in functions").
 
 ### Ejercicio 1.3: Copy-paste
+
 Este curso está estructurado como una serie de páginas web tradicionales en las que les incentivamos a probar interactivamente fragmentos de código en sus intérpretes de Python **escribiéndolos a mano**. Si estás aprendiendo Python por primera vez, esta forma "lenta" de hacer las cosas es la que recomendamos. Vas a entender mejor yendo lento y escribiendo los comandos vos misme mientras pensás en lo que estás tipeando.
 
 Es importante que tipées los comandos a mano. Para usar copy-paste quizás mejor ni hacerlos. Parte del objetivo de los ejercicios es entrenar tus manos, tus ojos y tu cabeza en leer, escribir y mirar código tal como dice [Zed Shaw en su libro](https://learntocodetogether.com/learn-python-the-hard-way-free-ebook-download/). Usar copy-paste excesivamente es como hacerte trampa a vos misme. Es como tratar de aprender a tocar la guitarra escuchando discos: es probable que no aprendas nunca.
@@ -138,7 +141,4 @@ Usá copy-paste para ejecutar los siguientes comandos:
 
 Advertencia: Cuando tenés algo como el código de arriba, no es posible copiar y pegar en el entorno básico de Python más de un comando por vez. El símbolo `>>>` lo impide.
 
-
-
 [Contenidos](../Contenidos.md) \| [Próximo (2 Variables, condicionales y ciclos)](02_Condicionales_Ciclos.md)
-
