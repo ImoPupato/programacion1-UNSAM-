@@ -314,7 +314,8 @@ Usá el comando `for` para iterar sobre los caracteres de una cadena.
 
 Modificá el código anterior de manera que dentro del ciclo el programa cuente cuántas letras "o" hay en la cadena.
 
-> [!NOTE] > _**Sugerencia:** usá un contador como con los meses de la hipoteca._
+> [!NOTE]
+> _**Sugerencia:** usá un contador como con los meses de la hipoteca._
 
 ### Ejercicio 1.18: Geringoso rústico
 
