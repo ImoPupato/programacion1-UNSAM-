@@ -28,13 +28,13 @@ Y me cubren las estrellas.
 
 Normalmente las cadenas de caracteres solo ocupan una línea. Las comillas triples nos permiten capturar todo el texto encerrado a lo largo de múltiples líneas.
 
-No hay diferencia entre las comillas simples (') y las dobles ("). *Pero el mismo tipo de comillas que se usó para abrir debe usarse para cerrar*.
+No hay diferencia entre las comillas simples (') y las dobles ("). _Pero el mismo tipo de comillas que se usó para abrir debe usarse para cerrar_.
 
 ### Código de escape
 
 Los códigos de escape (escape codes) son expresiones que comienzan con una barra invertida, `\` y se usan para representar caracteres que no pueden ser fácilmente tipeados directamente con el teclado. Estos son algunos códigos de escape usuales:
 
-```
+```py
 '\n'      Avanzar una línea
 '\r'      Retorno de carro
 '\t'      Tabulador
@@ -43,7 +43,7 @@ Los códigos de escape (escape codes) son expresiones que comienzan con una barr
 '\\'      Barra invertida literal
 ```
 
-El *retorno de carro* (código '\r') mueve el cursor al comienzo de la línea pero sin avanzar una línea. El origen de su nombre está relacionado con las máquinas de escribir.
+El _retorno de carro_ (código '\r') mueve el cursor al comienzo de la línea pero sin avanzar una línea. El origen de su nombre está relacionado con las máquinas de escribir.
 
 ### Representación en memoria de las cadenas
 
@@ -60,7 +60,7 @@ c = a[4]          # 'o'
 d = a[-1]         # 'd' (fin de cadena)
 ```
 
-También se puede *rebanar* (slice) o seleccionar subcadenas especificando un rango de índices con `:`.
+También se puede _rebanar_ (slice) o seleccionar subcadenas especificando un rango de índices con `:`.
 
 ```python
 d = a[:5]     # 'Hello'
@@ -69,7 +69,30 @@ f = a[3:8]    # 'lo wo'
 g = a[-5:]    # 'world'
 ```
 
-El caracter que corresponde al último índice no se incluye. Si un extremo no se especifica, significa que es *desde el comienzo* o *hasta el final*, respectivamente.
+El caracter que corresponde al último índice no se incluye. Si un extremo no se especifica, significa que es _desde el comienzo_ o _hasta el final_, respectivamente.
+
+Las rebanadas aceptan 3 argumentos: `[inicio:final:pasos]`.
+
+- **Inicio:** índice desde dónde empieza la rebanda. El elemento de este índice **se incluye en el retorno**.
+- **Final:** índice hasta dónde termina la rebanda. El elemento de este índice **no se incluye en el retorno**.
+- **Pasos:** este argumento indica la cantidad de _pasos_ a contar para contar mostrar los caracteres. Empieza a contar a partir del segundo elemento e **incluye al primer elemento en el retorno**
+
+```py
+>>> a = "Pasito a pasito"
+>>> a[::3]
+'Pi pi'
+```
+
+En este código le dijimos a python que tome todos los caracteres de la string, pero que solo devuelva aquellos que están cada 3 elementos. Si los contamos vamos a ver que cada 3er caractér se devuelve:
+
+```py
+"Pasito a pasito" # Esta es nuestra string
+ 012312312312312  # Acá damos los pasos
+ ^  ^  ^  ^  ^    # Cada 3 pasos nos quedamos con el caracter
+"P  i     p  i  " # Esto es lo que obtenemos
+```
+
+Volveremos sobre este tema de rebanadas o _slices_ más adelante.
 
 ### Operaciones con cadenas
 
@@ -95,7 +118,7 @@ rep = s * 5             # 'HelloHelloHelloHelloHello'
 
 ### Métodos de las cadenas
 
-Las cadenas en Python tienen *métodos* que realizan diversas operaciones con este tipo de datos.
+Las cadenas en Python tienen _métodos_ que realizan diversas operaciones con este tipo de datos.
 
 Ejemplo: sacar (strip) los espacios en blanco sobrantes al inicio o al final de una cadena.
 
@@ -134,7 +157,7 @@ s.isupper()            # Verifica si los caracteres son mayúsculas
 s.join(slist)          # Une una lista de cadenas usando s como delimitador
 s.lower()              # Convertir a minúsculas
 s.replace(old,new)     # Reemplaza texto
-s.split([delim])       # Parte la cadena en subcadenas
+s.split("delimitador") # Parte la cadena en subcadenas. Reemplazá "delimitador" por la substring que quieras usar como delimitador.
 s.startswith(prefix)   # Verifica si comienza con un prefijo
 s.strip()              # Elimina espacios en blanco al inicio o al final
 s.upper()              # Convierte a mayúsculas
@@ -154,7 +177,7 @@ TypeError: 'str' object does not support item assignment
 >>>
 ```
 
-*Esto implica que las operaciones y métodos que manipulan cadenas deben crear nuevas cadenas para almacenar su resultado.*
+> **Nota:** _Esto implica que las operaciones y métodos que manipulan cadenas deben crear nuevas cadenas para almacenar su resultado._
 
 ### Conversión de cadenas
 
@@ -191,9 +214,7 @@ El significado de los códigos lo veremos más adelante.
 
 En estos ejercicios vas a experimentar con operaciones sobre el tipo de dato string de Python. Hacelo en el intérprete interactivo para ver inmediatamente los resultados.
 
-Recordamos:
-
-> En los ejercicios donde interactuás con el intérprete, el símbolo `>>>` es el que usa Python para indicarte que espera un nuevo comando. Algunos comandos ocupan más de una línea de código --para que funcionen, vas a tener que apretar 'enter' algunas veces.
+> **Recordamos:** En los ejercicios donde interactuás con el intérprete, el símbolo `>>>` es el que usa Python para indicarte que espera un nuevo comando. Algunos comandos ocupan más de una línea de código --para que funcionen, vas a tener que apretar 'enter' algunas veces.
 > Acordate de no copiar el `>>>` de los ejemplos.
 
 Comencemos definiendo una cadena que contiene una lista de frutas así:
@@ -204,6 +225,7 @@ Comencemos definiendo una cadena que contiene una lista de frutas así:
 ```
 
 ### Ejercicio 1.14: Extraer caracteres individuales y subcadenas
+
 Los strings son vectores de caracteres. Tratá de extraer algunos carateres:
 
 ```python
@@ -220,7 +242,7 @@ Los strings son vectores de caracteres. Tratá de extraer algunos carateres:
 >>>
 ```
 
-Como ya dijimos, en Python los strings son sólo de lectura. Verificá esto tratando de cambiar el primer caracter de `frutas` por una m minúscula 'm'.
+Como ya dijimos, en Python los strings son sólo de lectura. Verificá esto tratando de cambiar el primer caracter de `frutas` por una `m` minúscula: `'m'`.
 
 ```python
 >>> frutas[0] = 'm'
@@ -233,6 +255,7 @@ TypeError: 'str' object does not support item assignment
 (Error de tipo: un objeto 'str' no permite asignación de ítems.)
 
 ### Ejercicio 1.15: Concatenación de cadenas
+
 A pesar de ser sólo de lectura, siempre podés reasignar una variable a una cadena nueva. Probá el siguiente comando que concatena la palabra "Pera" al final de `frutas`:
 
 ```python
@@ -263,6 +286,7 @@ Agregá 'Melón' al principio de la cadena:
 Podría parecer en estos ejemplos que la cadena original está siendo modificada, contradiciendo la regla de que las cadenas son de sólo lectura. No es así. Las operaciones sobre cadenas crean una nueva cadena cada vez. Cuando la variable `frutas` es reasignada, apunta a la cadena recientemente creada. Luego, la cadena vieja es destruida dado que ya no está siendo usada.
 
 ### Ejercicio 1.16: Testeo de pertenencia (test de subcadena)
+
 Experimentá con el operador `in` para buscar subcadenas. En el intérprete interactivo probá estas operaciones:
 
 ```python
@@ -275,9 +299,10 @@ True
 >>>
 ```
 
-*¿Por qué la verificación de `'nana'` dió `True`?*
+_¿Por qué la verificación de `'nana'` dió `True`?_
 
 ### Ejercicio 1.17: Iteración sobre cadenas
+
 Usá el comando `for` para iterar sobre los caracteres de una cadena.
 
 ```python
@@ -289,9 +314,10 @@ Usá el comando `for` para iterar sobre los caracteres de una cadena.
 
 Modificá el código anterior de manera que dentro del ciclo el programa cuente cuántas letras "o" hay en la cadena.
 
-*Sugerencia: usá un contador como con los meses de la hipoteca.*
+> [!NOTE] > _**Sugerencia:** usá un contador como con los meses de la hipoteca._
 
 ### Ejercicio 1.18: Geringoso rústico
+
 Usá una iteración sobre el string `cadena` para agregar la sílaba 'pa', 'pe', 'pi', 'po', o 'pu' según corresponda luego de cada vocal.
 
 ```python
@@ -302,11 +328,13 @@ Usá una iteración sobre el string `cadena` para agregar la sílaba 'pa', 'pe',
 >>> capadepenapa
 Geperipingoposopo
 ```
+
 Podés probar tu código cambiando la cadena inicial por otra palabra, como 'apa' o 'boligoma'.
 
 Guardá el código en un archivo `geringoso.py`.
 
 ### Ejercicio 1.19: Métodos de cadenas
+
 En el intérprete interactivo experimentá con algunos de los métodos de cadenas introducidos antes.
 
 ```python
@@ -342,6 +370,7 @@ Probá algunas más:
 ```
 
 ### Ejercicio 1.20: f-strings
+
 A veces querés crear una cadena que incorpore los valores de otras variables en ella.
 
 Para hacer eso, usá una f-string. Por ejemplo:
@@ -357,8 +386,8 @@ Para hacer eso, usá una f-string. Por ejemplo:
 
 Modificá el programa `hipoteca.py` del [Ejercicio 1.11](../01_Intro_a_Python/04_Numeros.md#ejercicio-111-hipoteca-ajustado) de la sección anterior para que escriba su salida usando f-strings. Tratá de hacer que la salida quede bien alineada.
 
-
 ### Ejercicio 1.21: Expresiones regulares
+
 Una limitación de las operaciones básicas de cadenas es que no ofrecen ningún tipo de transformación usando patrones más sofisticados. Para eso vas a tener que usar el módulo `re` de Python y aprender a usar expresiones regulares. El manejo de estas expresiones es un tema en sí mismo. A continuación presentamos un corto ejemplo:
 
 ```python
@@ -375,12 +404,11 @@ Una limitación de las operaciones básicas de cadenas es que no ofrecen ningún
 
 Para más información sobre el módulo `re`, mirá la [documentación oficial en inglés](https://docs.python.org/3/library/re.html) o algún [tutorial en castellano](https://rico-schmidt.name/pymotw-3/re/index.html). Es un tema que escapa al contenido del curso pero te recomendamos que mires en detalle en algún momento. Aunque no justo ahora. Sigamos...
 
-
 ### Comentario
 
 A medida que empezás a usar Python es usual que quieras saber qué otras operaciones admiten los objetos con los que estás trabajando. Por ejemplo ¿cómo podés averiguar qué operaciones se pueden hacer con una cadena?
 
-Dependiendo de tu entorno de Python, podrás ver una lista de métodos disponibles apretando la tecla tab.  Por ejemplo, intentá esto:
+Dependiendo de tu entorno de Python, podrás ver una lista de métodos disponibles apretando la tecla tab. Por ejemplo, intentá esto:
 
 ```python
 >>> s = 'hello world'
@@ -415,6 +443,4 @@ upper(...)
 >>>
 ```
 
-
 [Contenidos](../Contenidos.md) \| [Anterior (5 Línea de comandos)](05_Lineas_de_Comandos.md) \| [Próximo (7 Listas)](07_Listas.md)
-
