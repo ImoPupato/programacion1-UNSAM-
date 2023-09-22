@@ -8,10 +8,10 @@ Esta sección introduce las operaciones matemáticas elementales. Acá te dejamo
 
 Python tiene 4 tipos de variables numéricas:
 
-* Booleanos
-* Enteros
-* Punto flotante
-* Complejos (con parte real y parte imaginaria)
+- Booleanos
+- Enteros
+- Punto flotante
+- Complejos (con parte real y parte imaginaria)
 
 ### Booleanos (bool)
 
@@ -25,7 +25,9 @@ Representan números enteros (positivos y negativos) de cualquier magnitud:
 a = 37
 b = -299392993727716627377128481812241231
 ```
+
 Incluso se pueden especificar en diferentes bases:
+
 ```python
 c = 0x7fa8      # Hexadecimal
 d = 0o253       # Octal
@@ -34,7 +36,7 @@ e = 0b10001111  # Binario
 
 Operaciones usuales:
 
-```
+```py
 x + y      Suma
 x - y      Resta
 x * y      Multiplicación
@@ -47,17 +49,17 @@ abs(x)     Valor absoluto
 
 La unidad mínima de almacenamiento de una computadora es un bit, que puede valer 0 ó 1. Los números, caracteres e incluso imágenes y sonidos son almacenados en la máquina usando bits. Los números enteros positivos, en particular, suelen almacenarse mediante su representación binaria (o en base dos).
 
-| Número        | Representación binaria       |
-| ------------- |-------------|
-| 1 | 1|
-| 2 | 10|
-| 3 | 11|
-| 4 | 100|
-| 5 | 101|
-| 6 | 110|
-
+| Número | Representación binaria |
+| ------ | ---------------------- |
+| 1      | 1                      |
+| 2      | 10                     |
+| 3      | 11                     |
+| 4      | 100                    |
+| 5      | 101                    |
+| 6      | 110                    |
 
 Hay algunas operaciones primitivas que se pueden hacer con los enteros a partir de su representación como bits:
+
 ```python
 x << n     Desplazamiento de los bits a la izquierda
 x >> n     Desplazamiento de los bits a la derecha
@@ -84,9 +86,6 @@ Al desplazar los bits de un número a la derecha un lugar, el último bit "se ca
 >>> 6 >> 1 # 110 -> 11
 3
 ```
-
-
-
 
 ### Punto flotante (float)
 
@@ -119,7 +118,7 @@ Esto **no es un problema de Python**, sino el resultado de la forma en que el ha
 
 Operaciones usuales:
 
-```
+```py
 x + y      Suma
 x - y      Resta
 x * y      Multiplicación
@@ -143,12 +142,11 @@ e = math.log(x)
 
 El módulo `math` también tiene constantes (`math.e`, `math.pi`), entre otras cosas.
 
-
 ### Comparaciones
 
-Las siguientes comparaciones (suelen llamarse *operadores relacionales* ya que expresan una relación entre dos elementos) funcionan con números:
+Las siguientes comparaciones (suelen llamarse _operadores relacionales_ ya que expresan una relación entre dos elementos) funcionan con números:
 
-```
+```py
 x < y      Menor que
 x <= y     Menor o igual a
 x > y      Mayor que
@@ -161,7 +159,7 @@ Observá que el `==` se usa para comparar dos elementos mientras que el `=` se u
 
 Podés formar expresiones booleanas más complejas usando
 
-`and`, `or`, `not`
+`and` (y), `or` (o), `not` (no)
 
 Acá mostramos algunos ejemplos:
 
@@ -194,14 +192,15 @@ Probalo.
 >>>
 ```
 
-*Cuidado: el separador decimal en Python es el punto, como en inglés, y no la coma del castellano. Por eso el comando `float(3,141592)` da un `ValueError`.*
+> ⚠ _**Cuidado**: el separador decimal en Python es el punto, como en inglés, y no la coma del castellano. Por eso el comando `float(3,141592)` da un `ValueError`. Y si intentás convertir una string de punto flotante a entero usando int(), también te va a dar error._
 
 ## Ejercicios
 
 Recordatorio: Asumimos que estás trabajando en el subdirectorio `ejercicios_python/Clase01/`. Buscá el archivo `hipoteca.py` y hacé los ejercicios en ese archivo, usando un editor de texto. El archivo no tiene código, sólo unos comentarios. Para ejecutarlo usá la línea de comandos.
 
 ### Ejercicio 1.7: La hipoteca de David
-David solicitó un crédito a 30 años para comprar una vivienda, con una tasa fija nominal anual del 5%. Pidió $500000 al banco y acordó un pago mensual fijo de $2684,11.
+
+David solicitó un crédito a `30` años para comprar una vivienda, con una tasa fija nominal anual del `5%`. Pidió `$500000` al banco y acordó un pago mensual fijo de `$2684,11`.
 
 El siguiente es un programa que calcula el monto total que pagará David a lo largo de los años:
 
@@ -223,15 +222,17 @@ print('Total pagado', round(total_pagado, 2))
 Copiá este código y correlo. Deberías obtener `966279.6` como respuesta.
 
 ### Ejercicio 1.8: Adelantos
+
 Supongamos que David adelanta pagos extra de $1000/mes durante los primeros 12 meses de la hipoteca.
 
 Modificá el programa para incorporar estos pagos extra y para que imprima el monto total pagado junto con la cantidad de meses requeridos.
 
-Cuando lo corras, este nuevo programa debería dar un pago total de  `929965.62` en 342 meses.
+Cuando lo corras, este nuevo programa debería dar un pago total de `929965.62` en 342 meses.
 
-Aclaración: aunque puede parecer sencillo, este ejercicio requiere que agregues una variable *mes* y que prestes bastante atención a cuándo la incrementás, con qué valor entra al ciclo y con qué valor sale del ciclo. Una posiblidad es inicializar *mes* en 0 y otra es inicializarla en 1. En el primer caso es probable que la variable salga del ciclo contando la cantidad de pagos que se hicieron. En el segundo, ¡es probable que salga contando la cantidad de pagos más uno!
+Aclaración: aunque puede parecer sencillo, este ejercicio requiere que agregues una variable _mes_ y que prestes bastante atención a cuándo la incrementás, con qué valor entra al ciclo y con qué valor sale del ciclo. Una posiblidad es inicializar _mes_ en 0 y otra es inicializarla en 1. En el primer caso es probable que la variable salga del ciclo contando la cantidad de pagos que se hicieron. En el segundo, ¡es probable que salga contando la cantidad de pagos más uno!. Todo depende de cómo programes la solución.
 
 ### Ejercicio 1.9: Calculadora de adelantos
+
 ¿Cuánto pagaría David si agrega $1000 por mes durante cuatro años, comenzando en el sexto año de la hipoteca (es decir, luego de 5 años)?
 
 Modificá tu programa de forma que la información sobre pagos extras sea incorporada de manera versátil. Agregá las siguientes variables antes del ciclo, para definir el comienzo, fin y monto de los pagos extras:
@@ -245,6 +246,7 @@ pago_extra = 1000
 Hacé que el programa tenga en cuenta estas variables para calcular el total a pagar apropiadamente.
 
 ### Ejercicio 1.10: Tablas
+
 Modicá tu programa para que imprima una tabla mostrando el mes, el total pagado hasta el momento y el saldo restante. La salida debería verse aproximadamente así:
 
 ```bash
@@ -262,11 +264,13 @@ Meses:  310
 ```
 
 ### Ejercicio 1.11: Hipoteca ajustado
+
 Ya que estamos, corregí el código anterior de forma que el pago del último mes se ajuste a lo adeudado.
 
-Asegurate de guardar en el archivo  `hipoteca.py` esta última versión en tu directorio `ejercicios_python/Clase01/`. Vamos a volver a trabajar con él.
+Asegurate de guardar en el archivo `hipoteca.py` esta última versión en tu directorio `ejercicios_python/Clase01/`. Vamos a volver a trabajar con él.
 
 ### Ejercicio 1.12: Un misterio
+
 Las funciones `int()` y `float()` pueden usarse para convertir números. Por ejemplo,
 
 ```python
@@ -286,10 +290,9 @@ True
 ```
 
 ### Ejercicio 1.13: El volumen de una esfera
-En tu directorio de trabajo de esta clase, escribí un programa llamado `esfera.py` que le pida a le usuarie que ingrese por teclado el radio *r* de una esfera y calcule e imprima el volumen de la misma. *Sugerencia: recordar que el volumen de una esfera es 4/3 πr^3*.
+
+En tu directorio de trabajo de esta clase, escribí un programa llamado `esfera.py` que le pida a le usuarie que ingrese por teclado el radio _r_ de una esfera y calcule e imprima el volumen de la misma. _Sugerencia: recordar que el volumen de una esfera es 4/3 πr^3_.
 
 Finalmente, ejecutá el programa desde la línea de comandos para responder ¿cuál es el volumen de una esfera de radio 6? Debería darte `904.7786842338603`.
 
-
 [Contenidos](../Contenidos.md) \| [Anterior (3 Un primer programa)](03_Hello_world.md) \| [Próximo (5 Línea de comandos)](05_Lineas_de_Comandos.md)
-

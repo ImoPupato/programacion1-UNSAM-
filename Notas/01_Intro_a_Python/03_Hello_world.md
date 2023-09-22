@@ -136,7 +136,7 @@ Vamos a ir línea por línea qué es lo que está haciendo nuestro programa para
 - Luego le suma `1` a la variable `dia`. Esto no lo imprime en el while, pero se ejecuta y `dia` ahora vale `21` en la última iteración.
 - Luego multiplica los billetes. Esto tampoco lo imprime y también se ejecuta valiendo `1048576`.
 
-Más adelante en esta sección vamos a usar este primer programa como ejemplo para aprender algunas cosas fundamentales sobre Python. Si todavía no quedaron claros algunos conceptos, no te preocupes, haciendo ejercicios se afianzan los conocimientos. Recordá tipear vos misme los códigos que veas acá, eso ayuda muchísimo, como así también colocar print a todo lo que hagas, paso a paso.
+Más adelante en esta sección vamos a usar este primer programa como ejemplo para aprender algunas cosas fundamentales sobre Python. Si todavía no quedaron claros algunos conceptos, no te preocupes, haciendo ejercicios se afianzan los conocimientos. Recordá tipear vos misme los códigos que veas acá, eso ayuda muchísimo, como así también colocar `print()` a todo lo que hagas, paso a paso.
 
 ### Comandos
 
@@ -165,7 +165,7 @@ Los comentarios comienzan con `#` y siguen hasta el final de la línea.
 
 ### Imprimir en pantalla
 
-La función `print` imprime una línea de texto con el valor pasado como parámetro.
+La función `print()` imprime una línea de texto con el valor pasado como parámetro.
 
 ```python
 print('Hello world!') # Imprime 'Hello world!'
@@ -178,7 +178,7 @@ x = 100
 print(x) # imprime el texto '100'
 ```
 
-Si le pasás más de un valor al `print` los separa con espacios.
+Si le pasás más de un valor al `print()` los separa con espacios.
 
 ```python
 nombre = 'Juana'
@@ -199,7 +199,7 @@ Hola
 Mi nombre es Juana
 ```
 
-El salto de línea entre ambos comandos puede ser suprimido o reemplazado (en este caso por un espacio):
+El salto de línea entre ambos comandos puede ser suprimido o reemplazado utilizando el parámetro `end` con el argumento que elijas (en este caso por un espacio):
 
 ```python
 print('Hola', end=' ')
@@ -214,14 +214,15 @@ Hola Mi nombre es Juana
 
 ### Ingreso de valores por teclado
 
-Para leer un valor ingresado por el usuario, usá la función `input()`:
+Para leer un valor ingresado por le usuarie, usá la función `input()`:
 
 ```python
 nombre = input('Ingresá tu nombre:')
 print('Tu nombre es', nombre)
 ```
 
-`input` imprime el texto que le pases como parámetro y espera una respuesta. Es útil para programas pequeños, para hacer ejercicios o para debuguear un código. Casi no se lo usa en programas reales.
+`input()` imprime el texto que le pases como argumento y espera una respuesta. Es útil para programas pequeños, para hacer ejercicios puntuales o para debuguear un código. Casi no se lo usa en programas reales. A excepción de algunos ejercicios en esta unidad, no seguiremos usando esta función.
+Esta función devuelve el valor que le pases como una `string`. Si en vez de poner tu nombre en el ejercicio de arriba, pones `123`, ese número es tomado como una `string`.
 
 ### El comando pass
 
@@ -238,7 +239,7 @@ Este comando no hace nada. Sirve para guardar el lugar para un comando que querr
 
 ## Ejercicios
 
-Recordá descargar y descomprimir la carpeta [Ejercicios](../Ejercicios.zip).
+Si todavía no lo hiciste, recordá descargar y descomprimir la carpeta [Ejercicios](../Ejercicios.zip) que te pedimos previamente.
 
 ### Ejercicio 1.4: Debuguear
 
@@ -264,7 +265,7 @@ print('Altura final', num_billetes * grosor_billete)
 
 Copiá y pegá el código que aparece arriba en un nuevo archivo llamado `obelisco.py`. Cuando ejecutes el código vas a obtener el siguiente mensaje de error que hace que el programa se detenga:
 
-```code
+```python
 Traceback (most recent call last):
   File "obelisco.py", line 10, in <module>
     dia = dias + 1
@@ -286,7 +287,7 @@ Una pelota de goma es arrojada desde una altura de 100 metros y cada vez que toc
 
 Tu programa debería generar una tabla que se parezca a esta:
 
-```code
+```bash
 1 60.0
 2 36.0
 3 21.599999999999998
@@ -301,7 +302,7 @@ Tu programa debería generar una tabla que se parezca a esta:
 
 _Nota: Podés limpiar un toque la salida si usás la función round() de la que miraste el help hace un rato. Tratá de usarla para redondear a cuatro dígitos después del punto decimal._
 
-```code
+```bash
 1 60.0
 2 36.0
 3 21.6
