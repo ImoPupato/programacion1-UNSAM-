@@ -9,7 +9,7 @@ En esta sección estudiaremos listas que es el tipo de datos primitivo de Python
 Usá corchetes para definir una lista:
 
 ```python
-nombres = [ 'Rosita', 'Manuel', 'Luciana' ]
+nombres = ['Rosita', 'Manuel', 'Luciana' ]
 nums = [ 39, 38, 42, 65, 111]
 ```
 

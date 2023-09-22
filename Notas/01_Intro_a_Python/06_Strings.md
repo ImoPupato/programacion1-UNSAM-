@@ -71,7 +71,7 @@ g = a[-5:]    # 'world'
 
 El caracter que corresponde al último índice no se incluye. Si un extremo no se especifica, significa que es _desde el comienzo_ o _hasta el final_, respectivamente.
 
-Las rebanadas aceptan 3 argumentos: `[inicio:final:pasos]`.
+Las rebanadas aceptan 3 argumentos: `[inicio:final:pasos]` (son los mismos que vimos en la función `range()` cuando explicamos el ciclo `for`).
 
 - **Inicio:** índice desde dónde empieza la rebanda. El elemento de este índice **se incluye en el retorno**.
 - **Final:** índice hasta dónde termina la rebanda. El elemento de este índice **no se incluye en el retorno**.

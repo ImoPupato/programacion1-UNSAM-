@@ -254,6 +254,7 @@ Recordemos que una variable booleana puede almacenar el resultado de una compara
 
 ### Ciclos
 
+#### While
 Para ejecutar una porción de código reiteradamente mientras ciertas condiciones se cumplan podés usar el comando `while`. El `while` se comporta como un `if` mas un _ciclo_ (bucle o _loop_) que vuelve a ejecutar el bloque indentado si la condición del `while` sigue valiendo `True`.
 
 ```python
@@ -264,6 +265,76 @@ Para ejecutar una porción de código reiteradamente mientras ciertas condicione
 ```
 
 Los comandos indentados debajo del `while` se van a a ejecutar mientras la condición del `while` sea verdadera (`True`). Cuando esta condición sea falsa, ese bloque indentado no se ejecutará más y la ejecución continuará con el código que sigue.
+
+#### For
+
+A diferencia del ``while`` que es un ciclo que se ejecuta mientras se cumpla una condición, el ``for`` es un ciclo para iterar sobre una objeto iterable (strings, listas, diccionarios, tuplas y sets). La sintaxis del for es la siguiente:
+
+`for elemento in contenedor:`
+
+Donde `elemento` es nuestra **_variable iterativa_** a la que se le asigna, en cada ciclo, cada uno de los elementos del `contenedor` que es el **_iterable_** sobre el cual vamos a estar iterando, o sea, ir **haciendo acciones elemento por elemento**. Por ejemplo:
+
+```python
+>>> for caracter in "Hola, mundo!":
+... 	print(caracter)
+
+# Obtenemos la siguiente salida
+H
+o
+l
+a
+,
+
+m
+u
+n
+d
+o
+!
+```
+
+En este caso `caracter` es nuestra **_variable iterativa_** que va a ser cada elemento del **_iterable_** `"Hola, mundo!`.
+
+Podes pensarlo también como si estuvieras queriendo hacer un puré de papas: sacando papas de una bolsa y realizando una secuencia de acciones de **una papa por vez**.
+
+Tamién podemos usar el for para realizar una determinada cantidad de acciones teniendo o no en cuenta el iterable. En este caso nuestro _iterable_ va a ser la función `range()`. Esta función toma 3 argumentos de tipo `entero`: `range(inicio, final, pasos)`. Lo que hace es generar una secuencia de números desde el ``inicio`` hasta el número antes del ``final`` que le pasemos. Si solo le pasamos un argumento, entiende que es el argumento de ``final`` y que el ``inicio`` es `0`.
+
+Por ejemplo, imaginemos que queremos ver la tabla del 5, para esto le pasamos como argumento el número ``10`` para que vaya desde el `0` hasta el `9` (o sea, 10 números), luego multiplicamos cada número por `5` y lo imprimimos en pantalla:
+
+```python
+>>> for numero in range(10)
+>>> 	tabla = 5 * numero
+>>> 	print("5 x", numero, "=",tabla)
+
+# Obtenemos la siguiente salida
+5 x 0 = 0
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+```
+
+Dijimos que también podemos usar el for para realizar acciones sin tener en cuenta el iterable. En este caso, nuestra **_variable iterativa_** la nombramos como un guión bajo `_` (_underscore_ en inglés). De esta forma le indicamos que no la tenga en cuenta. Se podría optar por ponerle otro nombre y no usarlo, pero es una buena práctica dejarla como `_` ya que así evitamos utilizarla sin querer.
+
+Por ejemplo, si queremos imprimir `3` veces la string `"Hola, mundo!`, podemos hacer esto:
+
+```python
+>>> for _ in range(3)
+>>> 	print("Hola, mundo!")
+
+# Obtenemos la siguiente salida
+Hola, mundo!
+Hola, mundo!
+Hola, mundo!
+```
+
+Probá jugar con estos ciclos y descubrir otras cosas. La práctica es fundamental para poder fijar estos conceptos. Más adelante vas a tener ejercicios donde aplicar estos conocimientos.
+
 
 ### Indentación
 
