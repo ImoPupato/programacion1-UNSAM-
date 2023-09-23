@@ -272,7 +272,7 @@ A diferencia del ``while`` que es un ciclo que se ejecuta mientras se cumpla una
 
 `for elemento in contenedor:`
 
-Donde `elemento` es nuestra **_variable iterativa_** a la que se le asigna, en cada ciclo, cada uno de los elementos del `contenedor` que es el **_iterable_** sobre el cual vamos a estar iterando, o sea, ir **haciendo acciones elemento por elemento**. Por ejemplo:
+Donde `elemento` es nuestra **_variable iteradora_** a la que se le asigna, en cada ciclo, cada uno de los elementos del `contenedor` que es el **_iterable_** sobre el cual vamos a estar iterando, o sea, ir **haciendo acciones elemento por elemento**. Por ejemplo:
 
 ```python
 >>> for caracter in "Hola, mundo!":
@@ -293,7 +293,7 @@ o
 !
 ```
 
-En este caso `caracter` es nuestra **_variable iterativa_** que va a ser cada elemento del **_iterable_** `"Hola, mundo!`.
+En este caso `caracter` es nuestra **_variable iteradora_** que va a ser cada elemento del **_iterable_** `"Hola, mundo!`.
 
 Podes pensarlo también como si estuvieras queriendo hacer un puré de papas: sacando papas de una bolsa y realizando una secuencia de acciones de **una papa por vez**.
 
@@ -319,7 +319,7 @@ Por ejemplo, imaginemos que queremos ver la tabla del 5, para esto le pasamos co
 5 x 9 = 45
 ```
 
-Dijimos que también podemos usar el for para realizar acciones sin tener en cuenta el iterable. En este caso, nuestra **_variable iterativa_** la nombramos como un guión bajo `_` (_underscore_ en inglés). De esta forma le indicamos que no la tenga en cuenta. Se podría optar por ponerle otro nombre y no usarlo, pero es una buena práctica dejarla como `_` ya que así evitamos utilizarla sin querer.
+Dijimos que también podemos usar el for para realizar acciones sin tener en cuenta el iterable. En este caso, nuestra **_variable iteradora_** la nombramos como un guión bajo `_` (_underscore_ en inglés). De esta forma le indicamos que no la tenga en cuenta. Se podría optar por ponerle otro nombre y no usarlo, pero es una buena práctica dejarla como `_` ya que así evitamos utilizarla sin querer.
 
 Por ejemplo, si queremos imprimir `3` veces la string `"Hola, mundo!`, podemos hacer esto:
 

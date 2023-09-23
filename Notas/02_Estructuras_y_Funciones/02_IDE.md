@@ -4,17 +4,25 @@
 
 A partir de aquí te vamos a proponer trabajar principalmente dentro de un entorno de desarrollo integrado (IDE, por sus siglas en inglés). 
 
-En particular, sugerimos trabajar con el [Spyder](https://www.spyder-ide.org/) que es un entorno de desarrollo de Python diseñado para científicos, ingenieros y analistas de datos. El Spyder puede descargarse solo o como parte de la distribución de [Anaconda](https://www.anaconda.com/products/individual) que trae, además de Python y del Spyder, una serie de bibliotecas con módulos muy útiles para desarrollos relacionados a la ciencia de datos.
+En este curso vamos a trabajar usando [VS Code](https://code.visualstudio.com/) (Visual Studio Code), aunque podés usar el que más te guste. Otro IDE muy utilizado es [Spyder](https://www.spyder-ide.org/), pero en todos los ejemplos que veamos vamos a usar VS Code.
 
-En este [breve video](https://youtu.be/fHMnZ1gYOew) mostramos el spyder.
+Te dejamos un [video]() para que sepas cómo utilizar el VS Code.
 
-Esta es una imagen de una captura de pantalla del Spyder:
-![Ventana de Spyder](Spyder.png)
+Vamos a listar algunas de las extensiones que vas a precisar y otras que son opcionales pero que ayudan muchísimo:
 
+1. **Python Extension Pack - (Author: Don jayamanne):** esta extensión agrega muchos plugins útiles para Python.
+2. **Code Runner - (Author: Jun Han):** esta extensión agrega un icono arriba a la derecha para poder correr python fácilmente.
+3. **Error Lens - (Author: Alexander):** esta extensión te permite ver errores en tiempo real. Puede ser un poco molesta, si no te gusta la podes deshabilitar/desinstalar.
+4. **autopep8 - (Author: Microsoft):** esta extensión te permite formatear tu script según la convención PEP 8 que es una guía de estilo.
+5. **indent-rainbow - (Author: oderwat):** esta extensión agrega colores a las indentaciones, así se identifican más fácilmente.
 
-En la captura se puede ver que por defecto el Spyder viene estructurado con tres ventanas. Un editor de código ocupa la mitad izquierda de la ventana, mientras que la mitad derecha se divide en una terminal (o consola) interactiva de Python en la mitad inferior y un inspector de variables en la mitad superior. El Spyder nos permite correr línea por línea el código del editor (tecla `F9`) y ver el estado de las variables en el inspector de variables, o ejecutarlo completo (tecla `F5`). También nos permite debuguear el código con facilidad (botones azules de la barra superior).
+También te dejamos unas configuraciones muy útiles:
 
-Les recomendamos que le dediquen un tiempo a probar sus últimos ejercicios en este entorno. Verán que es muy cómodo. Pueden mirar un [breve tutorial](https://www.youtube.com/watch?v=0fxURPC1YFs) donde no sólo les enseñan el uso de la tecla `F5`, sino también una introducción al uso del debugger (le dice depurador) que veremos más adelante en este curso.
+1. **Formatear tu código al guardar:** esta configuración te permite que cuando guardes tu código se formatee según la convención PEP 8. Para activar esta opción primero tenes que bajarte un formateador como "autopep8" (hay muchos), luego ir a configuración y en la barra de búsqueda de configuraciones escribí: Format On Save, y tickeá la opción que aparece.
+![format on save](/Notas/02_Estructuras_y_Funciones/img/format_on_save.png)
+
+2. ****
+
 
 
 [Contenidos](../Contenidos.md) \| [Anterior (1 Introducción y repaso)](01_Introduccion_y_repaso.md) \| [Próximo (3 Manejo de archivos)](03_Archivos.md)

@@ -39,10 +39,10 @@ t = ['a', 'b']
 s + t           # [1, 2, 3, 'a', 'b']
 ```
 
-Las listas se indexan con números enteros, comenzando en 0.
+Las listas se indexan con números enteros, comenzando en ``0``:
 
 ```python
-nombres = [ 'Rosita', 'Manuel', 'Luciana' ]
+nombres = ['Rosita', 'Manuel', 'Luciana']
 
 nombres[0]  # 'Rosita'
 nombres[1]  # 'Manuel'
@@ -150,7 +150,8 @@ t = sorted(s)               # s queda igual, t guarda los valores ordenados
 
 ### Listas y matemática
 
-*Cuidado: Las listas no fueron diseñadas para realizar operaciones matemáticas.*
+> [!IMPORTANT]
+> *Cuidado: Las listas no fueron diseñadas para realizar operaciones matemáticas.*
 
 ```python
 >>> nums = [1, 2, 3, 4, 5]
@@ -178,6 +179,7 @@ Armá una lista con los nombres de frutas usando el comando `split()`:
 
 
 ### Ejercicio 1.22: Extracción y reasignación de elementos.
+
 Probá un par de estos comandos para extraer un elemento:
 
 ```python
@@ -238,7 +240,7 @@ Verificá esto tipeando lo que sigue y viendo qué pasa:
 
 ```python
 >>> for s in lista_frutas:
-        print('s =', s)
+>>>     print('s =', s)
 ```
 
 ### Ejercicio 1.24: Test de pertenencia
@@ -284,7 +286,8 @@ Usá el método `remove()` para borrar `'Mandarina'` de la lista.
 
 Agregá una segunda copia de `'Banana'` al final de la lista.
 
-*Observación: es perfectamente válido tener valores duplicados en una lista.*
+> [!NOTE]
+> *Observación: es perfectamente válido tener valores duplicados en una lista.*
 
 ```python
 >>> # Agregar 'Banana'
@@ -321,7 +324,7 @@ Borrá la primera aparición de  `'Banana'`.
 >>>
 ```
 
-Para que sepas, no hay un método que permita encontrar o borrar *todas* las apariciones de un elemento en un a lista. Más adelante veremos una forma elegante de hacerlo.
+Para que sepas, no hay un método que permita encontrar o borrar *todas* las apariciones de un elemento en una lista. Más adelante veremos una forma elegante de hacerlo.
 
 ### Ejercicio 1.26: Sorting
 ¿Querés ordenar una lista? Usá el método `sort()`. Probalo:
@@ -342,7 +345,8 @@ Para que sepas, no hay un método que permita encontrar o borrar *todas* las apa
 >>>
 ```
 
-Observación: acordate de que el método `sort()` modifica el contenido de la misma lista *in-place*. Los elementos son reordenados moviéndolos de una posición a otra, pero no se crea una nueva lista.
+> [!NOTE]
+> Observación: acordate de que el método `sort()` modifica el contenido de la misma lista *in-place*. Los elementos son reordenados moviéndolos de una posición a otra, pero no se crea una nueva lista.
 
 ### Ejercicio 1.27: Juntar múltiples cadenas
 Si querés juntar las cadenas en una lista, usá el método `join()` de los strings como sigue (ojo: parece un poco raro al principio).
@@ -398,7 +402,7 @@ Podés acceder a los elementos de las listas anidadas usando múltiples operacio
 A pesar de que es técnicamente posible hacer una estructura de listas muy complicada, como regla general, es mejor mantener las cosas simples. Lo más usual es guardar en las listas muchos elementos del mismo tipo. Por ejemplo, una lista sólo de números o una lista de cadenas. Mezclar diferentes tipos de datos en una misma lista puede volverse conceptualmente difuso, así que mejor lo evitamos.
 
 ### Ejercicio 1.29: Traductor (rústico) al lenguaje inclusivo
-Queremos hacer un traductor que cambie las palabras masculinas de una frase por su versión neutra. Como primera aproximación, completá el siguiente código para reemplazar todas las letras 'o' que figuren en el último o anteúltimo caracter de cada palabra por una 'e'. Por ejemplo 'todos somos programadores' pasaría a ser 'todes somes programadores'. Guardá tu código en el archivo `inclusive.py`
+Queremos hacer un traductor que cambie las palabras masculinas de una frase por su versión neutra. Como primera aproximación, completá el siguiente código para reemplazar todas las letras ``'o'`` que figuren en el último o anteúltimo caracter de cada palabra por una ``'e'``. Por ejemplo 'todos somos programadores' pasaría a ser 'todes somes programadores'. Guardá tu código en el archivo `inclusive.py`
 
 ```python
 >>> frase = 'todos somos programadores'

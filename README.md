@@ -28,6 +28,13 @@ Este es un curso cuatrimestral con guías de ejercicios semanales y encuentros v
 
 Para hacer este curso solo hace falta estar inscriptx, tener instalado alguna version de Python 3.9 (o uno más nuevo), comprometerse a leer las clases y a hacer los ejercicios de las guías semanales. Estimamos que esto te demandará alrededor de 15 horas de dedicación semanal (en algunos casos menos, en algunos casos más, dependiendo del estudiante).
 
+## Hoja de ruta de cómo empezar
+
+1. Leé nuestro [código de honor](/Notas/Codigo.md).
+2. Leé las [condiciones de cursada](/Notas/Cursada.md).
+3. [Instalá Python](/Notas/Instalacion.md).
+4. Que comiencen [las clases :)](/Notas/Contenidos.md)
+
 ## Inscripción
 
 Para inscribirse en el curso es necesario completar el siguiente [formulario de inscripcion]().
