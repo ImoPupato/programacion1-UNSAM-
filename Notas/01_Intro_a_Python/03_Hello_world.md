@@ -300,7 +300,8 @@ Tu programa debería generar una tabla que se parezca a esta:
 10 0.6046617599999998
 ```
 
-_Nota: Podés limpiar un toque la salida si usás la función round() de la que miraste el help hace un rato. Tratá de usarla para redondear a cuatro dígitos después del punto decimal._
+> [!NOTE]
+> Podés limpiar un toque la salida si usás la función round() de la que miraste el help hace un rato. Tratá de usarla para redondear a cuatro dígitos después del punto decimal.
 
 ```bash
 1 60.0

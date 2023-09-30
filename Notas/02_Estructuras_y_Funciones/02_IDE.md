@@ -16,12 +16,13 @@ Vamos a listar algunas de las extensiones que vas a precisar y otras que son opc
 4. **autopep8 - (Author: Microsoft):** esta extensión te permite formatear tu script según la convención PEP 8 que es una guía de estilo.
 5. **indent-rainbow - (Author: oderwat):** esta extensión agrega colores a las indentaciones, así se identifican más fácilmente.
 
-También te dejamos unas configuraciones muy útiles:
+## Configuraciones muy útiles:
 
 1. **Formatear tu código al guardar:** esta configuración te permite que cuando guardes tu código se formatee según la convención PEP 8. Para activar esta opción primero tenes que bajarte un formateador como "autopep8" (hay muchos), luego ir a configuración y en la barra de búsqueda de configuraciones escribí: Format On Save, y tickeá la opción que aparece.
 ![format on save](/Notas/02_Estructuras_y_Funciones/img/format_on_save.png)
 
-2. ****
+2. **Guardar al ejecutar el código:** esta configuración permite guardar el script automáticamente al ejecutarlo. **Solo está disponible si tenés la extensión de Code Runner**. Para activarla tenés que ir a configuración y en la barra de búsqueda de configuraciones escribí: Code-runner: Save File Before Run.
+![save file before run](/Notas/02_Estructuras_y_Funciones/img/save_file_before_run.png)
 
 
 

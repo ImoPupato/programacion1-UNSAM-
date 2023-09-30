@@ -179,7 +179,8 @@ Si le pasás más de un valor al `print()`, los imprime separándolos con espaci
 >>> print('Hola mundo', end='\n\t')
 ```
 
-> **<img src="/Notas/img/info_emoji.png" align="left"  style="margin-top:4px;"/>Nota:** Recordar que esta función solo imprime cosas en la pantalla, no hace otra cosa. Esto es muy útil para poder ir _debugeando_ (encontrar y solucionar errores) a mano.
+> [!NOTE]
+> Recordar que esta función solo imprime cosas en la pantalla, no hace otra cosa. Esto es muy útil para poder ir _debugeando_ (encontrar y solucionar errores) a mano.
 >
 > Una recomendación, al menos mientras estás aprendiendo, es que, cuando empieces a usar el entorno de desarrollo integrado o editor de texto, a medida que vayas codeando coloques `print()` usando como argumentos las variables o expresiones que hayas creado para saber si tu codigo está haciendo lo que vos queres que haga.
 

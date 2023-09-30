@@ -2,7 +2,7 @@
 
 # 1.6 Cadenas
 
-En esta sección veremos cómo trabajar con textos. En este [video](https://youtu.be/RpoBSkjrLcQ) introducimos el tema.
+En esta sección veremos cómo trabajar con textos. En este [video]() introducimos el tema.
 
 ### Representación de textos
 
@@ -177,7 +177,8 @@ TypeError: 'str' object does not support item assignment
 >>>
 ```
 
-> **Nota:** _Esto implica que las operaciones y métodos que manipulan cadenas deben crear nuevas cadenas para almacenar su resultado._
+> [!NOTE]
+> Esto implica que las operaciones y métodos que manipulan cadenas deben crear nuevas cadenas para almacenar su resultado.
 
 ### Conversión de cadenas
 
@@ -207,14 +208,16 @@ Las f-Strings son cadenas en las que ciertas expresiones son formateadas
 >>>
 ```
 
-**Nota: Esto requiere Python 3.6 o uno más nuevo.**
+> [!IMPORTANT]
+> Esto requiere Python 3.6 o uno más nuevo.
 El significado de los códigos lo veremos más adelante.
 
 ## Ejercicios
 
 En estos ejercicios vas a experimentar con operaciones sobre el tipo de dato string de Python. Hacelo en el intérprete interactivo para ver inmediatamente los resultados.
 
-> **Recordamos:** En los ejercicios donde interactuás con el intérprete, el símbolo `>>>` es el que usa Python para indicarte que espera un nuevo comando. Algunos comandos ocupan más de una línea de código --para que funcionen, vas a tener que apretar 'enter' algunas veces.
+> [!IMPORTANT]
+> En los ejercicios donde interactuás con el intérprete, el símbolo `>>>` es el que usa Python para indicarte que espera un nuevo comando. Algunos comandos ocupan más de una línea de código --para que funcionen, vas a tener que apretar 'enter' algunas veces.
 > Acordate de no copiar el `>>>` de los ejemplos.
 
 Comencemos definiendo una cadena que contiene una lista de frutas así:
@@ -315,7 +318,7 @@ Usá el comando `for` para iterar sobre los caracteres de una cadena.
 Modificá el código anterior de manera que dentro del ciclo el programa cuente cuántas letras "o" hay en la cadena.
 
 > [!NOTE]
-> _**Sugerencia:** usá un contador como con los meses de la hipoteca._
+> Como sugerencia usá un contador como con los meses de la hipoteca.
 
 ### Ejercicio 1.18: Geringoso rústico
 

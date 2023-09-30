@@ -35,7 +35,8 @@ A las líneas `joaco@paleo:~$` en Linux y `PS C:\Users\Joaco>` en Windows se las
 
 La línea de comandos facilita administrar archivos y espacios de almacenamiento, y lanzar programas. El sistema ejecuta los comandos que le digas sobre el directorio en el que estás, salvo que especifiques lo contrario.
 
-> **Nota:** Para los siguientes pasos puede serte útil abrir una instancia del programa Administrador de Archivos (File Manager en Windows o Nautilus, Dolphin o Thunar en Linux). Así verás lo que sucede en el disco en forma gráfica, además de lo que veas en la línea de comandos.
+> [!NOTE]
+> Para los siguientes pasos puede serte útil abrir una instancia del programa Administrador de Archivos (File Manager en Windows o Nautilus, Dolphin o Thunar en Linux). Así verás lo que sucede en el disco en forma gráfica, además de lo que veas en la línea de comandos.
 
 Normalmente al abrir una ventana terminal estamos en el directorio _home_ (hogar) del usuario correspondiente (`~` y `\Users\Joaco`) en el disco `C:`.
 
@@ -83,7 +84,8 @@ Generalicemos esto que hicimos recién.
 
 ### Comandos, directorio de trabajo y parámetros.
 
-_Nota:_ Habrás notado que en esta sección el sistema usa el separador `\` pero nosotros usamos `/`. Esto nos permite escribir la misma línea en Linux y en Windows dado que ambos entienden `/`
+> [!NOTE]
+> Habrás notado que en esta sección el sistema usa el separador `\` pero nosotros usamos `/`. Esto nos permite escribir la misma línea en Linux y en Windows dado que ambos entienden `/`
 
 En general para pedir cosas al sistema operativo decile _qué, dónde y cómo_: QUE querés que haga, DONDE querés que lo haga, y COMO querés que lo haga (con variaciones, por supuesto):
 
@@ -155,7 +157,8 @@ obteniendo
 
 Que es donde queremos estar.
 
-> _**Nota:** Mi nombre de usuario en este Windows es `Joaco`. Adaptá el nombre al usuario que vos uses, o al directorio de trabajo (home) en tu Windows._
+> [!NOTE]
+> Mi nombre de usuario en este Windows es `Joaco`. Adaptá el nombre al usuario que vos uses, o al directorio de trabajo (home) en tu Windows._
 
 ## Ver el contenido de un archivo
 
@@ -166,7 +169,8 @@ PS C:\Users\Joaco\ejercicios_python\Clase01> type readme.txt
 esta carpeta contiene los archivos .py correspondientes a la ejercitaciÃ³n de la clase 1
 ```
 
-> _**Nota:**_ La palabra "ejercitación" se lee mal por un problema de "encoding" o codificación de datos. Veremos esto mas adelante.
+> [!NOTE]
+> La palabra "ejercitación" se lee mal por un problema de "encoding" o codificación de datos. Veremos esto mas adelante.
 
 ## Borrar un archivo
 
@@ -184,7 +188,8 @@ Si ya estás en el directorio donde está el archivo que querés borrar, no nece
 PS C:\Users\Joaco\ejercicios_python\Clase01> del readme.txt
 ```
 
-> _**Nota:** Windows no es case-sentitive (sensible a mayusculas) para nombres de archivos y directorios. **Linux SI**_.
+> [!NOTE]
+> Windows no es case-sentitive (sensible a mayusculas) para nombres de archivos y directorios. **Linux SI**.
 
 ## Caminos absolutos y caminos relativos
 

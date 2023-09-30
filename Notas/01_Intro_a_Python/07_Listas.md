@@ -2,7 +2,7 @@
 
 # 1.7 Listas
 
-En esta sección estudiaremos listas que es el tipo de datos primitivo de Python para guardar colecciones ordenadas de valores. En [este video](https://youtu.be/h3GN0-rAsss) introducimos el tema.
+En esta sección estudiaremos listas que es el tipo de datos primitivo de Python para guardar colecciones ordenadas de valores. En [este video]() introducimos el tema.
 
 ### Creación de Listas
 
@@ -151,7 +151,7 @@ t = sorted(s)               # s queda igual, t guarda los valores ordenados
 ### Listas y matemática
 
 > [!IMPORTANT]
-> *Cuidado: Las listas no fueron diseñadas para realizar operaciones matemáticas.*
+> Las listas no fueron diseñadas para realizar operaciones matemáticas.
 
 ```python
 >>> nums = [1, 2, 3, 4, 5]
@@ -287,7 +287,7 @@ Usá el método `remove()` para borrar `'Mandarina'` de la lista.
 Agregá una segunda copia de `'Banana'` al final de la lista.
 
 > [!NOTE]
-> *Observación: es perfectamente válido tener valores duplicados en una lista.*
+> Es perfectamente válido tener valores duplicados en una lista.
 
 ```python
 >>> # Agregar 'Banana'

@@ -192,7 +192,8 @@ Probalo.
 >>>
 ```
 
-> ⚠ _**Cuidado**: el separador decimal en Python es el punto, como en inglés, y no la coma del castellano. Por eso el comando `float(3,141592)` da un `ValueError`. Y si intentás convertir una string de punto flotante a entero usando int(), también te va a dar error._
+> [!WARNING]
+> El separador decimal en Python es el punto, como en inglés, y no la coma del castellano. Por eso el comando `float(3,141592)` da un `ValueError`. Y si intentás convertir una string de punto flotante a entero usando int(), también te va a dar error.
 
 ## Ejercicios
 
