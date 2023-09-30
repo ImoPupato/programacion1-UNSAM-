@@ -8,6 +8,8 @@ En este curso vamos a trabajar usando [VS Code](https://code.visualstudio.com/) 
 
 Te dejamos un [video]() para que sepas cómo utilizar el VS Code.
 
+## Extensiones de VS Code
+
 Vamos a listar algunas de las extensiones que vas a precisar y otras que son opcionales pero que ayudan muchísimo:
 
 1. **Python Extension Pack - (Author: Don jayamanne):** esta extensión agrega muchos plugins útiles para Python.
@@ -23,7 +25,6 @@ Vamos a listar algunas de las extensiones que vas a precisar y otras que son opc
 
 2. **Guardar al ejecutar el código:** esta configuración permite guardar el script automáticamente al ejecutarlo. **Solo está disponible si tenés la extensión de Code Runner**. Para activarla tenés que ir a configuración y en la barra de búsqueda de configuraciones escribí: Code-runner: Save File Before Run.
 ![save file before run](/Notas/02_Estructuras_y_Funciones/img/save_file_before_run.png)
-
 
 
 [Contenidos](../Contenidos.md) \| [Anterior (1 Introducción y repaso)](01_Introduccion_y_repaso.md) \| [Próximo (3 Manejo de archivos)](03_Archivos.md)

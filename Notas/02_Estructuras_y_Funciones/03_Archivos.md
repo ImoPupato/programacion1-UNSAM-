@@ -2,9 +2,9 @@
 
 # 2.3 Manejo de archivos
 
-La mayoría de los programas usa alguna fuente de datos. En esta sección discutimos el acceso a archivos, tema que introducimos en este [video](https://youtu.be/KTCS13-Z8bI). Te dejamos también el [código](./arboles.py) y el [archivo](./arboles.csv) que usamos en el video.
+La mayoría de los programas usa alguna fuente de datos. En esta sección discutimos el acceso a archivos, tema que introducimos en este [video](). Te dejamos también el [código](./arboles.py) y el [archivo](./arboles.csv) que usamos en el video.
 
-### Archivos de entrada y salida
+## Archivos de entrada y salida
 
 Con estos comandos podés abrir dos archivos, una para lectura y otro para escritura:
 
@@ -13,7 +13,8 @@ f = open('foo.txt', 'rt')     # Abrir para lectura ('r' de read, 't' de text)
 g = open('bar.txt', 'wt')     # Abrir para escritura ('w' de write, 't' de text)
 ```
 
-_Observación: los nombres [foo, bar, foobar](https://es.wikipedia.org/wiki/Foo) son genéricos que se usan usualmente para aludir a un nombre que se ignora, son los análogos informáticos a fulano, mengano y zutano._
+> [!NOTE]
+> Los nombres [foo, bar, foobar](https://es.wikipedia.org/wiki/Foo) son genéricos que se usan usualmente para aludir a un nombre que se ignora, son los análogos informáticos a fulano, mengano y zutano.
 
 Para leer el archivo completo, o una parte:
 
@@ -37,9 +38,11 @@ f.close()
 g.close()
 ```
 
-Es importante cerrar adecuadamente los archivos y es bastante fácil olvidarse (puede que el programa termine y no se termine de guardar bien). Por eso, preferimos abrir los archivos con el comando `with` de la siguiente forma.
+**Es importante cerrar adecuadamente** los archivos y es bastante fácil olvidarse (puede que el programa termine y no se termine de guardar bien). Por eso, preferimos abrir los archivos con el comando `with` de la siguiente forma.
 
 ```python
+nombre_archivo = 'foo.txt'
+
 with open(nombre_archivo, 'rt') as file:
     # Usá el archivo `file`
     ...comandos que usan el archivo
@@ -47,11 +50,15 @@ with open(nombre_archivo, 'rt') as file:
 ...comandos que no usan el archivo
 ```
 
-Esto cierra automáticamente el archivo cuando se termina de ejecutar el bloque indentado.
+El comando `with` se lo utiliza muchísimo ya que permite cerrar automáticamente el archivo cuando lo terminamos de usar y también en caso que ocurra alguna excepción. Esto previene que ocurran bugs en el código o algunas fugas de memoria.
 
-_Observación: En algunos sistemas operativos es probable que le tengas que especificar el_ encoding _agregando `encoding='utf8'` como parámetro al comando `open`. Algo tipo `open('foo.txt', 'rt', encoding='utf8')`._
+> [!WARNING]
+> A partir de ahora, cuando te pidamos abrir archivos hacelo con el comando `with`.
 
-### Comandos usuales para leer un archivo
+> [!NOTE]
+> En algunos sistemas operativos es probable que le tengas que especificar el_ encoding _agregando `encoding='utf8'` como parámetro al comando `open`. Algo tipo `open('foo.txt', 'rt', encoding='utf8')`.
+
+## Comandos usuales para leer un archivo
 
 Para leer un archivo entero, todo de una, como cadena:
 
@@ -64,12 +71,15 @@ with open('foo.txt', 'rt') as file:
 Para leer línea por línea iterativamente:
 
 ```python
+nombre_archivo = 'foo.txt'
+
 with open(nombre_archivo, 'rt') as file:
     for line in file:
+        print(line)
         # Procesar la línea
 ```
 
-### Comandos usuales para escribir un archivo
+## Comandos usuales para escribir un archivo
 
 Para escribir cadenas:
 
@@ -89,12 +99,12 @@ with open('outfile', 'wt') as out:
 
 ## Ejercicios
 
-Estos ejercicios usan el archivo `../Data/camion.csv`.  El archivo contiene una lista de líneas con información sobre los cajones de fruta cargados en un camión. Suponemos que estás trabajando en el directorio `ejercicios_python/Clase02` del curso. Si no estás segure, podés pedirle al Python que te diga dónde está trabajando con este comando:
+Estos ejercicios usan el archivo `../Data/camion.csv`.  El archivo contiene una lista de líneas con información sobre los cajones de fruta cargados en un camión. Suponemos que estás trabajando en el directorio `ejercicios_python/Clase02` del curso. Si no estás segure, podés pedirle a Python que te diga dónde está trabajando con este comando:
 
 ```python
 >>> import os
 >>> os.getcwd()
-'/Users/profe/Desktop/ejercicios_python/Clase02/' # La salida va a cambiar
+'D:\\ejercicios_python\\Clase02' # La salida va a cambiar
 >>>
 ```
 
@@ -119,11 +129,11 @@ nombre,cajones,precio
 >>>
 ```
 
-En el ejemplo de arriba podrás observar que Python tiene dos modos de salida. En el primero escribiste `data` en el intérprete y Python mostró la representación *cruda* de la cadena, incluyendo comillas y códigos de escape. Cuando escribiste `print(data)`, en cambio, obtuviste la salida formateada de la cadena.
+En el ejemplo de arriba podrás observar que Python tiene dos modos de salida. En el primero escribiste `data` en el intérprete y Python mostró la representación *cruda* de la cadena, incluyendo comillas y códigos de escape (`\n`). Cuando escribiste `print(data)`, en cambio, obtuviste la salida formateada de la cadena.
 
 Leer un archivo entero y cargarlo en memoria todo de una vez parece simple, pero sólo tiene ventajas si el archivo es pequeño. Si estás trabajando con archivos enormes es mejor procesar las líneas de tu archivo una a una.
 
-Para leer un archivo línea por línea, usá un ciclo for como este:
+Para leer un archivo línea por línea, usá un ciclo ``for`` como este:
 
 ```python
 >>> with open('../Data/camion.csv', 'rt') as f:
@@ -169,22 +179,23 @@ Una vez que estés leyendo un archivo línea a línea, podés hacer otras operac
         row = line.split(',')
         print(row)
 
-['"Lima"', '100', '32.20\n']
-['"Naranja"', '50', '91.10\n']
+['Lima', '100', '32.20\n']
+['Naranja', '50', '91.10\n']
 ...
 >>> f.close()
 ```
 
-*Observación: En estos ejemplos tuvimos que llamar  a `f.close()` explícitamente porque no estamos trabajando con el comando `with`.*
-
-*Otra observación: usamos `../Data` para acceder a la carpeta "Data" porque ésta se encuentra dentro de la carpeta "ejercicios_python", al igual que la carpeta actual de trabajo, que es "Clase02". Con los dos puntos del inicio del path nos referimos a la carpeta "madre", es decir, a la carpeta que contiene a la actual.*
+> [!NOTE]
+> 1. En estos ejemplos tuvimos que llamar  a `f.close()` explícitamente porque no estamos trabajando con el comando `with`. Probá hacerlo en el intérprete de esta forma, pero recordá trabajar con el comando `with`.
+> 2. Usamos `../Data` para acceder a la carpeta "Data" porque ésta se encuentra dentro de la carpeta "ejercicios_python", al igual que la carpeta actual de trabajo, que es "Clase02". Con los dos puntos del inicio del path nos referimos a la carpeta "madre", es decir, a la carpeta que contiene a la actual.
 
 ### Ejercicio 2.2: Lectura de un archivo de datos
 Ahora que sabés leer un archivo, escribamos un programa que haga un cálculo simple con los datos leídos.
 
 Las columnas en `camion.csv` corresponden a un nombre de fruta, una cantidad de cajones cargados en el camión, y un precio de compra por cada cajón de ese grupo. Escribí un programa llamado `costo_camion.py`  que abra el archivo, lea las líneas, y calcule el precio pagado por los cajones cargados en el camión.
 
-*Ayuda: para interpretar un string `s` como un número entero, usá `int(s)`. Para leerlo como punto flotante, usá `float(s)`.*
+> [!IMPORTANT]
+> Para interpretar un string `s` como un número entero, usá `int(s)`. Para leerlo como punto flotante, usá `float(s)`.
 
 Tu programa debería imprimir una salida como la siguiente:
 
@@ -197,7 +208,7 @@ Acordate de guardar tu archivo en el directorio `Clase02`; vamos a volver a trab
 ### Ejercicio 2.3: Precio de la naranja
 El archivo `../Data/precios.csv` contiene una serie de líneas con precios de venta de cajones en el mercado al que va el camión. El archivo se ve así:
 
-```csv
+```py
 "Lima",40.22
 "Uva",24.85
 "Ciruela",44.85
@@ -209,9 +220,9 @@ El archivo `../Data/precios.csv` contiene una serie de líneas con precios de ve
 Escribí un código que abra el archivo `../Data/precios.csv`, busque el precio de la naranja y lo imprima en pantalla.
 
 ```python
->>> f = open('../Data/precios.csv', 'rt')
+>>> with open('../Data/precios.csv', 'rt') as f:
 ...
->>> f.close()
+>>>
 
 El precio de la naranja es:  106.28
 ```
@@ -231,13 +242,14 @@ Probalo:
 >>>
 ```
 
-*Observación: La inclusión del modo  `'rt'` es crítica acá. Si te lo olvidás, vas a estar leyendo cadenas de bytes en lugar de cadenas de caracteres.*
+> [!WARNING]
+> La inclusión del modo  `'rt'` es crítica acá. Si te lo olvidás, vas a estar leyendo cadenas de bytes en lugar de cadenas de caracteres.
 
 ### Comentario: ¿No deberíamos estar usando Pandas para esto?
 
-Es frecuente que les estudiantes que conocen un poco más de Python rápidamente señalen que hay módulos como [Pandas](https://pandas.pydata.org) que tienen, entre muchas otras funcionalidades, la posibilidad de leer archivos CSV en una sola instrucción. Es verdad, y funcionan muy bien. Sin embargo, este no es un curso sobre Pandas. Si bien más adelante veremos algo de esta biblioteca, lo que nos interesa en este momento es aprender a manejar archivos directamente. Estamos trabajando con archivos CSV porque es un formato sencillo que es muy útil conocer, pero es principalmente una excusa para mostrar cómo Python maneja archivos de texto. En resumen, cuando tengas que trabajar con datos, definitivamente usá Pandas. Pero para aprender a manejar archivos vamos a seguir usando las funciones básicas de Python.
+Es frecuente que les estudiantes que conocen un poco más de Python rápidamente señalen que hay módulos como [Pandas](https://pandas.pydata.org) que tienen, entre muchas otras funcionalidades, la posibilidad de leer archivos CSV en una sola instrucción. Es verdad, y funcionan muy bien. Sin embargo, este no es un curso sobre Pandas. Si bien más adelante veremos algo de esta biblioteca, lo que nos interesa en este momento es aprender a manejar archivos directamente. Estamos trabajando con archivos CSV porque es un formato sencillo que es muy útil conocer, pero es principalmente una excusa para mostrar cómo Python maneja archivos de texto. 
 
-
+En resumen, cuando tengas que trabajar con datos, definitivamente usá Pandas. Pero para aprender a manejar archivos vamos a seguir usando las funciones básicas de Python.
 
 
 [Contenidos](../Contenidos.md) \| [Anterior (2 Entorno de desarrollo integrado)](02_IDE.md) \| [Próximo (4 Funciones)](04_Funciones.md)

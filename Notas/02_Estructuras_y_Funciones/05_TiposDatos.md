@@ -4,7 +4,7 @@
 
 Esta sección introduce dos estructuras de datos elementales: las tuplas y los diccionarios.
 
-### Tipos de datos primitivos
+## Tipos de datos primitivos
 
 Python tiene pocos tipos primitivos de datos.
 
@@ -14,7 +14,7 @@ Python tiene pocos tipos primitivos de datos.
 
 Algo ya sabemos sobre estos tipos de datos por la clase anterior.
 
-### Tipo None
+## Tipo None
 
 ```python
 email_address = None
@@ -27,11 +27,11 @@ if email_address:
     send_email(email_address, msg)
 ```
 
-### Estructuras de datos
+## Estructuras de datos
 
 Los programas reales tienen datos más complejos que los que podemos almacenar en los tipos primitivos. Por ejemplo, información sobre un pedido de frutas:
 
-```code
+```py
 100 cajones de Manzanas a $490.10 cada uno
 ```
 
@@ -104,14 +104,14 @@ Traceback (most recent call last):
 ValueError: too many values to unpack
 ```
 
-### Tuplas vs. Listas
+#### Tuplas vs. Listas
 
 Las tuplas parecieran ser listas de solo-lectura. Sin embargo, las tuplas suelen usarse para un solo ítem que consiste de múltiples partes mientras que las listas suelen usarse para una colección de diferentes elementos, típicamente del mismo tipo.
 
 ```python
 record = ('Manzanas', 100, 490.1)                # Una tupla representando un registro dentro de un pedido de frutas
 
-symbols = [ 'Manzanas', 'Peras', 'Mandarinas' ]  # Una lista representando tres frutas diferentes.
+symbols = ['Manzanas', 'Peras', 'Mandarinas']  # Una lista representando tres frutas diferentes.
 ```
 
 ### Diccionarios
@@ -126,6 +126,54 @@ s = {
 }
 ```
 
+En las listas, tuplas y strings accedíamos a los elementos que contenían mediante índices numéricos:
+
+```python
+l = ["manzana", "banana", "pera"]
+t = ("algo", 6, 78.2)
+s = "Hola mundo!"
+
+print(l[0]) # Devuelve: manzana
+print(t[-1]) # Devuelve: 78.2
+print(s[3]) # Devuelve: a
+```
+
+En los diccionarios los índices van a ser las claves que usemos, y esas claves pueden ser números, strings, tuplas, etc. Cuando llamemos a una clave, obtendremos su valor:
+
+```python
+
+# El formato de un diccionario es el siguiente
+d = {"clave": "valor"}
+
+# Reemplazando "clave" y "valor" por los tipos de datos que necesitemos.
+
+
+# Diccionario con claves de tipo string
+d1 = {
+    'nombre': 'Pepe',
+    'edad': 66
+}
+
+# Llamo a las claves para obtener sus valores
+print(d1['nombre'])
+print(d1['edad'])
+
+# Diccionario con claves variadas
+d2 = {
+    1: 40,
+    6: 5,
+    (3, 4): 10,
+    "alturas": [20,10,13,32]
+}
+
+# Llamo a las claves
+print(d2[1])
+print(d2[6])
+print(d2[(3, 4)])
+print(d2['alturas'])
+```
+
+
 #### Operaciones usuales
 
 Para obtener el valor almacenado en un diccionario usamos las claves.
@@ -138,11 +186,16 @@ Manzanas 100
 >>>
 ```
 
-Para agregar o modificar valores, simplemente asignamos usando la clave.
+Para agregar o modificar valores, simplemente asignamos usando la clave:
 
 ```python
->>> s['cajones'] = 75
->>> s['fecha'] = '6/8/2020'
+>>> s = {
+... 'fruta': 'Manzana',
+... 'cajones': 100,
+... 'precio': 490.1
+...}
+>>> s['cajones'] = 75 # Modificamos el valor de "cajones"
+>>> s['fecha'] = '6/8/2020' # Agregamos la clave "fecha"
 >>>
 ```
 
@@ -151,6 +204,27 @@ para borrar un valor, usamos el comando `del`.
 ```python
 >>> del s['fecha']
 >>>
+```
+
+Podemos generar un diccionario vacío e ir asignandole claves:
+
+```python
+d3 = {}
+d3["nombre"] = "María"
+d3["cuenta"] = 12345
+print(d3) # Obtendremos el diccionario con esas claves
+```
+
+Los diccionarios no pueden contener claves repetidas. Si estás llamando 2 o más veces a una misma clave y asignandole valores distintos, lo que estás haciendo es modificar el valor de la clave inicial y terminás quedándote con la última modificación:
+
+```py
+d3 = {}
+d3["nombre"] = "María"
+d3["cuenta"] = 12345
+d3["nombre"] = "Eduardo"
+d3["cuenta"] = 54321
+
+print(d3) # Fijate la salida
 ```
 
 #### ¿Por qué diccionarios?
@@ -374,7 +448,16 @@ Si tenés tuplas como en `items` podés crear un diccionario usando la función 
 
 ### Ejercicio 2.13: Diccionario geringoso.
 Construí una función que, a partir de una lista de palabras, devuelva un diccionario geringoso. Las claves del diccionario deben ser las palabras de la lista y los valores deben ser sus traducciones al geringoso (como en el [Ejercicio 1.18](../01_Intro_a_Python/06_Strings.md#ejercicio-118-geringoso-rustico)). 
-Probá tu función para la lista `['banana', 'manzana', 'mandarina']`.
+Probá tu función para la lista `['banana', 'manzana', 'mandarina']`. Deberías obtener una salida como esta:
+
+```python
+{
+    'banana': 'bapanapanapa',
+    'manzana': 'mapanzapanapa',
+    'mandarina': 'mapandaparipinapa'
+}
+```
+
 Guardá este ejercicio en un archivo `diccionario_geringoso.py` para entregar al final de la clase.
 
 
