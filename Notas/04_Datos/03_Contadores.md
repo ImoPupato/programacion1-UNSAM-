@@ -2,9 +2,9 @@
 
 # 4.3 Contadores del módulo _collections_
 
-El módulo `collections` ofrece objetos útiles para manejar datos. En esta sección (y en este [video](https://youtu.be/DoRHWjU3Ews)) introducimos brevemente los contadores, que son solo una de las clases incluidas en este módulo.
+El módulo `collections` ofrece objetos útiles para manejar datos. En esta sección (y en este [video]()) introducimos brevemente los contadores, que son solo una de las clases incluidas en este módulo.
 
-### Ejemplo: Contar cosas
+## Ejemplo: Contar cosas
 
 Digamos que querés hacer una tabla con el total de cajones de cada fruta.
 
@@ -21,9 +21,9 @@ camion = [
 
 Hay dos entradas de `Naranja` y dos de `Pera` en esta lista. Estos cajones deben ser combinados juntos de alguna forma.
 
-### Contadores
+## Contadores
 
-Solución: Usá un  `Counter` (contador).
+Solución: Usá un `Counter()` (contador).
 
 ```python
 from collections import Counter
@@ -46,7 +46,7 @@ O podés cargarlo en el Spyder y correrlo.
 
 
 ### Ejercicio 4.6: Contadores
-Vamos a usar un contador (objeto `Counter`) para contar cajones de frutas. Probalo:
+Vamos a usar un contador (objeto `Counter()`) para contar cajones de frutas. Probalo:
 
 ```python
 >>> camion = leer_camion('../Data/camion.csv')
@@ -105,6 +105,19 @@ Counter({'Frambuesa': 250, 'Durazno': 125, 'Lima': 50, 'Mandarina': 25})
 >>> combinada
 Counter({'Caqui': 150, 'Durazno': 220, 'Frambuesa': 250, 'Lima': 150, 'Mandarina': 275, 'Naranja': 150})
 >>>
+```
+
+Otra forma de usar `Counter()` es pasándole un contenedor como argumento:
+
+```python
+from collections import Counter
+
+l = [1,1,1,1,2,2,3,3,3,3,3,3,3,4,4,4,4,5,5]
+contador = Counter(l)
+print(contador)
+
+# Salida
+Counter({3: 7, 1: 4, 4: 4, 2: 2, 5: 2})
 ```
 
 Esto es solo una pequeña muestra de lo que se puede hacer con contadores. El módulo  `collections` es muy poderoso pero meterse a ver sus detalles sería una distracción ahora. Sigamos con nuestro curso...

@@ -2,11 +2,11 @@
 
 # 4.4 Impresión con formato
 
-En esta sección se ven detalles técnicos sobre cómo hacer que la salida por pantalla sea más amena para el usuario. Podés complementar la lectura con un [video](https://youtu.be/_Mlj6FcJZ9Y).
+En esta sección se ven detalles técnicos sobre cómo hacer que la salida por pantalla sea más amena para el usuario. Podés complementar la lectura con un [video]().
 
 Cuando trabajás con datos es usual que quieras imprimir salidas estructuradas (tablas, etc.). Por ejemplo:
 
-```code
+```py
   Nombre      Cajones     Precio
 ----------  ----------  -----------
  Lima           100        32.20
@@ -18,7 +18,7 @@ Cuando trabajás con datos es usual que quieras imprimir salidas estructuradas (
  Naranja        100        70.44
 ```
 
-### Formato de cadenas
+## Formato de cadenas
 
 Una excelente manera de darle formato a una cadena en Python (a partir de la versión 3.6) es usando `f-strings`.
 
@@ -37,7 +37,7 @@ La parte `{expresion:formato}` va a ser reemplazada. Usualmente los `f-strings` 
 print(f'{nombre:>10s} {cajones:>10d} {precio:>10.2f}')
 ```
 
-### Códigos de formato
+## Códigos de formato
 
 Lo códigos de formato (lo que va luego de `:` dentro de `{}`) son similares a los que se usan en el `printf()` del lenguaje C. Los más comunes son:
 
@@ -61,7 +61,7 @@ Los modificadores permiten ajustar el ancho a imprimir o la precisión decimal (
 :0.2f   Flotante con dos dígitos de precisión
 ```
 
-### Formato a diccionarios
+## Formato a diccionarios
 
 Podés usar el método `format_map()` para aplicarle un formato a los valores de un diccionario:
 
@@ -78,7 +78,7 @@ Podés usar el método `format_map()` para aplicarle un formato a los valores de
 
 Usa los mismos códigos que los `f-strings` pero toma los valores que provee el diccionario.
 
-### El método format()
+## El método format()
 
 Existe un método  `format()` que permite aplicar formato a argumentos.
 
@@ -92,7 +92,7 @@ Existe un método  `format()` que permite aplicar formato a argumentos.
 
 La verdad es que `format()` nos resulta un poco extenso y preferimos usar `f-strings`.
 
-### Formato estilo C
+## Formato estilo C
 
 También podés usar el operador  `%`.
 
@@ -108,6 +108,8 @@ También podés usar el operador  `%`.
 Esto requiere un solo ítem, o una tupla a la derecha. Los códigos están también inspirados en el `printf()` de C. Tiene la dificultad de que hay que contar posiciones y todas las variables van juntas al final.
 
 ## Ejercicios
+
+Por lo general vamos a usar `f-strings` para todo ya que es un método muy utilizado actualmente. Aun así te dejamos ejercicios con distintos formatos para que sepas cómo funcionan por si te los encontrás en algún código.
 
 ### Ejercicio 4.7: Formato de números
 Un problema usual cuando queremos imprimir números es especificar el número de dígitos decimales. Los f-strings nos permiten hacerlo. Probá los siguientes ejemplos:
@@ -140,7 +142,7 @@ La documentación completa sobre los códigos de formato usados en f-strings pue
 
 La documentación sobre códigos usados con `%` puede encontrarse [acá](https://docs.python.org/3/library/stdtypes.html#printf-style-string-formatting).
 
-A pesar de que suelen usarse dentro de un `print`, el formato de cadenas no está necesariamente ligado a la impresión. Por ejemplo, podés simplemente asignarlo a una variable.
+A pesar de que suelen usarse dentro de un `print()`, el formato de cadenas no está necesariamente ligado a la impresión. Por ejemplo, podés simplemente asignarlo a una variable.
 
 ```python
 >>> f = '%0.4f' % value
@@ -152,7 +154,7 @@ A pesar de que suelen usarse dentro de un `print`, el formato de cadenas no est�
 ### Ejercicio 4.8: Recolectar datos
 En el [Ejercicio 4.4](../04_Datos/02_Secuencias.md#ejercicio-44-la-funcion-zip), modificaste tu programa `informe.py` que calcula las ganancias o pérdidas de un camión que compra a productores y vende en el mercado. Copiá su contenido en un nuevo archivo `tabla_informe.py` y guarda éste también en la carpeta de ejercicios de esta clase. Ahora dejá el archivo `informe.py`, y trabajá sobre `tabla_informe.py`. Lo vas a ir modificando durante los próximos ejercicios hasta producir una tabla como ésta:
 
-```
+```py
  Nombre     Cajones     Precio     Cambio
 ---------- ---------- ---------- ----------
  Lima          100        32.2       8.02
@@ -166,8 +168,7 @@ En el [Ejercicio 4.4](../04_Datos/02_Secuencias.md#ejercicio-44-la-funcion-zip),
 
 En este informe, el "Precio" es el precio en el mercado y el "Cambio" es la variación respecto al precio cobrado por el productor.
 
-Para generar un informe como el de arriba, primero tenés que recolectar todos los datos de la tabla. Escribí una función `hacer_informe()`
-que recibe una lista de cajones y un diccionario con precios como input y devuelve una lista de tuplas conteniendo la información mostrada en la tabla anterior.
+Para generar un informe como el de arriba, primero tenés que recolectar todos los datos de la tabla. Escribí una función `hacer_informe()` que recibe una lista de cajones y un diccionario con precios como input y devuelve una lista de tuplas conteniendo la información mostrada en la tabla anterior.
 
 Agregá esta función a tu archivo `tabla_informe.py`. Debería funcionar como se muestra en el siguiente ejemplo:
 
@@ -207,7 +208,7 @@ Volvé a hacer el ciclo `for` del ejercicio anterior pero cambiando la forma de 
 >>>
 ```
 
-O directamente usando  f-strings. Por ejemplo:
+O directamente usando ``f-strings``. Por ejemplo:
 
 ```python
 >>> for nombre, cajones, precio, cambio in informe:

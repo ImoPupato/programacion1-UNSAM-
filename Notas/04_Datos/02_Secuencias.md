@@ -4,13 +4,13 @@
 
 En esta sección hablamos de secuencias de datos.
 
-### Tipo de secuencias
+## Tipo de secuencias
 
 Python tiene tres tipos de datos que son *secuencias*.
 
-* String: `'Hello'`. Una cadena es una secuencia de caracteres.
-* Lista: `[1, 4, 5]`.
-* Tupla: `('Pera', 100, 490.1)`.
+* **String:** `'Hello'`. Una cadena es una secuencia de caracteres.
+* **Lista:** `[1, 4, 5]`.
+* **Tupla:** `('Pera', 100, 490.1)`.
 
 Todas las secuencias tienen un orden, indexado por enteros, y tienen una longitud.
 
@@ -57,7 +57,7 @@ Traceback (most recent call last):
 TypeError: can only concatenate tuple (not "list") to tuple
 ```
 
-### Rebanadas (slicing)
+## Rebanadas (slicing)
 
 Sacar una rebanada es tomar una subsecuencia de una secuencia.
 La sintaxis es `s[comienzo:fin]`, donde `comienzo` y `fin` son los índices de la subsecuencia que querés.
@@ -84,7 +84,8 @@ a = [0,1,2,3,4,5,6,7,8]
 a[2:4] = [10,11,12]       # [0,1,10,11,12,4,5,6,7,8]
 ```
 
-*Observación: La rebanada reasignada no tiene que tener necesariamente la misma longitud.*
+> [!NOTE]
+> La rebanada reasignada no tiene que tener necesariamente la misma longitud.
 
 ```python
 # Eliminación
@@ -92,7 +93,7 @@ a = [0,1,2,3,4,5,6,7,8]
 del a[2:4]                # [0,1,4,5,6,7,8]
 ```
 
-### Reducciones de secuencias
+## Reducciones de secuencias
 
 Hay algunas operaciones usuales que reducen una secuencia a un solo valor.
 
@@ -110,7 +111,7 @@ Hay algunas operaciones usuales que reducen una secuencia a un solo valor.
 >>>
 ```
 
-### Iterar sobre una secuencia
+## Iterar sobre una secuencia
 
 Los ciclos `for` iteran sobre los elementos de una secuencia.
 
@@ -135,7 +136,7 @@ for x in s:         # `x` es una variable iteradora
 
 En cada iteración, el valor previo de la variable (si hubo alguno) es sobreescrito. Luego de terminar el ciclo, la variable retiene su último valor.
 
-### El comando break
+## El comando break
 
 Podés usar el comando `break` para romper un ciclo antes de tiempo.
 
@@ -150,7 +151,7 @@ instrucciones
 
 Cuando el comando  `break` se ejecuta, sale del ciclo y se mueve a las siguientes `instrucciones`.  El comando `break` sólo se aplica al ciclo más interno. Si un ciclo está anidado en otro ciclo, el comando no va a romper el ciclo externo.
 
-### El comando continue
+## El comando continue
 
 Para saltear un elemento y moverse al siguiente, usá el comando `continue`.
 
@@ -164,7 +165,7 @@ for line in lines:
 
 Éste es útil cuando el elemento encontrado no es de interés o es necesario ignorarlo en el procesamiento.
 
-### Ciclos sobre enteros
+## Ciclos sobre enteros
 
 Para iterar sobre un rango de números enteros, usá `range()`.
 
@@ -193,7 +194,7 @@ for k in range(10,50,2):
 * `paso` es opcional. Por defecto es `1`.
 * `range()` calcula los valores a medida que los necesita. No guarda realmente en memoria el rango completo de números.
 
-### La función enumerate()
+## La función enumerate()
 
 La función `enumerate` agrega un contador extra a una iteración.
 
@@ -214,7 +215,7 @@ with open(nombre_archivo) as f:
         ...
 ```
 
-Al fin de cuentas, `enumerate` es sólo una forma abreviada y simpática de escribir:
+Al fin de cuentas, `enumerate()` es sólo una forma abreviada y simpática de escribir:
 
 ```python
 i = 0
@@ -223,9 +224,9 @@ for x in s:
     i += 1
 ```
 
-Al usar `enumerate` tenemos que tipear menos y el programa funciona un poco más rápido.
+Al usar `enumerate()` tenemos que tipear menos y el programa funciona un poco más rápido.
 
-### Tuplas y ciclos for
+## Tuplas y ciclos for
 
 Podés iterar con múltiples variables de iteración.
 
@@ -250,7 +251,7 @@ La función `zip` toma múltiples secuencias y las combina en un iterador.
 columnas = ['nombre', 'cajones', 'precio']
 valores = ['Pera', 100, 490.1 ]
 pares = zip(columnas, valores)
-# ('nombre','Pera'), ('cajones',100), ('precio',490.1)
+# ('nombre', 'Pera'), ('cajones', 100), ('precio', 490.1)
 ```
 
 Para obtener el resultado debés iterar. Podés usar múltiples variables para desempaquetar las tuplas como mostramos antes.
@@ -266,7 +267,7 @@ Un uso frecuente de `zip` es para crear pares clave/valor y construir diccionari
 d = dict(zip(columnas, valores))
 ```
 
- Como cierre te dejamos una [explicación](https://youtu.be/e_E-2tFcRwQ) para este tema.
+ Como cierre te dejamos un [video]() para este tema.
 
 ## Ejercicios
 
@@ -322,7 +323,7 @@ Probá iterar sobre los datos.
 >>>
 ```
 
-A veces los comandos for, len(), y range() son combinados para recorrer listas:
+A veces los comandos for, ``len()`` y ``range()`` son combinados para recorrer listas:
 
 ```python
 >>> for n in range(len(data)):
@@ -335,11 +336,10 @@ A veces los comandos for, len(), y range() son combinados para recorrer listas:
 >>>
 ```
 
-Sin embargo, Python tiene mejores alternativas para esto. Te recomendamos familiarizarte con ellas y usarlas: por su simpleza producen código más legible y reducen la posibilidad de un bug en el código. Simplemente usá un ciclo `for` normal si querés iterar sobre los elementos de la variable `data`.  Y usá `enumerate()` si necesitás tener el índice por algún motivo.
+Sin embargo, Python tiene mejores alternativas para esto. Te recomendamos familiarizarte con ellas y usarlas: por su simpleza producen código más legible y reducen la posibilidad de un bug en el código. Simplemente usá un ciclo `for` normal si querés iterar sobre los elementos de la variable `data`. Y usá `enumerate()` si necesitás tener el índice por algún motivo.
 
 ### Ejercicio 4.3: Un ejemplo práctico de enumerate()
-Recordá que el archivo  `Data/missing.csv` contiene datos sobre los cajones de un camión, pero tiene algunas filas que faltan. Usando `enumerate()`,
-copiá tu programa `costo_camion.py` a la carpeta de la clase actual, y modificalo de forma que imprima un aviso (warning) cada vez que encuentre una fila incorrecta, indicando el número de fila.
+Recordá que el archivo  `Data/missing.csv` contiene datos sobre los cajones de un camión, pero tiene algunas filas que faltan. Usando `enumerate()`, copiá tu programa `costo_camion.py` a la carpeta de la clase actual, y modificalo de forma que imprima un aviso (warning) cada vez que encuentre una fila incorrecta, indicando el número de fila.
 
 ```python
 >>> cost = costo_camion('../Data/missing.csv')
@@ -396,7 +396,7 @@ Este apareamiento es un paso intermedio para construir un diccionario. Probá lo
 
 Esta transformación es un truco sumamente útil cuando tenés que procesar muchos archivos de datos. Por ejemplo, suponé que querés hacer que el programa `costo_camion.py` trabaje con diferentes archivos de entrada, pero que no le importe la posición exacta de la columna que tiene la cantidad de cajones o el precio. Es decir, que entienda que la columna tiene el precio por su encabezado y no por su posición dentro del archivo.
 
-Modificá la función  `costo_camion()` en el archivo `costo_camion.py` para que se vea así:
+Modificá la función `costo_camion()` en el archivo `costo_camion.py` para que se vea así:
 
 ```python
 # costo_camion.py
@@ -417,7 +417,7 @@ def costo_camion(nombre_archivo):
 
 Ahora, probá tu función con un archivo completamente diferente `Data/fecha_camion.csv` que se ve así:
 
-```csv
+```py
 nombre,fecha,hora,cajones,precio
 "Lima","6/11/2007","9:50am",100,32.20
 "Naranja","5/13/2007","4:20pm",50,91.10
@@ -497,7 +497,7 @@ Observá que `zip()` no está limitada a pares. Podés usarla con cualquier núm
 >>> b = ['w', 'x', 'y', 'z']
 >>> c = [0.2, 0.4, 0.6, 0.8]
 >>> list(zip(a, b, c))
-[(1, 'w', 0.2), (2, 'x', 0.4), (3, 'y', 0.6), (4, 'z', 0.8))]
+[(1, 'w', 0.2), (2, 'x', 0.4), (3, 'y', 0.6), (4, 'z', 0.8)]
 >>>
 ```
 
