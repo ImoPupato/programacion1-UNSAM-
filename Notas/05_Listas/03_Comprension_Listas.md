@@ -179,7 +179,7 @@ O una con la info de las frutas que costaron más de $10000.
 >>> costo10k
 [{'cajones': 150, 'nombre': 'Caqui', 'precio': 103.44},
  {'cajones': 200, 'nombre': 'Mandarina', 'precio': 51.23}]
- >>>
+>>>
 ```
 
 Esta forma de escribir resulta análoga a las consultas a una base de datos con 
