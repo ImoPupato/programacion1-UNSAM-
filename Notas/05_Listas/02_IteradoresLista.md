@@ -12,7 +12,7 @@ Queremos mostrarte en ejemplos concretos cómo distintas maneras de resolver  un
 
 El uso adecuado de estos conceptos puede hacer la diferencia entre un algoritmo que termina el procesamiento en unos pocos minutos o uno que hay que dejar corriendo dos días (y rezar para que no se corte la electricidad mientras corre).
 
-Si querés podés complementar la lectura de esta sección con un [video introductorio](https://youtu.be/pd_fc1SB2UA) al tema.
+Si querés podés complementar la lectura de esta sección con un [video introductorio]() al tema.
 
 
 ## Búsqueda lineal
@@ -39,13 +39,9 @@ Traceback (most recent call last):
 ValueError: 20 is not in list
 ```
 
-Vemos que usar la función `index()` resuelve nuestro problema si el
-valor buscado está en la lista, pero si el valor no está no sólo no devuelve
-un -1, sino que se produce un error.
+Vemos que usar la función `index()` resuelve nuestro problema si el valor buscado está en la lista, pero si el valor no está no sólo no devuelve un -1, sino que se produce un error.
 
-El problema es que para poder aplicar la función `index()` debemos
-estar seguros de que el valor está en la lista, y para averiguar eso Python
-nos provee del operador `in`:
+El problema es que para poder aplicar la función `index()` debemos estar seguros de que el valor está en la lista, y para averiguar eso Python nos provee del operador `in`:
 
 ```python
 >>> 5 in [1, 3, 5, 7]
@@ -54,10 +50,7 @@ True
 False
 ```
 
-Si llamamos a la función `index()` sólo cuando el
-resultado de `in` es verdadero, y devolvemos -1 cuando el
-resultado de `in` es falso, estaremos resolviendo el problema
-planteado usando sólo funciones provistas por Python:
+Si llamamos a la función `index()` sólo cuando el resultado de `in` es verdadero, y devolvemos -1 cuando el resultado de `in` es falso, estaremos resolviendo el problema planteado usando sólo funciones provistas por Python:
 
 ```python
 def busqueda_con_index(lista, e):
@@ -91,10 +84,7 @@ Probemos la función `busqueda_con_index()`:
 ### ¿Cuántas comparaciones hace este programa?
 
 Es decir, ¿cuánto esfuerzo computacional requiere
-este programa? ¿Cuántas veces compara el valor que buscamos con los datos de
-la lista? No lo sabemos porque no sabemos cómo están implementadas las
-operaciones `in` e `index()`. La pregunta queda planteada
-por ahora pero daremos un método para averiguarlo más adelante.
+este programa? ¿Cuántas veces compara el valor que buscamos con los datos de la lista? No lo sabemos porque no sabemos cómo están implementadas las operaciones `in` e `index()`. La pregunta queda planteada por ahora pero daremos un método para averiguarlo más adelante.
 
 ###  Búsqueda lineal
 
@@ -103,9 +93,9 @@ Nos interesa estudiar formas alternativas de programar la búsqueda usando opera
 Consideremos la siguiente solución: iterar sobre los índices y elementos de una lista de manera de comparar el elemento `e` buscado con cada uno de los elementos de la lista y devolver la posición donde lo encontremos, en caso de encontrarlo. Si llegamos al final de la lista sin haber salido antes de la función es porque el valor de `e` no está en la lista, y en ese caso
 devolvemos -1.
 
-En esta solución lo ideal es usar `enumerate` (ver la [Sección 4.2](../04_Datos/02_Secuencias.md#la-función-enumerate)) ya que dentro de la iteración necesitamos tener acceso tanto al valor del elemento (para ver si es igual al buscado) como a su índice (es el valor que tenemos que devolver).
+En esta solución lo ideal es usar `enumerate()` (ver la [Sección 4.2](../04_Datos/02_Secuencias.md#la-función-enumerate)) ya que dentro de la iteración necesitamos tener acceso tanto al valor del elemento (para ver si es igual al buscado) como a su índice (es el valor que tenemos que devolver).
 
-Primero hagámoslo sin usarlo y luego lo agregamos para entender su ventaja. En ambos casos necesitamos una variable `i` que cuente en cada momento en qué posición de la lista estamos. Si no usamos `enumerate`, debemos inicializar `i` en 0 antes de entrar en el ciclo e incrementarla en 1 en cada paso.
+Primero hagámoslo sin usarlo y luego lo agregamos para entender su ventaja. En ambos casos necesitamos una variable `i` que cuente en cada momento en qué posición de la lista estamos. Si no usamos `enumerate()`, debemos inicializar `i` en 0 antes de entrar en el ciclo e incrementarla en 1 en cada paso.
 
 El programa nos queda así:
 
@@ -124,7 +114,7 @@ def busqueda_lineal(lista, e):
     return pos
 ```
 
-La versión con `enumerate` es mucho más elegante:
+La versión con `enumerate()` es mucho más elegante:
 ```python
 def busqueda_lineal(lista, e):
     '''Si e está en la lista devuelve su posición, de lo
@@ -153,21 +143,16 @@ Y ahora lo probamos:
 
 ###  ¿Cuántas comparaciones hace este programa?
 
-Volvemos a preguntarnos lo mismo que en la sección anterior pero con el nuevo
-programa: ¿cuánto esfuerzo computacional requiere este programa?, ¿cuántas
-veces compara el valor que buscamos con los datos de la lista? Ahora podemos
-analizar el código de `busqueda_lineal`:
+Volvemos a preguntarnos lo mismo que en la sección anterior pero con el nuevo programa: ¿cuánto esfuerzo computacional requiere este programa?, ¿cuántas veces compara el valor que buscamos con los datos de la lista? Ahora podemos analizar el código de `busqueda_lineal()`:
 
-El ciclo recorre uno a uno los elementos de la lista, y en el cuerpo de ese ciclo, se compara cada elemento con el valor buscado. En el caso de encontrarlo
-se devuelve la posición. Si el valor no está en la lista, se recorrerá la lista entera, haciendo una comparación por cada elemento.
+El ciclo recorre uno a uno los elementos de la lista, y en el cuerpo de ese ciclo, se compara cada elemento con el valor buscado. En el caso de encontrarlo se devuelve la posición. Si el valor no está en la lista, se recorrerá la lista entera, haciendo una comparación por cada elemento.
 
-O sea que si el valor está en la posición *p* de la lista se hacen *p*
-comparaciones. En el *peor caso*, si el valor no está, se hacen
-tantas comparaciones como elementos tenga la lista.
+O sea que si el valor está en la posición *p* de la lista se hacen *p* comparaciones. En el *peor caso*, si el valor no está, se hacen tantas comparaciones como elementos tenga la lista.
 
 En resumen: Si la lista crece, la cantidad de comparaciones para encontrar un valor arbitrario crecerá en forma proporcional al tamaño de la lista. Es decir que:
 
-**El algoritmo de búsqueda lineal tiene un comportamiento *proporcional a la longitud de la lista involucrada*, o que es un algoritmo *lineal*.**
+> [!IMPORTANT]
+> **El algoritmo de búsqueda lineal tiene un comportamiento *proporcional a la longitud de la lista involucrada*, o que es un algoritmo *lineal*.**
 
 ## Ejercicios
 
@@ -188,12 +173,11 @@ Probá tu función con algunos ejemplos:
 4
 >>> buscar_u_elemento([1,2,3,2,3,4],5)
 -1
-
 ```
 
 Agregale a tu programa `busqueda_en_listas.py` una función `buscar_n_elemento()` que reciba una lista y un elemento y devuelva la cantidad de veces que aparece el elemento en la lista. Probá también esta función con algunos ejemplos.
 
-Ayuda: si querés podés ver este [video](https://youtu.be/idzQ5ts77zE) donde hablamos de este ejercicio. Te dejamos también el [código](./buscar_elem.py) que usamos en el video.
+Ayuda: si querés podés ver este [video]() donde hablamos de este ejercicio. Te dejamos también el [código](./buscar_elem.py) que usamos en el video.
 
 ### Ejercicio 5.4: Búsqueda de máximo y mínimo
 Agregale a tu archivo `busqueda_en_listas.py` una función `maximo()` que busque el valor máximo de una lista de números positivos. Python tiene el comando `max` que ya hace esto, pero como práctica te proponemos que completes el siguiente código:
@@ -211,6 +195,7 @@ def maximo(lista):
 ```
 
 Probá tu función con estos ejemplos:
+
 ```pyton 
 >>> maximo([1,2,7,2,3,4])
 7
@@ -222,8 +207,7 @@ Probá tu función con estos ejemplos:
 0
 ```
 
-¿Por qué falla en el último caso? ¿Por qué anda en el caso anterior? 
-¿Cómo se puede inicializar m para que la función ande también con números negativos? Corregilo y guarda la versión mejorada en el archivo `busqueda_en_listas.py`.
+¿Por qué falla en el último caso? ¿Por qué anda en el caso anterior? ¿Cómo se puede inicializar m para que la función ande también con números negativos? Corregilo y guarda la versión mejorada en el archivo `busqueda_en_listas.py`.
 
 Si te dan ganas, agregá una función `minimo()` al archivo.
 

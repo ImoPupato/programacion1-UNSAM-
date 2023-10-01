@@ -7,7 +7,7 @@ Python tiene un debugger poderoso que te permite probar porciones de código. Es
 Vimos en la  [Sección 3.2](../03_Contenedores_y_Errores/02_Bugs.md#tres-tipos-de-errores) diferentes ejemplos de problemas que pueden aparecer y tuviste que arremangarte e ingeniártelas para resolverlos a mano. En esta sección vamos a introducir la herramienta *pdb* (Python debugger) que ofrece el lenguaje para resolver este tipo de problemas.
 
 
-## Testear es genial, debuggear es horrible.
+## Testear es genial, debuggear es horrible
 
 Se dice que hay un _bug_ (un error) cuando un programa no se comporta como el programador espera o hace algo inesperado. Es muy frecuente que los programas tengan bugs. Después de escribir un fragmento de código por primera vez, es conveniente correrlo algunas veces usando tests que permitan poner en evidencia esos bugs.
 
@@ -86,14 +86,14 @@ Nos resulta más cómodo usar un IDE como Spyder para hacer debugging y ése es 
 
 Fijate los nombres de cada ícono: 
 
-Nombre | Acción
----|---
-Debug | inicia el modo debug
-Step | da un paso en el programa
-Step Into | entra en la función referida
-Step Return | ejecuta hasta salir de la función
-Continue | retoma la ejecución normal
-Stop | detiene el programa
+| Nombre      | Acción                            |
+| ----------- | --------------------------------- |
+| Debug       | inicia el modo debug              |
+| Step        | da un paso en el programa         |
+| Step Into   | entra en la función referida      |
+| Step Return | ejecuta hasta salir de la función |
+| Continue    | retoma la ejecución normal        |
+| Stop        | detiene el programa               |
 
 Vamos a volver a analizar el siguiente código, similar al del [Ejercicio 3.5](../03_Contenedores_y_Errores/02_Bugs.md#ejercicio-35-semantica) para que veas la utilidad del debugger:
 
@@ -149,9 +149,10 @@ Si, en cambio, al llegar a la línea del `print()` en lugar de `Step` (Ctrl + F1
 
 En todo caso, lo que observamos en esta ejecución de `tiene_a()` es que salimos de la función después de haber analizado sólo la primera letra de la palabra. ¿Es correcto esto? ¿Donde está el error? ¿Cómo lo podemos resolver?
 
-**Comentario.** Recorrer la ejecución de un programa como un simple espectador no nos muestra claramente un error en el código. Es la incongruencia entre lo esperado y lo que realmente sucede lo que lo marca. Esto exige mucha atención para, antes de ejecutar cada paso, preguntarse: ¿qué espero que ocurra? Luego, al avanzar un paso en la ejecución, puede ocurrir que lo que esperamos que pase no sea lo que realmente pasa. Entonces estamos en un **paso clave** de la  ejecución, que nos marca que estamos frente a una de dos: ó frente a un error en el código ó frente a la oportunidad de mejorar nuestra comprensión del mismo.
+> [!NOTE]
+> Recorrer la ejecución de un programa como un simple espectador no nos muestra claramente un error en el código. Es la incongruencia entre lo esperado y lo que realmente sucede lo que lo marca. Esto exige mucha atención para, antes de ejecutar cada paso, preguntarse: ¿qué espero que ocurra? Luego, al avanzar un paso en la ejecución, puede ocurrir que lo que esperamos que pase no sea lo que realmente pasa. Entonces estamos en un **paso clave** de la  ejecución, que nos marca que estamos frente a una de dos: ó frente a un error en el código ó frente a la oportunidad de mejorar nuestra comprensión del mismo.
 
-Te dejamos un [video](https://youtu.be/ak5wqGwCb5M) (un poco largo) donde usamos el debugger y repasamos el [Ejercicio 4.12](../04_Datos/04_Formato.md#ejercicio-412-tablas-de-multiplicar) de tablas de multipicar.
+Te dejamos un [video]() (un poco largo) donde usamos el debugger y repasamos el [Ejercicio 4.12](../04_Datos/04_Formato.md#ejercicio-412-tablas-de-multiplicar) de tablas de multipicar.
 
 ## Ejercicios
 

@@ -2,9 +2,9 @@
 
 # 5.3 Comprensión de listas
 
-Una tarea que realizamos una y otra vez es procesar los elementos de una lista. En esta sección introducimos la definición de listas por comprensión que es una herramienta potente para hacer exactamente eso. Si querés, podés ver este [video breve](https://youtu.be/Ewauirj_leo) donde introducimos el tema, o también podés optar por un [video extendido](https://youtu.be/h5EnktOrsRQ), donde usamos [este código](./listas.py).
+Una tarea que realizamos una y otra vez es procesar los elementos de una lista. En esta sección introducimos la definición de listas por comprensión que es una herramienta potente para hacer exactamente eso. Si querés, podés ver este [video breve]() donde introducimos el tema, o también podés optar por un [video extendido](), donde usamos [este código](./listas.py).
 
-### Crear listas nuevas
+## Crear listas nuevas
 
 La comprensión de listas crea un una nueva lista aplicando una operación a cada elemento de una secuencia.
 
@@ -28,7 +28,7 @@ Otro ejemplo:
 
 La sintaxis general es : `[<expresión> for <variable> in <secuencia>]`.
 
-### Filtros
+## Filtros
 
 La comprensión de listas se puede usar para filtrar.
 
@@ -40,7 +40,7 @@ La comprensión de listas se puede usar para filtrar.
 >>>
 ```
 
-### Casos de uso
+## Casos de uso
 
 La comprensión de listas es enormemente útil. Por ejemplo, podés recolectar los valores de un campo específico de un diccionario:
 
@@ -60,7 +60,7 @@ También podés combinar la comprensión de listas con reducciones de secuencias
 costo = sum([s['cajones']*s['precio'] for s in camion])
 ```
 
-### Sintaxis general
+## Sintaxis general
 
 ```code
 [<expresión> for <variable> in <secuencia> if <condición>]
@@ -75,7 +75,7 @@ for variable in secuencia:
         resultado.append(expresión)
 ```
 
-### Digresión histórica
+## Digresión histórica
 
 La comprensión de listas viene de la matemática (definición de conjuntos por comprensión).
 
@@ -292,12 +292,39 @@ Este comando no es trivial. Es sintácticamente muy compacto, pero es conceptual
 
 ¡Por las barbas de mi abuelo! Acabamos de reducir casi toda la función `leer_camion()` a un solo comando.
 
-### Comentario
+## Comentario
 
 La comprensión de listas se usa frecuentemente en Python. Es una forma eficiente de transformar, filtrar o juntar datos. Tiene una sintaxis potente pero tratá de no pasarte con su uso: mantené cada comando tan simple como sea posible. Está perfecto descomponer un solo comando complejo en muchos pasos. Concretamente: compartir el último ejemplo con personas desprevenidas puede no ser lo ideal.  
 
 Dicho esto, saber manipular datos rápidamente es una habilidad increíblemente útil. Hay numerosas situaciones donde puede que tengas que resolver algún tipo de problema excepcional (en el sentido de raro o único) para importar, extraer o exportar datos. La comprensión de listas te puede ahorrar muchísimo tiempo en esas tareas.
 
+Cómo dijimos, está bueno usar la comprensión de listas en situaciones particulares para comprimir código; acá abajo te dejamos un ejemplo de lo que **NO HAY QUE HACER**. Lo siguiente es un código hecho en una línea que realiza una simulación de `N` jugadas de la generala y calcula probabilidad de sacar generala (es de un ejercicio de la siguiente clase):
+
+```py
+import random
+from collections import Counter
+
+def generala(N):
+    return sum((len((lambda f: [f[1][0]] * len(f[1]) + [f
+    [1][0]] * Counter(f[0])[f[1][0]] if f[1] and f[0] and
+     f[1][0] in f[0] else [Counter(f[0]).most_common(1)[0]
+     [0]] * Counter(f[0]).most_common(1)[0][1] if f[0]
+      and Counter(f[0]).most_common(1)[0][1] > 1 else f
+      [1])((lambda w: [[random.randint(1, 6) for _ in
+       range(5 - len(w))], w])((lambda y: [y[1][0]] * len(y
+      [1]) + [y[1][0]] * Counter(y[0])[y[1][0]] if y[1]
+       and y[0] and y[1][0] in y[0] else [Counter(y[0])
+       .most_common(1)[0][0]] * Counter(y[0]).most_common
+       (1)[0][1] if y[0] and Counter(y[0]).most_common(1)
+       [0][1] > 1 else y[1])((lambda z: [[random.randint
+       (1, 6) for _ in range(5 - len(z))], z])((lambda x:
+        [x[0][0]] * x[0][1] if x[0][1] > 1 else [])
+        (Counter([random.randint(1, 6) for _ in range
+        (5)]).most_common(1))))))) == 5 for _ in range
+        (N)))/N
+
+print(generala(100000))
+```
 
 [Contenidos](../Contenidos.md) \| [Anterior (2 Listas y búsqueda lineal)](02_IteradoresLista.md) \| [Próximo (4 Objetos)](04_Objetos.md)
 
