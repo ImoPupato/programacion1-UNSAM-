@@ -138,7 +138,7 @@ print(t[-1]) # Devuelve: 78.2
 print(s[3]) # Devuelve: a
 ```
 
-En los diccionarios los índices van a ser las claves que usemos, y esas claves pueden ser números, strings, tuplas, etc. Cuando llamemos a una clave, obtendremos su valor:
+En los diccionarios los índices van a ser las claves que usemos, y esas claves pueden ser números, strings, tuplas, cualquier objeto que sea inmutable (listas y conjuntos no, por ejemplo). Cuando llamemos a una clave, obtendremos su valor:
 
 ```python
 

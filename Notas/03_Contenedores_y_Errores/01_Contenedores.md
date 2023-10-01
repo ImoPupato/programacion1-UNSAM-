@@ -4,7 +4,7 @@
 
 En esta sección trataremos listas, diccionarios y conjuntos.
 
-### Panorama
+## Panorama
 
 Para dar soluciones útiles, los programas suelen trabajar con una diversidad de objetos. Muchas veces éstos son representaciones de objetos en la vida real. Por ejemplo, en la clase pasada, el programa del camión de frutas [Ejercicio 2.9](../02_Estructuras_y_Funciones/04_Funciones.md#ejercicio-29-funciones-de-la-biblioteca) maneja listas que representan el contenido de un camión, y maneja un archivo .csv con una lista de precios del mercado. 
 
@@ -19,7 +19,7 @@ En Python hay tres opciones principales para elegir contenedores de datos.
 * Diccionarios - Datos no ordenados.
 * Conjuntos - Colección no ordenada de elementos únicos.
 
-### Listas como contenedores
+## Listas como contenedores
 
 Usá listas cuando el orden de los datos importe. Acordate de que las listas pueden contener cualquier tipo de objeto.
 Por ejemplo, una lista de tuplas.
@@ -35,7 +35,7 @@ camion[0]            # ('Pera', 100, 490.1)
 camion[2]            # ('Limon', 150, 83.44)
 ```
 
-#### Construcción de una lista
+### Construcción de una lista
 
 Cómo armar una lista desde cero.
 
@@ -60,7 +60,7 @@ with open('../Data/camion.csv', 'rt') as f:
         registros.append((row[0], int(row[1]), float(row[2])))
 ```
 
-### Diccionarios como contenedores
+## Diccionarios como contenedores
 
 Los diccionarios son útiles si vamos a querer buscar rápidamente (por claves).
 Por ejemplo, un diccionario de precios de cajones.
@@ -142,7 +142,8 @@ Luego, podemos acceder al diccionario así:
 >>>
 ```
 
-*Las listas, los conjuntos y los diccionarios no pueden ser usados como claves de diccionarios, porque son mutables.*
+> [!WARNING]
+> Las listas, los conjuntos y los diccionarios no pueden ser usados como claves de diccionarios, porque son mutables.
 
 ### Conjuntos
 
@@ -243,7 +244,8 @@ Por último, la función debe devolver la lista `camion`.
 
 Experimentá con tu función interactivamente (acordate de que primero tenés que correr el programa `informe.py` en el intérprete):
 
-*Ayuda: Usá `-i` para ejecutar un archivo en la terminal y quedar en el intérprete*
+> [!NOTE]
+> Usá `-i` para ejecutar un archivo en la terminal y quedar en el intérprete.
 
 ```python
 >>> camion = leer_camion('../Data/camion.csv')
@@ -279,7 +281,8 @@ También podés reescribir el último ciclo for usando un comando como éste:
 >>>
 ```
 
-*Observación: la instrucción `+=` es una abreviación. Poner `a += b` es equivalente a poner `a = a + b`*
+> [!NOTE]
+> La instrucción `+=` es una abreviación. Poner `a += b` es equivalente a poner `a = a + b`.
 
 ### Ejercicio 3.2: Lista de diccionarios
 Tomá la función que escribiste en el ejercicio anterior y modificala para representar cada cajón del camión con un diccionario en vez de una tupla. En este diccionario usá los campos "nombre", "cajones" y "precio" para representar las diferentes columnas del archivo de entrada.
@@ -307,7 +310,7 @@ Experimentá con esta función nueva igual que en el ejercicio anterior.
 
 Fijate que acá los distintos campos para cada entrada se acceden a través de claves en vez de la posición en la lista. Muchas veces preferimos esto porque el código resulta más fácil de leer. Tanto para otres como para nosotres en el futuro.
 
-Mirar diccionarios y listas muy grandes puede ser un lío. Para limpiar el output para debuguear, probá la función `pprint` (Pretty-print) que le da un formato más sencillo de interpretar.
+Mirar diccionarios y listas muy grandes puede ser un lío. Para limpiar el output para debuguear, probá la función `pprint()` (Pretty-print) que le da un formato más sencillo de interpretar.
 
 ```python
 >>> from pprint import pprint
@@ -388,7 +391,7 @@ Supongamos que los precios en `camion.csv` son los precios pagados al productor 
 
 Ahora vamos calcular el balance del negocio: juntá todo el trabajo que hiciste recién en tu programa `informe.py` (usando las funciones `leer_camion()` y `leer_precios()`) y completá el programa para que con los precios del camión ([Ejercicio 3.2](../03_Contenedores_y_Errores/01_Contenedores.md#ejercicio-32-lista-de-diccionarios)) y los de venta en el negocio ([Ejercicio 3.3](../03_Contenedores_y_Errores/01_Contenedores.md#ejercicio-33-diccionarios-como-contenedores)) calcule lo que costó el camión, lo que se recaudó con la venta, y la diferencia. ¿Hubo ganancia o pérdida? El programa debe imprimir por pantalla un balance con estos datos.
 
-Ayuda: hubo una ganancia de algo más de quince mil pesos.
+**Ayuda:** hubo una ganancia de algo más de quince mil pesos.
 
 
 [Contenidos](../Contenidos.md) \| [Próximo (2 Errores)](02_Bugs.md)

@@ -7,7 +7,6 @@ Vas a aprender a imprimir información con cierto formato, esto tiene un enorme 
 Al final de la clase, vamos a trabajar con datos reales sobre los árboles de la ciudad de Buenos Aires en espacios públicos.
 
 
-
 * [4.1 Introducción](01_Introduccion.md)
 * [4.2 Secuencias](02_Secuencias.md)
 * [4.3 Contadores del módulo _collections_](03_Contadores.md)

@@ -38,19 +38,18 @@ print (sys.argv)
 
 Ahora ejecutalo desde la línea de comandos con
 
-```
+```powershell
 PS ...\Clase03> py parametros.py
 ['parametros.py']
 ```
 
 Y ahora probá:
-```
+```powershell
 PS ...\Clase03> py parametros.py uno dos tres
 ['parametros.py', 'uno', 'dos', 'tres']
 ```
 
-Sin entrar en detalles, lo que hace el script es imprimir una variable (`sys.argv` del módulo `sys`). Esa variable es una lista (por eso los corchetes en la salida `['parametros.py']`) y esa lista contiene los parámetros que le dimos a Python al invocarlo (`
-['parametros.py', 'uno', 'dos', 'tres']`). Notá que el primer parámetro en la lista (con índice `0`) es el nombre del script a ejecutar.
+Sin entrar en detalles, lo que hace el script es imprimir una variable (`sys.argv` del módulo `sys`). Esa variable es una lista (por eso los corchetes en la salida `['parametros.py']`) y esa lista contiene los parámetros que le dimos a Python al invocarlo (`['parametros.py', 'uno', 'dos', 'tres']`). Notá que el primer parámetro en la lista (con índice `0`) es el nombre del script a ejecutar.
 
 Esto es interesante porque implica que un script puede acceder a los parámatros que hayas escrito en la línea de comandos, incluso a su propio nombre. 
 
@@ -71,7 +70,7 @@ No funciona, verdad ? Porqué ? Que dice el Traceback ? (probálo!). Dice que hu
 
 Podríamos evitar que esta excepción detenga el programa, pero por ahora no compliquemos el script, y pasémosle parámetros que pueda usar:
 
-```
+```powershell
 ...\Clase03> py parametros.py 4 3
 12
 ```
@@ -79,7 +78,7 @@ Podríamos evitar que esta excepción detenga el programa, pero por ahora no com
 ## Ejercicios:
 Usando estas ideas, modificá `rebotes.py` para que la altura inicial de la pelota no sea ya 100 metros, sino que la puedas especificar al invocar el script, de modo de obtener este comportamiento:
 
-```code
+```powershell
 ...\Clase03> py rebotes.py 300
 1 180.0
 2 108.0
@@ -93,9 +92,8 @@ Usando estas ideas, modificá `rebotes.py` para que la altura inicial de la pelo
 10 1.814
 ```
 
-Atención a la forma de invocar el script ! 
-Qué acaba de pasar acá ? Qué hemos hecho: hemos "exportado" una función escrita en Python y ahora la podemos invocar desde la línea de comandos pasándole los parámetros necesarios. Poderoso!
-
+Atención a la forma de invocar el script! 
+Qué acaba de pasar acá? Qué hemos hecho: hemos "exportado" una función escrita en Python y ahora la podemos invocar desde la línea de comandos pasándole los parámetros necesarios. Poderoso!
 
 Esta modificación para recibir parámetros desde la línea de comandos tiene una ventaja y una desventaja. La ventaja esta clara. La desventaja tal vez también: ahora _es obligatorio_ pasarle parámetros por línea de comandos. 
 
@@ -145,6 +143,13 @@ costo = costo_camion(nombre_archivo)
 print('Costo total:', costo)
 ```
 
+> [!NOTE]
+> ¿Qué estamos haciendo con esas líneas del if?:
+>
+> `if len(sys.argv) == 2:` Le estamos preguntando al programa que si la cantidad de argumentos son 2, entonces utilice como nombre de archivo el segundo (ya que el primero, como vimos, es el nombre del script que estamos ejecutando).
+>
+> Caso contrario, si no le pasamos un nombre de archivo, entonces utilice por defecto `'../Data/camion.csv'`.
+
 Como vimos antes, `sys.argv` es una lista que contiene los argumentos que le pasamos al script al momento de llamarlo desde la línea de comandos (si es que le pasamos alguno). Por ejemplo, desde una terminal de Unix (en Windows es similar), para correr nuestro programa y que procese el mismo archivo podríamos escribir:
 
 ```bash
@@ -164,9 +169,7 @@ Si no le pasamos ningún archivo, va a mostrar el resultado para `camion.csv` po
 
 Guardá tu programa en el archivo `camion_commandline.py` para entregar al final de la clase.
 
-
-Te dejamos un [video](https://youtu.be/D4WI4qsuwrQ) explicando cómo funciona el pasaje de parámetros por línea de comandos en Python. 
-
+Te dejamos un [video]() explicando cómo funciona el pasaje de parámetros por línea de comandos en Python. 
 
 
 [Contenidos](../Contenidos.md) \| [Anterior (2 Errores)](02_Bugs.md) \| [Próximo (4 Cierre de la clase)](04_Cierre.md)

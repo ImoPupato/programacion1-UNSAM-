@@ -2,17 +2,17 @@
 
 # 3.2 Errores
 
-En esta sección hablamos sobre errores. Acá hay un [video](https://youtu.be/1nTWUPopXrI) sobre este tema.
+En esta sección hablamos sobre errores. Acá hay un [video]() sobre este tema.
 
 ## Tres tipos de errores:
 
 Programando nos podemos encontrar con tres tipos de errores.
 
-Los *errores sintácticos* son los que se dan cuando escribimos incorrectamente. Por ejemplo si queremos escribir `x = (a + b) * c` pero en vez de eso escribimos `x = (a + b] * c`, el programa no va a correr.
+Los ***errores sintácticos*** son los que se dan cuando escribimos incorrectamente. Por ejemplo si queremos escribir `x = (a + b) * c` pero en vez de eso escribimos `x = (a + b] * c`, el programa no va a correr.
 
-Un segundo tipo de error lo forman los errores *en tiempo de ejecución*, que se dan cuando el programa empieza a ejecutarse pero se produce un error durante su ejecución. Por ejemplo si le pedimos al usuarie que ingrese su edad esperando un número entero e ingresa "veintiséis años", es probable que el programa dé un error. Si leemos un archivo CSV y una fila tiene datos faltantes, el programa puede dar un error. Este tipo de errores en Python generan _excepciones_ que, como veremos más adelante, pueden atraparse administrarse adecuadamente.
+Un segundo tipo de error lo forman los errores ***en tiempo de ejecución***, que se dan cuando el programa empieza a ejecutarse pero se produce un error durante su ejecución. Por ejemplo si le pedimos al usuarie que ingrese su edad esperando un número entero e ingresa "veintiséis años", es probable que el programa dé un error. Si leemos un archivo CSV y una fila tiene datos faltantes, el programa puede dar un error. Este tipo de errores en Python generan **_excepciones_** que, como veremos más adelante, pueden atraparse administrarse adecuadamente.
 
-El tercer tipo de error es el más difícil de encontrar y de entender. Son los *errores semánticos*, que se dan cuando el programa no hace lo que está diseñado para hacer. Tienen que ver con el sentido de las instrucciones. En estos casos el programa se ejecuta pero da un resultado incorrecto o inesperado. En general, la mejor forma de encontrar estos errores es correr paso a paso el código que genera un resultado inesperado, tratando de entender dónde está la falla, usando el debugger. Veremos cómo usar el debugger la clase que viene, por ahora trabajaremos de forma un poco más primitiva.
+El tercer tipo de error es el más difícil de encontrar y de entender. Son los ***errores semánticos***, que se dan cuando el programa no hace lo que está diseñado para hacer. Tienen que ver con el sentido de las instrucciones. En estos casos el programa se ejecuta pero da un resultado incorrecto o inesperado. En general, la mejor forma de encontrar estos errores es correr paso a paso el código que genera un resultado inesperado, tratando de entender dónde está la falla, usando el debugger. Veremos cómo usar el debugger la clase que viene, por ahora trabajaremos de forma un poco más primitiva.
 
 ## Debuggear a mano
 
@@ -39,7 +39,7 @@ La última línea dice algo así como "el objeto `int` no tiene un atributo `app
 La última línea es el motivo concreto del error.
 
 Las líneas anteriores te dicen el camino que siguió el programa hasta llegar al error. En este caso: el error ocurrió en `x.append(3)` en la línea 4, dentro de la función `spam` del módulo `"blah.py"`, que fue llamado por la función `bar` en la línea 7 del mismo archivo, que fue llamada por... y así siguiendo. 
-En este caso en particular, la pregunta es: es  `x` efectivamente un objeto que implementa el método `.append()` ?  Hay que revisar el programa.
+En este caso en particular, la pregunta es: ¿es  `x` efectivamente un objeto que implementa el método `.append()`?  Hay que revisar el programa.
 
 Sin embargo a veces el traceback no proporciona suficiente información (por ejemplo, no sabemos el valor de cada parámetro usado en las llamadas).
 
@@ -61,16 +61,17 @@ Traceback (most recent call last):
   File "blah.py", line 4, in spam
     x.append(3)
 AttributeError: 'int' object has no attribute 'append'
->>>     print( repr(x) )
+>>>     print(repr(x))
 ```
 
 Este *parámetro* (el `-i`, que ya usamos antes) preserva el estado del intérprete al finalizar el script y te permite interrogarlo sobre el estado de las variables y obtener información que de otro modo perderías. En el ejemplo de recién interesa saber qué es `x` y cómo llegó a ese estado. Si estás usando un IDE esta posibilidad de interacción suele ocurrir naturalmente.
 
-### Debuggear con `print`
+### Debuggear con `print()`
 
 `print()` es una forma rápida y sencilla de permitir que el programa se ejecute (casi) normalmente mientras te da información del estado de las variables. Si elegís bien las variables que mostrar, es probable que digas "¡¡Ajá!!".
 
-*Sugerencia: es conveniente usar `repr()` para imprimir las variables*
+> [!NOTE]
+> Es conveniente usar `repr()` para imprimir las variables.
 
 ```python
 def spam(x):
@@ -209,7 +210,7 @@ print(f"La suma da {a} + {b} = {c}")
 ### Ejercicio 3.9: Pisando memoria
 El siguiente ejemplo usa el dataset de la clase anterior, pero no lo imprime como corresponde, ¿podés determinar por qué y explicarlo brevemente en la versión corregida?
 
-Te dejamos un [video](https://youtu.be/xb3IG44SP08) sobre este ejemplo.
+Te dejamos un [video]() sobre este ejemplo.
 
 ```python
 import csv
@@ -232,7 +233,8 @@ camion = leer_camion('../Data/camion.csv')
 pprint(camion)
 ```
 
-_Ayuda: Primero tratá de pensarlo, pero si este último se te hace muy difícil, podés mirar un poco de la teoría relacionada con esto un par de secciones más adelante ([Sección 5.4](../05_Listas/04_Objetos.md#ejemplo-de-asignación))._
+> [!IMPORTANT]
+> Primero tratá de pensarlo, pero si este último se te hace muy difícil, podés mirar un poco de la teoría relacionada con esto un par de secciones más adelante ([Sección 5.4](../05_Listas/04_Objetos.md#ejemplo-de-asignación))._
 
 
 
