@@ -85,7 +85,7 @@ a = [x * x for x in s if x > 0] # Python
 a = {x^2 | x ∈ s, x > 0}        # Matemática
 ```
 
-La mayoría de los programadores no suelen pensar en el costado matemático de esta herramienta. Podemos verla simplemente como una abreviación copada para definir listas.
+La mayoría de les programadores no suelen pensar en el costado matemático de esta herramienta. Podemos verla simplemente como una abreviación copada para definir listas.
 
 ## Ejercicios
 
@@ -206,7 +206,7 @@ Por ejemplo, si quisieras un listado de las frutas en el camión pordías usar:
 >>>
 ```
 
-Si especificás pares `clave:valor`, podés construir un diccionario. Por ejemplo, si queremos un diccionario con el total de cada fruta en el camión podemos comenzar con
+Si especificás pares `{clave: valor}`, podés construir un diccionario. Por ejemplo, si queremos un diccionario con el total de cada fruta en el camión podemos comenzar con
 
 ```python
 >>> stock = {nombre: 0 for nombre in nombres}
@@ -231,7 +231,7 @@ Otro ejemplo útil podría ser generar un diccionario de precios de venta de aqu
 >>> camion_precios = {nombre: precios[nombre] for nombre in nombres}
 >>> camion_precios
 {'Caqui': 105.46, 'Durazno': 73.48, 'Lima': 40.22, 'Mandarina': 80.89, 'Naranja': 106.28}
- >>>
+>>>
 ```
 
 
@@ -279,7 +279,7 @@ Y finalmente leamos los datos y armemos un diccionario usando comprensión de di
 Este comando no es trivial. Es sintácticamente muy compacto, pero es conceptualmente algo complejo. Cuando te sientas cómode con esta lectura de una línea del archivo, leé el resto. (si no pasa, tranca, podemos seguir sin esto).
 
 ```python
->>> camion = [{ ncolumna: row[index] for ncolumna, index in zip(select, indices)} for row in rows]
+>>> camion = [{ncolumna: row[index] for ncolumna, index in zip(select, indices)} for row in rows]
 >>> camion
 [{'cajones': '50', 'nombre': 'Naranja', 'precio': '91.1'},
  {'cajones': '150', 'nombre': 'Caqui', 'precio': '103.44'},
@@ -298,7 +298,7 @@ La comprensión de listas se usa frecuentemente en Python. Es una forma eficient
 
 Dicho esto, saber manipular datos rápidamente es una habilidad increíblemente útil. Hay numerosas situaciones donde puede que tengas que resolver algún tipo de problema excepcional (en el sentido de raro o único) para importar, extraer o exportar datos. La comprensión de listas te puede ahorrar muchísimo tiempo en esas tareas.
 
-Cómo dijimos, está bueno usar la comprensión de listas en situaciones particulares para comprimir código; acá abajo te dejamos un ejemplo de lo que **NO HAY QUE HACER**. Lo siguiente es un código hecho en una línea que realiza una simulación de `N` jugadas de la generala y calcula probabilidad de sacar generala (es de un ejercicio de la siguiente clase):
+Cómo dijimos, está bueno usar la comprensión de listas en situaciones particulares para comprimir código. Acá abajo te dejamos un ejemplo que hizo un demente, que no voy a decir quien soy, sobre lo que **NO HAY QUE HACER**. Lo siguiente es un código hecho en una línea que realiza una simulación de `N` jugadas de la generala y calcula probabilidad de sacar generala (es de un ejercicio de la clase 6):
 
 ```py
 import random

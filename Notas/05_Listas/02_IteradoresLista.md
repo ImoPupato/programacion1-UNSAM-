@@ -8,7 +8,7 @@ En esta sección seguiremos usando Python, pero nos concentraremos en la parte a
 
 Sin embargo, entre las cosas que trae resueltas Python hay algunos algoritmos que nos interesa que vuelvas a escribir vos, por motivos didácticos. En lo que sigue te vamos a pedir en algunas ocasiones que no uses toda la potencia y simpleza de Python sino que te arremangues y escribas algunas funciones desde los primeros rudimentos.
 
-Queremos mostrarte en ejemplos concretos cómo distintas maneras de resolver  un mismo problema pueden dar lugar a algoritmos con eficiencias muy diferentes. A veces una es mejor para un uso y la otra para otro uso. En concreto, vamos a profundizar en el problema de la búsqueda y en el problema del ordenamiento, que son dos problemas elementales que ilustran conceptos centrales del desarrollo de algoritmos. 
+Queremos mostrarte en ejemplos concretos cómo distintas maneras de resolver un mismo problema pueden dar lugar a algoritmos con eficiencias muy diferentes. A veces una es mejor para un uso y la otra para otro uso. En concreto, vamos a profundizar en el problema de la búsqueda y en el problema del ordenamiento, que son dos problemas elementales que ilustran conceptos centrales del desarrollo de algoritmos. 
 
 El uso adecuado de estos conceptos puede hacer la diferencia entre un algoritmo que termina el procesamiento en unos pocos minutos o uno que hay que dejar corriendo dos días (y rezar para que no se corte la electricidad mientras corre).
 
@@ -151,11 +151,9 @@ O sea que si el valor está en la posición *p* de la lista se hacen *p* compara
 
 En resumen: Si la lista crece, la cantidad de comparaciones para encontrar un valor arbitrario crecerá en forma proporcional al tamaño de la lista. Es decir que:
 
-> [!IMPORTANT]
-> **El algoritmo de búsqueda lineal tiene un comportamiento *proporcional a la longitud de la lista involucrada*, o que es un algoritmo *lineal*.**
+> El algoritmo de búsqueda lineal tiene un comportamiento _**proporcional a la longitud de la lista involucrada**_, o que **es un algoritmo *lineal*.**
 
 ## Ejercicios
-
 
 ### Ejercicio 5.3: Búsquedas de un elemento
 Creá el archivo `busqueda_en_listas.py` para guardar tu código de este ejercicio y el siguiente.
@@ -164,7 +162,7 @@ En este primer ejercicio tenés que escribir una función `buscar_u_elemento()` 
 
 Probá tu función con algunos ejemplos:
 
-```pyton 
+```python 
 >>> buscar_u_elemento([1,2,3,2,3,4],1)
 0
 >>> buscar_u_elemento([1,2,3,2,3,4],2)
@@ -180,7 +178,7 @@ Agregale a tu programa `busqueda_en_listas.py` una función `buscar_n_elemento()
 Ayuda: si querés podés ver este [video]() donde hablamos de este ejercicio. Te dejamos también el [código](./buscar_elem.py) que usamos en el video.
 
 ### Ejercicio 5.4: Búsqueda de máximo y mínimo
-Agregale a tu archivo `busqueda_en_listas.py` una función `maximo()` que busque el valor máximo de una lista de números positivos. Python tiene el comando `max` que ya hace esto, pero como práctica te proponemos que completes el siguiente código:
+Agregale a tu archivo `busqueda_en_listas.py` una función `maximo()` que busque el valor máximo de una lista de números positivos. Python tiene el comando `max()` que ya hace esto, pero como práctica te proponemos que completes el siguiente código:
 
 ```python
 def maximo(lista):
@@ -196,7 +194,7 @@ def maximo(lista):
 
 Probá tu función con estos ejemplos:
 
-```pyton 
+```python 
 >>> maximo([1,2,7,2,3,4])
 7
 >>> maximo([1,2,3,4])
@@ -207,7 +205,7 @@ Probá tu función con estos ejemplos:
 0
 ```
 
-¿Por qué falla en el último caso? ¿Por qué anda en el caso anterior? ¿Cómo se puede inicializar m para que la función ande también con números negativos? Corregilo y guarda la versión mejorada en el archivo `busqueda_en_listas.py`.
+¿Por qué falla en el último caso? ¿Por qué anda en el caso anterior? ¿Cómo se puede inicializar ``m`` para que la función ande también con números negativos? Corregilo y guarda la versión mejorada en el archivo `busqueda_en_listas.py`.
 
 Si te dan ganas, agregá una función `minimo()` al archivo.
 
@@ -234,7 +232,7 @@ Imaginate una fila con varios fósforos uno al lado del otro. Los fósforos pued
 Representaremos esta situación con una lista *L* con un elemento por fósforo, que en cada posición tiene un 0 (nuevo), un 1 (encendido) o un -1 (carbonizado). 
 El fuego se propaga inmediatamente de un fósforo encendido a cualquier fósforo nuevo que tenga a su lado. Los fósforos carbonizados no se encienden nuevamente.
 
-Escribí una función llamada `propagar` que reciba un vector con 0's, 1's y -1's y devuelva un vector en el que los 1's se propagaron a sus vecinos con 0. Guardalo en un archivo `propaga.py`.
+Escribí una función llamada `propagar()` que reciba un vector con 0's, 1's y -1's y devuelva un vector en el que los 1's se propagaron a sus vecinos con 0. Guardalo en un archivo `propaga.py`.
 
 Por ejemplo:
 ```python

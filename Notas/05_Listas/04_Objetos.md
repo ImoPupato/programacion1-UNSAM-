@@ -3,7 +3,7 @@
 # 5.4 Objetos
 
 
-En esta sección introducimos algunos conceptos sobre el modelo interno de objeto en Python y discutimos algunos temas relacionados con el manejo de memoria, copias de variable y verificación de tipos. En este [video](https://youtu.be/OFLZaqDjoxU) introducimos el tema.
+En esta sección introducimos algunos conceptos sobre el modelo interno de objeto en Python y discutimos algunos temas relacionados con el manejo de memoria, copias de variable y verificación de tipos. En este [video]() introducimos el tema.
 
 ### Asignaciones
 
@@ -16,7 +16,9 @@ s.append(valor)   # Agregar a una lista
 d['key'] = valor  # Agregar a una diccionario
 ```
 
-*Ojo: las operaciones de asignación **nunca hacen una copia** del valor asignado.*
+> [!WARNING]
+> Las operaciones de asignación **nunca hacen una copia** del valor asignado.*
+
 Las asignaciones son simplemente copias de las referencias (o copias del puntero, si preferís).
 
 ### Ejemplo de asignación
@@ -29,7 +31,7 @@ b = a
 c = [a,b]
 ```
 
-A continuación te mostramos en un gráfico las operaciones de memoria suyacentes. En este ejemplo, hay solo un objeto lista `[1,2,3]`, pero hay cuatro referencias a él.
+A continuación te mostramos en un gráfico las operaciones de memoria subyacentes. En este ejemplo, hay solo un objeto lista `[1,2,3]`, pero hay cuatro referencias a él.
 
 ![Referencias](referencias.png)
 
@@ -64,13 +66,15 @@ print(a)      # [4, 5, 6]
 print(b)      # [1, 2, 3]    Mantiene el valor original
 ```
 
-Acordate: **Las variables son nombres, no ubicaciones en la memoria.**
+> [!NOTE]
+> **Las variables son nombres, no ubicaciones en la memoria.**
 
 ### Peligros
 
 Si no te explican esto, tarde o temprano te trae problemas. Un típico ejemplo es cuando cambiás un dato pensando que es una copia privada y, sin querer, esto corrompe los datos en otra parte del programa.
 
-*Comentario: Esta es una de las razones por las que los tipos de datos primitivos (int,  float, string) son immutables (de sólo lectura).*
+> [!NOTE]
+> *Esta es una de las razones por las que los tipos de datos primitivos (int, float, string) son immutables (de sólo lectura).*
 
 ### Identidad y referencias
 
@@ -94,7 +98,7 @@ True
 >>>
 ```
 
-Observación: Para ver si dos valores son iguales, es mejor usar el `==`. El comportamiento de `is` puede dar resultados inesperados:
+Para ver si dos valores son iguales, es mejor usar el `==`. El comportamiento de `is` puede dar resultados inesperados:
 
 ```python
 >>> a = [1,2,3]
@@ -196,7 +200,8 @@ if isinstance(a, (list,tuple)):
     print('a una lista o una tupla')
 ```
 
-*Cuidado: Demasiadas verificaciones de tipos pueden resultar en un código excesivamente complejo. Típicamente lo usás para evitar errores comunes cometidos por otres usuaries de tu código.*
+> [!WARNING]
+> *Demasiadas verificaciones de tipos pueden resultar en un código excesivamente complejo. Típicamente lo usás para evitar errores comunes cometidos por otres usuaries de tu código.*
 
 ### Todo es un objeto
 
@@ -238,6 +243,7 @@ Con un gran poder viene siempre una gran responsabilidad. Que puedas no signific
 En estos ejercicios mostramos algo de la potencia que tiene el hecho de que todos los objetos sean de la misma jerarquía.
 
 ### Ejercicio 5.12: Datos de primera clase
+
 En el archivo `Data/camion.csv`, leímos datos organizados en columnas que se ven así:
 
 ```csv
@@ -376,7 +382,7 @@ El código de arriba puede comprimirse en una sola instrucción usando comprensi
 Si estás en sintonía con la comprensión de listas podés escribir una sola línea usando comprensión de diccionarios:
 
 ```python
->>> { name: func(val) for name, func, val in zip(headers, types, row) }
+>>> {name: func(val) for name, func, val in zip(headers, types, row)}
 {'precio': 32.2, 'name': 'Lima', 'cajones': 100}
 >>>
 ```
@@ -405,9 +411,9 @@ Convirtamos estos datos usando un truco similar:
 >>> converted = [func(val) for func, val in zip(types, row)]
 >>> record = dict(zip(headers, converted))
 >>> record
-{'volume': 181800, 'name': 'AA', 'price': 39.48, 'high': 39.69,
-'low': 39.45, 'time': '9:36am', 'date': '6/11/2007', 'open': 39.67,
-'change': -0.18}
+{'volume': 181800, 'name': 'AA', 'price': 39.48,
+ 'high': 39.69, 'low': 39.45, 'time': '9:36am',
+  'date': '6/11/2007', 'open': 39.67, 'change': -0.18}
 >>> record['name']
 'AA'
 >>> record['price']

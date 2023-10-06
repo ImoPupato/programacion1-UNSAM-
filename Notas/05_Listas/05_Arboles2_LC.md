@@ -19,7 +19,7 @@ Vamos a llamar `arboleda` a esta lista.
 Usando comprensión de listas y la variable `arboleda` podés por ejemplo armar la lista de la altura de los árboles.
 
 ```python
-H=[float(arbol['altura_tot']) for arbol in arboleda]
+H = [float(arbol['altura_tot']) for arbol in arboleda]
 ```
 
 Usá los filtros (recordá la [Sección 5.3](../05_Listas/03_Comprension_Listas.md#filtros)) para armar la lista de alturas de los Jacarandás solamente.
