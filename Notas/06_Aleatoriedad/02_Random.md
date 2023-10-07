@@ -2,7 +2,7 @@
 
 # 6.2 Random
 
-En esta sección veremos algunas de las funciones del módulo `random`. Este módulo se usa para generar valores pseudo-aleatorios. Desde el punto de vista práctico, usaremos estos valores como perfectamente aleatorios --al ser la computadora una máquina determinística sabemos que esto no es completamente cierto. De hecho, en lo que sigue, por simplicidad, omitiremos el prefijo pseudo y hablaremos de números aleatorios aunque no lo sean exactamente. Si querés podés ver este [video](https://youtu.be/fB64nDOowA4) sobre los temas de esta sección.
+En esta sección veremos algunas de las funciones del módulo `random`. Este módulo se usa para generar valores pseudo-aleatorios. Desde el punto de vista práctico, usaremos estos valores como perfectamente aleatorios --al ser la computadora una máquina determinística sabemos que esto no es completamente cierto. De hecho, en lo que sigue, por simplicidad, omitiremos el prefijo pseudo y hablaremos de números aleatorios aunque no lo sean exactamente. Si querés podés ver este [video]() sobre los temas de esta sección.
 
 
 ## Valores discretos
@@ -20,7 +20,7 @@ Si queremos simular una primera tirada del juego [la generala](https://es.wikipe
 ```python
 import random
 
-tirada=[]
+tirada = []
 for i in range(5):
     tirada.append(random.randint(1,6)) 
 
@@ -73,14 +73,14 @@ print(tirada)
 
 A veces queremos elegir al azar un elemento de una lista y no solo un número. En el caso que vimos recién de los dados, nuestra lista sería `[1, 2, 3, 4, 5, 6]` pero podría ser también `['uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis']`.
 
-La función `random.choice()` toma una secuencia y devuelve un elemento aleatorio.
+La función `random.choice()` toma una secuencia y devuelve un elemento aleatorio:
 
 ```python
 caras = ['uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis']
 print(random.choice(caras))
 ```
 
-Si queremos realizar múltiples elecciones aleatorias de la lista podemos usar la función `random.choices()`
+Si queremos realizar múltiples elecciones aleatorias de la lista podemos usar la función `random.choices()`:
 
 ```python
 print(random.choices(caras,k=5))
@@ -95,7 +95,8 @@ Podes formular una pregunta muy similar y contestarla modificando un poco tu pro
 
 La probabilidad de que en un grupo de personas haya dos personas que cumplan años el mismo día del año depende del tamaño del grupo. Que tamaño tiene que tener el grupo para que esa probabilidad sea mayor a 0.5 ?
 
-_Observación_: Les dejamos una nota sobre las [Simulaciones de Monte Carlo](https://www.pagina12.com.ar/347117-la-simulacion-de-monte-carlo),  por Adrián Paenza, que está relacionada con estos temas.
+> [!NOTE]
+> Les dejamos una nota sobre las [Simulaciones de Monte Carlo](https://www.pagina12.com.ar/347117-la-simulacion-de-monte-carlo), por Adrián Paenza, que está relacionada con estos temas.
 
 ### Elecciones sin reposición
 
@@ -109,9 +110,9 @@ palos = ['oro', 'copa', 'espada', 'basto']
 naipes = [(valor,palo) for valor in valores for palo in palos]
 ```
 
-Ahora podemos usar `random.choice(naipes)` para seleccionar un naipe. Sin embargo, si usáramos `random.choices(naipes, k=3)` para seleccionar tres naipes para un jugador, podríamos estar repitiendo el mismo naipe más de una vez, lo que es incorrecto. En este caso tenemos que usar elecciones múltiples *sin reposición*. Para eso usamos la función `sample` del módulo `random`: `random.sample(naipes,k=3)`.
+Ahora podemos usar `random.choice(naipes)` para seleccionar un naipe. Sin embargo, si usáramos `random.choices(naipes, k=3)` para seleccionar tres naipes para un jugador, podríamos estar repitiendo el mismo naipe más de una vez, lo que es incorrecto. En este caso tenemos que usar elecciones múltiples *sin reposición*. Para eso usamos la función `sample()` del módulo `random`: `random.sample(naipes,k=3)`.
 
-A diferencia de `choices` donde el parámetro `k` podía tomar cualquier valor, al dar la instrucción `random.sample(naipes,k=?)` la variable `k` no puede ser mayor que la cantidad de naipes (es decir 40) ya que no se puede sacar *sin reposición* más elementos que la cantidad total.
+A diferencia de `choices()` donde el parámetro `k` podía tomar cualquier valor, al dar la instrucción `random.sample(naipes,k=?)` la variable `k` no puede ser mayor que la cantidad de naipes (es decir 40) ya que no se puede sacar *sin reposición* más elementos que la cantidad total.
 
 ### Ejercicio 6.4: Envido
 Teniendo en cuenta las reglas del [Truco](https://es.wikipedia.org/wiki/Truco_argentino), estimá la probabilidad de obtener 31, 32 o 33 puntos de envido en una mano. ¿Son iguales estas tres probabilidades? ¿Por qué?
@@ -121,7 +122,7 @@ _Observación: como corresponde, en esta materia jugamos al truco **sin** flor. 
 Guardá este ejercicio con el nombre `envido.py`.
 
 ### Mezclar 
-La última función que queremos introducir es útil en muchos contextos. En los juegos de naipes, para continuar con nuestro ejemplo, es muy usual mezclar el mazo entero antes de repartir. En Python usamos la función `shuffle` del módulo `random`.
+La última función que queremos introducir es útil en muchos contextos. En los juegos de naipes, para continuar con nuestro ejemplo, es muy usual mezclar el mazo entero antes de repartir. En Python usamos la función `shuffle()` del módulo `random`.
 
 ```python
 valores = [1, 2, 3, 4, 5, 6, 7, 10, 11, 12]

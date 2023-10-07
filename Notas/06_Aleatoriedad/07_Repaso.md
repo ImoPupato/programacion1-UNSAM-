@@ -4,14 +4,15 @@
 
 A continuación dejamos unos links a unos videos sobre un par de ejercicios de pasados:
 
-1. Ejercicio [Ejercicio 6.2](../06_Aleatoriedad/02_Random.md#ejercicio-62-generala-no-necesariamente-servida) sobre la probabilidad de obtener una generala no servida resuelto por [Matías](https://youtu.be/D_mipwwZjhM) y por [Rafael](https://youtu.be/c2SO3-iSd04).
-2. Ejercicio [Ejercicio 6.18](../06_Aleatoriedad/06_Figuritas.md#ejercicio-618) del [álbum de Figuritas](https://youtu.be/lSVNxPoRLJA).
+1. Ejercicio [Ejercicio 6.2](../06_Aleatoriedad/02_Random.md#ejercicio-62-generala-no-necesariamente-servida) sobre la probabilidad de obtener una generala no servida resuelto por []() y por []().
+2. Ejercicio [Ejercicio 6.18](../06_Aleatoriedad/06_Figuritas.md#ejercicio-618) del [álbum de Figuritas]().
 
 ## Análisis de alternativas para *propagar*
 
 Los siguientes tres ejercicios proponen diferentes soluciones al [Ejercicio 5.6](../05_Listas/02_IteradoresLista.md#ejercicio-56-propagacion) de propagación del fuego. Vamos a analizar sus diferencias y comenzar a pensar en la eficiencia de cada algoritmo. Algunas soluciones tienen errores que deberás corregir oportunamente. ¡Usá el debugger de Python!
 
-_Observación: Cuando te pidamos que cuentes cuántas operaciones hace una función, no nos va a importar el detalle de las constantes. Por ejemplo: si una función para una entrada de largo n hace n+2 operaciones y otra hace 3*n+5 nos va a importar que ambas hacen una cantidad **lineal** de operaciones en el tamaño de la entrada, pero no las constantes 2, 3 y 5 que figuran en cada caso. Diremos que la cantidad de operaciones es *O(n)* (se lee 'o de n'). En cambio, sí vamos a hacer una diferencia si una función hace n y otra hace n^2 operaciones (una va a tener complejidad *O(n)* y la otra O(n^2)*). Volveremos sobre estos temas más adelante._
+> [!IMPORTANT]
+> _Cuando te pidamos que cuentes cuántas operaciones hace una función, no nos va a importar el detalle de las constantes. Por ejemplo: si una función para una entrada de largo n hace n+2 operaciones y otra hace 3*n+5 nos va a importar que ambas hacen una cantidad **lineal** de operaciones en el tamaño de la entrada, pero no las constantes 2, 3 y 5 que figuran en cada caso. Diremos que la cantidad de operaciones es *O(n)* (se lee 'o de n'). En cambio, sí vamos a hacer una diferencia si una función hace n y otra hace n^2 operaciones (una va a tener complejidad *O(n)* y la otra O(n^2)*). Volveremos sobre estos temas más adelante._
 
 
 ### Ejercicio 6.28: _Propagar_ a vecinos

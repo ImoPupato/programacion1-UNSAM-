@@ -2,14 +2,14 @@
 
 # 5.1 Debuggear programas
 
-Python tiene un debugger poderoso que te permite probar porciones de código. Esto es sencillo y está integrado en IDEs como Spyder.
+Python tiene un debugger poderoso que te permite probar porciones de código. Esto es sencillo y está integrado en IDEs como VS Code, Spyder y otros
 
 Vimos en la  [Sección 3.2](../03_Contenedores_y_Errores/02_Bugs.md#tres-tipos-de-errores) diferentes ejemplos de problemas que pueden aparecer y tuviste que arremangarte e ingeniártelas para resolverlos a mano. En esta sección vamos a introducir la herramienta *pdb* (Python debugger) que ofrece el lenguaje para resolver este tipo de problemas.
 
 
 ## Testear es genial, debuggear es horrible
 
-Se dice que hay un _bug_ (un error) cuando un programa no se comporta como el programador espera o hace algo inesperado. Es muy frecuente que los programas tengan bugs. Después de escribir un fragmento de código por primera vez, es conveniente correrlo algunas veces usando tests que permitan poner en evidencia esos bugs.
+Se dice que hay un _bug_ (un error) cuando un programa no se comporta como le programadore espera o hace algo inesperado. Es muy frecuente que los programas tengan bugs. Después de escribir un fragmento de código por primera vez, es conveniente correrlo algunas veces usando tests que permitan poner en evidencia esos bugs.
 
 Diseñar un conjunto de _tests_ adecuado no es una tarea sencilla y es frecuente que queden casos especiales que causen errores inesperados.
 
@@ -19,9 +19,7 @@ Testear consiste en ejecutar un programa o porción de código en condiciones co
 
 La ejecución de un algoritmo puede pensarse como un árbol (el árbol de ejecución del algoritmo, cada condición booleana da lugar a una ramificación del árbol). Según la entrada que le des, el programa se va a ejecutar siguiendo una rama u otra. Lo ideal es testear todas las ramas posibles de ejecución y que los casos de prueba (_test cases_) incluyan todos los casos _especiales_ (casos como listas vacías, índices apuntando al primer o al último elemento, claves ausentes, etc.) comprobando en cada caso que el programa se comporte según lo esperado.  
 
-![Partes del Spyder, un IDE para Python que facilita el debugging](./spyder-partes.png)
-
-Los entornos de desarrollo integrado (como el Spyder) dan la posiblidad de combinar el uso de un intérprete de Python con un editor de código y suelen integrar también el uso del debugger. Aún con herramientas como el Spyder, hacer debugging es lento y tedioso. Antes de entrar en los detalles de cómo hacerlo, comentaremos algunos métodos que tratan de reducir su necesidad. Profundizaremos sobre estos métodos más adelante.  
+Los entornos de desarrollo integrado (como el VS Code) dan la posiblidad de combinar el uso de un intérprete de Python con un editor de código y suelen integrar también el uso del debugger. Aún con herramientas como el VS Code, hacer debugging es lento y tedioso. Antes de entrar en los detalles de cómo hacerlo, comentaremos algunos métodos que tratan de reducir su necesidad. Profundizaremos sobre estos métodos más adelante.  
 
 ### Aseveraciones (assert)
 
@@ -41,7 +39,7 @@ La idea *no es* usarlo para comprobar la validez de lo ingresado por el usuario.
 
 ### Programación por contratos
 
-Se llama `programación por contratos` a una forma de programar en la que le programadore  define, para cada parte del programa, el tipo y formato de datos con que llamarla y el tipo de datos que devolverá. 
+Se llama `programación por contratos` a una forma de programar en la que le programadore define, para cada parte del programa, el tipo y formato de datos con que llamarla y el tipo de datos que devolverá. 
 
 Para asegurarse que los tipos de datos sean los esperados, el uso irrestricto de verificaciones puede ayudar en el diseño de software, y detecta tempranamente un error en los datos pasados a una función evitando que se propague.
 
@@ -80,7 +78,7 @@ def mi_funcion():
 
 Podés encontrar instrucciones detalladas [acá](https://docs.python.org/3/library/pdb.html) sobre como usarlo. 
 
-Nos resulta más cómodo usar un IDE como Spyder para hacer debugging y ése es el método que describiremos aquí. Este es el menú desplegable del debugger:
+Nos resulta más cómodo usar un IDE como VS Code para hacer debugging y ése es el método que describiremos aquí. Para poder acceder al debugger primero colocamos un `breakpoint` en donde creemos que está el problema. Luego en el panel izquierdo vamos a donde dice _debugger_ (o tocamos F5) e iniciamos el debugger: [COMPLETAR]
 
 ![Menu Debug, en Spyder](./debug_menu.png)
 

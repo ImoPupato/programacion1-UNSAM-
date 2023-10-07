@@ -20,9 +20,8 @@ os.path.join('..', 'Data', 'arbolado-en-espacios-verdes.csv')
 arboleda = leer_arboles(nombre_archivo)
 altos = [comprensión de listas]
 plt.hist(altos,bins=...)
+plt.show()
 ```
-
-_Observación:_ Spyder tiene opciones para mostrar las figuras dentro de la misma ventana o en una ventana nueva (Tools -> Preferences -> IPython console -> Graphics -> Backend). Te recomendamos generarlas en una ventana nueva. Luego, con `plt.clf()` podés borrar la figura actual y con `plt.figure()` generás una nueva figura por si querés dejar varias abiertas a la vez.
 
 ### Ejercicio 6.11: Scatterplot (diámetro vs alto) de Jacarandás
 En este ejercicio introducimos un nuevo tipo de gráfico: _el gráfico de dispersión_  o _scatterplot_. El mismo usa coordenadas cartesianas para mostrar los valores de dos variables para un conjunto de datos. 
@@ -36,6 +35,7 @@ Ayuda: si ya tenés una lista o un vector *d* con diámetros y otra *h* con alto
 ```python
 import matplotlib.pyplot as plt
 plt.scatter(d,h)
+plt.show()
 ```
 
 Algunas recomendaciones:

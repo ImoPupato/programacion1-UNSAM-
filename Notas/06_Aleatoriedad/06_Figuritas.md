@@ -78,7 +78,8 @@ Implementá la función `cuantas_figus(figus_total)` que, dado el tamaño del á
 ### Ejercicio 6.17:  
 Ejecutá `n_repeticiones = 1000` veces la función anterior utilizando `figus_total = 6` y guardá en una lista los resultados obtenidos en cada repetición. Con los resultados obtenidos estimá cuántas figuritas hay que comprar, en promedio, para completar el álbum de seis figuritas.
 
-*Ayuda: El comando `np.mean(l)` devuelve el promedio de la lista `l`.*
+> [!NOTE]
+> *Ayuda - El comando `np.mean(l)` devuelve el promedio de la lista `l`.*
 
 ¿Podés crear esta lista usando una comprensión de listas?
 
@@ -139,7 +140,6 @@ plt.xlabel("Cantidad de paquetes comprados.")
 plt.ylabel("Cantidad de figuritas pegadas.")
 plt.title("La curva de llenado se desacelera al final")
 plt.show()
-
 ```
 
 

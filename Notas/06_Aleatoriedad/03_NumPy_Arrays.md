@@ -6,7 +6,7 @@ Esta es una introducción a la biblioteca NumPy (**Numerical Python**) de Python
 
 Esta biblioteca permite trabajar cómodamente con matrices multidimensionales por medio del tipo **ndarray**, un objeto n-dimensional homogéneo (es decir, con todas sus entradas del mismo tipo), y con métodos para operar eficientemente sobre él. NumPy puede usarse para una amplia variedad de operaciones matemáticas sobre matrices. Le agrega a Python estructuras de datos muy potentes sobre las que puedés hacer cálculos y operar matemáticamente con eficiencia y a un alto nivel.
 
-Te dejamos un [video](https://youtu.be/e8T5PzxY5HA) donde introducimos este tema.
+Te dejamos un [video]() donde introducimos este tema.
 
 ##  Instalar e importar numpy
 
@@ -101,7 +101,8 @@ Vamos a representar la creación con este gráfico:
 
 ![./np_array.png](./np_array.png)
 
-_Ojo, estas visualizaciones son simplificaciones para representar lo que esta pasando y darte un entendimiento básico de los conceptos y mecanismos de NumPy. Los arreglos y sus operaciones tienen aspectos más complejos que los que quedan capturados en estos dibujitos._
+> [!NOTE]
+> Estas visualizaciones son simplificaciones para representar lo que esta pasando y darte un entendimiento básico de los conceptos y mecanismos de NumPy. Los arreglos y sus operaciones tienen aspectos más complejos que los que quedan capturados en estos dibujitos.
 
 Además de crear un arreglo a partir de una secuencia de elementos, podés crear un arreglo lleno de `0`’s:
 
@@ -117,7 +118,7 @@ O uno lleno de `1`’s:
 array([1., 1.])
 ```
 
-¡O incluso uno no inicializado! La función `empty` crea un arreglo cuyo contenido inicial depende del estado de la memoria. Lo bueno de usar `empty` en lugar de `zeros` (o `ones`) es la velocidad - al no inicilizar los valores no perdemos tiempo. ¡Pero asegurate de ponerle valores con sentido luego!
+¡O incluso uno no inicializado! La función `empty()` crea un arreglo cuyo contenido inicial depende del estado de la memoria. Lo bueno de usar `empty()` en lugar de `zeros()` (o `ones()`) es la velocidad - al no inicilizar los valores no perdemos tiempo. ¡Pero asegurate de ponerle valores con sentido luego!
 
 ```python
 >>> # Crea un arreglo con dos elementos
@@ -177,7 +178,7 @@ Podés ordenar sus elementos con:
 >>> np.sort(arr)
 array([1, 2, 3, 4, 5, 6, 7, 8])
 ```
-Fijate que el vector `arr` quedó desordenado. `sort` simplemente devolvió una copia ordenada de los datos pero no modificó el original.
+Fijate que el vector `arr` quedó desordenado. `sort()` simplemente devolvió una copia ordenada de los datos pero no modificó el original.
 
 Otra operación usual es la concatenación. Si empezás con estos dos vectores:
 
