@@ -2,9 +2,9 @@
 
 # 8.3 El módulo principal
  
-En esta sección introducimos el concepto de **módulo principal**. Dejamos [este video](https://youtu.be/TsWym9qYs4M) con una introducción breve a esta sección y la siguiente.
+En esta sección introducimos el concepto de **módulo principal**.
 
-### Función principal
+## Función principal
 
 En muchos lenguajes de programación existe el concepto de método o función *principal*. 
 
@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
 
 ```java
 // java
-class myprog {
+class MyProg {
     public static void main(String args[]) {
         ...
     }
@@ -25,7 +25,7 @@ class myprog {
 ```
 Se refiere a la primera función que es ejecutada cuando corremos un programa.
 
-### Módulo principal en Python
+## Módulo principal en Python
 
 Python no tiene una función o método principal. En su lugar existe un *módulo principal* y éste será el archivo con código fuente que se ejecuta primero.
 
@@ -36,7 +36,7 @@ bash % python3 prog.py
 
 El archivo que le pases al intérprete al invocarlo será el módulo principal. No importa cómo lo llames.
 
-### Chequear `__main__` 
+## Chequear `__main__` 
 
 Es una práctica estándar usar la siguiente construcción en módulos que son ejecutados como scripts principales: 
 
@@ -53,7 +53,7 @@ Los comandos dentro del `if` constituyen el *programa principal*. Si el `if` no 
 
 
 
-### Módulo principal vs. módulo importado
+## Módulo principal vs. módulo importado
 
 Cualquier archivo .py puede ejecutarse ya sea como el programa principal o como un módulo importado:  
 
@@ -76,7 +76,7 @@ if __name__ == '__main__':
     # Esto no se ejecuta en un módulo importado ...
 ```
 
-### Modelo de programa
+## Modelo de programa
 
 Éste es un modelo usual para escribir un programa en Python. Esta configuración permite importar el módulo y acceder a sus funciones, o ejecutarlo como un programa:
 
@@ -100,7 +100,7 @@ if __name__ == '__main__':
     f_principal()
 ```
 
-### Herramientas para la consola 
+## Herramientas para la consola 
 
 Python se usa muy frecuentemente para correr herramientas desde la línea de comandos. En clase vimos algún ejemplo:
 
@@ -110,7 +110,7 @@ bash % python3 informe_final.py ../Data/camion.csv ../Data/precios.csv
 
 Esto permite que los scripts sean ejecutados desde la terminal para correr ciertos procesos automáticos, ejecutar tareas en segundo plano, etc.
 
-### Argumentos en la línea de comandos
+## Argumentos en la línea de comandos
 
 Python interpreta una línea de comandos como una lista de cadenas de texto.
 
@@ -146,7 +146,7 @@ precios = sys.argv[2]
 Para ir un poco más allá, podés mirar el módulo [argparse](https://docs.python.org/3/library/argparse.html#module-argparse) de Python permite escribir interfaces para programas que corren por linea de comandos de una manera amigable y profesional.
 
 
-### Standard I/O
+## Standard I/O
 
 Los archivos de entrada y salida estándard (Standard Input / Output (stdio)) son archivos que se portan como archivos normales, pero están definidos por el sistema operativo.
 
@@ -168,7 +168,7 @@ bash % cmd1 | python3 prog.py | cmd2
 
 Esta sintaxis se llama "piping" o redireccionamiento y significa: ejecutar cmd1, enviar su salida como entrada a prog.py invocado desde la terminal, y la salida de éste será la entrada para cmd2.
 
-### Terminación del programa
+## Terminación del programa
 
 La terminación y salida del programa se administran a través de excepciones.
 
@@ -187,7 +187,7 @@ sys.exit(codigo_salida)
 
 Es estándar que un codigo de salida de `0` indica que no hubo problemas y otro valor, que los hubo, donde el valor indica que tipo de problema hubo. 
 
-### El comando `#!` 
+## El comando `#!` 
 
 Bajo Unix (Linux es un Unix) una línea que comienza con `#!` ejecutará un script en el intérprete Python. Por ejemplo, si agregás la siguiente línea al comienzo de tu script podés ejecutar directamente el script (sin invocar manualmente a Python en la misma línea).
 
@@ -207,9 +207,10 @@ bash % ./prog.py
 ... salida ...
 ```
 
-*Observación: Al iniciar un script Python en Windows, se lee la línea que comienza con `#!` dentro del script para saber qué versión del intérprete invocar.*
+> [!NOTE]
+> *Al iniciar un script Python en Windows, se lee la línea que comienza con `#!` dentro del script para saber qué versión del intérprete invocar.*
 
-### Modelo de script con parámetros
+## Modelo de script con parámetros
 
 Para terminar, éste es un modelo usual de programa en Python que se ejecuta invocado desde la terminal.
 
@@ -239,7 +240,8 @@ if __name__ == '__main__':
     f_principal(sys.argv)
 ```
 
-_Observación: Este modelo es flexible porque te permite escribir programas que podés llamar desde la terminal pasándole parámetros o ejecutar directamente dentro de un intérprete usando `import` y llamando a su función `main` como veremos en los siguientes ejercicios._
+> [!NOTE]
+> _Este modelo es flexible porque te permite escribir programas que podés llamar desde la terminal pasándole parámetros o ejecutar directamente dentro de un intérprete usando `import` y llamando a su función `main` como veremos en los siguientes ejercicios._
 
 Notá que esta estructura difiere un poco de la estructura que solemos proponer, porque la línea `import sys` depende del resultado de un `if`. Esto evita importar el módulo `sys` cuando no lo necesitemos.
 

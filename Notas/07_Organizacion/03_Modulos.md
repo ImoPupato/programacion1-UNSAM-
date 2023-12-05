@@ -4,7 +4,7 @@
 
 En esta sección vamos a introducir conceptos que nos permiten crear módulos y trabajar con programas cuyas partes están repartidas en múltiples archivos. 
 
-### Módulos y la instrucción `import`
+## Módulos y la instrucción `import`
 
 Todos los archivos con código Python son módulos.
 
@@ -26,7 +26,7 @@ b = foo.spam('Hola')
 ...
 ```
 
-### Namespaces
+## Namespaces
 
 Se puede decir que un módulo es una colección de valores asignados a nombres. A ésto se lo llama un *namespace* (espacio de nombres). Es el contexto en el cual esos nombres existen: todas las variables globales y las funciones definidas en un módulo *pertenecen* a ese módulo. Una vez importado, el nombre del módulo se usa como un prefijo al nombrar esas variables y funciones. Por eso se llama un namespace.
 
@@ -41,7 +41,7 @@ b = foo.spam('Hello')
 
 El nombre del módulo es el nombre del archivo que lo contiene.
 
-### Definiciones globales
+## Definiciones globales
 
 El espacio de nombres contiene todo aquello definido con visibilidad *global*.
 Supongamos dos módulos diferentes que definen cada uno una variable `x`:
@@ -65,7 +65,7 @@ Entonces hay dos definiciones de `x` y cada una refiere a una variable diferente
 
 **Los módulos están aislados uno de otro.**
 
-### Módulos como entornos
+## Módulos como entornos
 Los módulos crean un entorno que contiene a todo el código definido ahí.
 
 ```python
@@ -79,13 +79,13 @@ def grok(a):
 Incluso las variables *globales* son visibles sólo dentro del módulo en que fueron definidas (el mismo archivo).
 Cada módulo es un pequeño universo.
 
-### Ejecución de módulos
+## Ejecución de módulos
 
 Cuando importás un módulo se ejecutan *todas* las instrucciones en ese módulo, una tras otra, hasta llegar al final del archivo. 
 El *namespace* del módulo está poblado por todas las funciones y variables globales cuya definición siga vigente al terminar de ejecutar el módulo. 
 Si existen comandos que se ejecutan en el *namespace* global del módulo y hacen tareas como crear archivos, imprimir mensajes, etc., se van a ejecutar al importar el módulo.
 
-### El comando `import as` 
+## El comando `import as` 
 
 En el momento de importar un módulo, podés cambiar el nombre que le asignás dentro del contexto en que lo importás. 
 
@@ -99,7 +99,7 @@ def rectangular(r, theta):
 
 Funciona del mismo modo que un `import` común salvo que, para quien lo importa, el nombre del módulo cambia.
 
-### `from` módulo `import` nombre
+## `from` módulo `import` nombre
 
 Este comando toma ciertos nombres selectos de un módulo, y los hace accesibles localmente.
 
@@ -116,7 +116,7 @@ Esta forma de importar te permite usar partes de un módulo sin necesidad de esp
 
 Si usás `from math import *` vas a importar *todas* las funciones y constantes del módulo `math` como si estuvieran definidas localmente. No es coveniente hacer esto ya que se pierden las ventajas que da trabajar con namespaces.
 
-### Notas sobre `import` 
+## Notas sobre `import` 
 
 Estas distintas formas de usar `import` *no modifican* el funcionamiento de un módulo.
 
@@ -133,11 +133,12 @@ El comando `import módulo as` sólo cambia el nombre local del módulo.
 El comando `from math import cos, sin`, aunque sólo hace accesibles las funciones `sin` y `cos`, de todos modos carga todo el módulo y lo ejecuta. La única diferencia es que copia los nombres de las funciones `sin` y `cos` al namespace local.
 
 
-### Carga de módulos
+## Carga de módulos
 
 Cada módulo es cargado y ejecutado sólo *una* vez.
 
-*Observación: Repetir la instrucción `import` sólo devuelve una referencia al módulo ya cargado.*
+> [!NOTE]
+> *Repetir la instrucción `import` sólo devuelve una referencia al módulo ya cargado.*
 
 La variable `sys.modules` es un diccionario de los módulos cargados. 
 
@@ -147,9 +148,10 @@ La variable `sys.modules` es un diccionario de los módulos cargados.
 ['copy_reg', '__main__', 'site', '__builtin__', 'encodings', 'encodings.encodings', 'posixpath', ...]
 >>>
 ```
-**Precaución:**
-Si cambiás el código de un módulo y lo volvés a cargar sucede algo que suele causar confusión hasta que lo entendés: 
-Dado que existe la lista de módulos cargados `sys.modules`, un pedido de cargar un módulo por segunda vez siempre devolverá el módulo ya cargado, aún si el módulo fue modificado, si se trata de una versión nueva de ese módulo y si el archivo en disco ha sido modificado. Es posible usar `reload(módulo)` pero sólo en ciertos casos. El método que asegura que el módulo se vuelva a cargar es cerrar y volver a abrir el intérprete de Python. 
+
+> [!WARNING]
+> Si cambiás el código de un módulo y lo volvés a cargar sucede algo que suele causar confusión hasta que lo entendés: 
+> Dado que existe la lista de módulos cargados `sys.modules`, un pedido de cargar un módulo por segunda vez siempre devolverá el módulo ya cargado, aún si el módulo fue modificado, si se trata de una versión nueva de ese módulo y si el archivo en disco ha sido modificado. Es posible usar `reload(módulo)` pero sólo en ciertos casos. El método que asegura que el módulo se vuelva a cargar es cerrar y volver a abrir el intérprete de Python. 
 
 
 ## Ejercicios
@@ -177,7 +179,7 @@ Repetimos: al importar un módulo ejecutás su código.
 
 Si nada de esto funciona, es probable que estés ejecutando Python desde la carpeta equivocada.
 
-Ahora probá importar tu módulo `fileparse` y pedile `help`.
+Ahora probá importar tu módulo `fileparse` y pedile `help()`.
 
 ```python
 >>> import fileparse

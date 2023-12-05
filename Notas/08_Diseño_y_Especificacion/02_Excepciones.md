@@ -3,9 +3,9 @@
 # 8.2 Control de errores
 
 Aunque ya hablamos de *excepciones* antes, en esta sección hablaremos de administración de excepciones y control de errores con mayor detalle.
-Dejamos [este video](https://youtu.be/1yX-uFioZ8w) con una introducción breve a esta sección.
 
-### Formas en que los programas fallan
+
+## Formas en que los programas fallan
 
 Python no hace ningún control ni validación sobre los tipos de los argumentos que las funciones reciben ni los valores de estos argumentos. Las funciones trabajarán sobre todo dato que sea compatible con las instrucciones dentro de la función. 
 
@@ -40,7 +40,7 @@ Error de tipo de datos: operandos de tipo incompatible para +: 'int' y 'str'.
 
 Es decir: la función intentó aplicar el operador + (suma) a dos argumentos de tipos distintos (entero y cadena) y no supo hacerlo. Por eso levantó una excepción. 
 
-### Excepciones
+## Excepciones
 
 Como ya dijimos, las excepciones son una forma de señalar errores en tiempo de ejecución. Acordate de que podés levantar una excepción usando la instrucción `raise` . 
 
@@ -58,7 +58,7 @@ except RuntimeError as e:
     print(e)
 ```
 
-### Administración de excepciones
+## Administración de excepciones
 
 Una excepción se propagará hasta el primer `except` que coincida con ella.
 
@@ -122,7 +122,7 @@ def bar():
 bar()
 ```
 
-### Excepciones integradas
+## Excepciones integradas
 
 Hay más de una veintena de tipos de excepciones ya integradas en Python. Normalmente, el nombre de la excepción indica qué anduvo mal (por ejemplo, se levanta un  `ValueError` si el valor suministrado no es adecuado). La siguiente no es una lista completa. Vas a encontrar más en la [documentación del lenguaje](https://docs.python.org/3/library/exceptions.html#bltin-exceptions).
 
@@ -145,7 +145,7 @@ TypeError
 ValueError
 ```
 
-### Valores asociados a excepciones
+## Valores asociados a excepciones
 
 Usualmente las excepciones llevan valores asociados, que te dan más información sobre la causa precisa del error. Este valor puede ser una cadena (*string*) o una tupla con valores diversos (por ejemplo un código de error y un texto explicando ese código). 
 
@@ -170,7 +170,7 @@ except RuntimeError as e:
     print('Fracasé. Motivo:', e)
 ```
 
-### Podés atrapar múltiples excepciones
+## Podés atrapar múltiples excepciones
 
 Es posible atrapar diferentes tipos de excepciones en la misma porción de código, si incluís varios `except` en tu `try:`.
 
@@ -196,7 +196,7 @@ except (IOError, LookupError, RuntimeError) as e:
   ...
 ```
 
-### Todas las excepciones
+## Todas las excepciones
 
 Para atrapar todas y cualquier excepción, se usa `Exception` así: 
 
@@ -209,7 +209,7 @@ except Exception:           # PELIGRO. (ver abajo)
 
 En general es mala idea "administrar" las excepciones de este modo, porque no te da ninguna pista de por qué falló el programa. Sólo sabés que "Hubo un error".
 
-### Así NO se atrapan excepciones. 
+## Así NO se atrapan excepciones. 
 
 Así es como NO debe hacerse la administración de excepciones.
 
@@ -222,7 +222,7 @@ except Exception:
 
 Esto atrapa todos los errores posibles, y puede complicar mucho el debugging cuando el código falla por algún motivo que no esperabas (por ejemplo, falta algún módulo de Python y lo único que obtenés es "Hubo un error").
 
-### Así es un poco mejor.
+## Así es un poco mejor.
 
 Si vas a atrapar todas las excepciones, acá hay un modo algo más decente:
 
@@ -238,7 +238,7 @@ Al menos esta versión te informa el motivo específico del error. Siempre es bu
 
 Sin embargo, por lo general es mejor atrapar errores específicos, y sólo aquellos que podés administrar. Errores que no sepas administrar, déjalos correr (tal vez alguna otra porción de código los atrape y administre correctamente o tal vez lo mejor sea detener la ejecución).
 
-### Re-lanzar una excepción
+## Re-lanzar una excepción
 
 Si necesitás hacer algo en respuesta a una excepción pero no querés administrarla, podés usar `raise` para volver a lanzar la misma excepción.
 
@@ -252,11 +252,11 @@ except Exception as e:
 
 Esto te permite, por ejemplo, llevar un registro de las excepciones (*log*) sin administrarla, y re-lanzarla para administrarla adecuadamente más tarde.
 
-### Buenas prácticas al administrar excepciones
+## Buenas prácticas al administrar excepciones
 
 No atrapes excepciones que no vayas a manejar adecuadamente. Dejalas caer ruidosamente. Si es importante, alguien se va a encargar del problema. Sólo atrapá excepciones si *sos ese "alguien"*. Es decir: sólo atrapá aquellos errores que podés administrar elegantemente de forma que permita que el programa se siga ejecutando.
 
-### La instrucción `finally`.
+## La instrucción `finally`.
 
 `finally` especifica que esa porción de código debe ejecutarse sin importar si una excepción fue atrapada o no.
 
@@ -351,7 +351,7 @@ Modificá `parse_csv()` de modo que le usuarie pueda silenciar los informes de e
 Este nuevo parámetro debe ser opcional, y su valor por omisión debe ser `False`.
 Guardá estos cambios que los vamos a usar más adelante.
 
-### Comentarios
+## Comentarios
 
 Lograr un buen manejo o administración de errores es una de las partes más difíciles en la mayoría de los programas. Estás intentando prever imprevistos. Como regla general, no silencies los errores. Es mejor informar los problemas y darle al usuarie la opción de silenciarlos explícitamente. Un buen diálogo entre el código y el usuarie facilita el debugging y el buen uso del programa. 
 

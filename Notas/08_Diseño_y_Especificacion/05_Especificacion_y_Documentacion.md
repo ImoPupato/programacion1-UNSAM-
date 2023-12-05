@@ -2,7 +2,7 @@
 
 # 8.5 Contratos, Especificación y Documentación
 
-En esta unidad formalizamos algunos temas que ya mencionamos brevemente en las clases anteriores sobre la especificación y documentación de funciones. Dejamos [este video](https://youtu.be/cKVP5-Z4_RE) con una introducción breve a esta sección y la siguiente.
+En esta unidad formalizamos algunos temas que ya mencionamos brevemente en las clases anteriores sobre la especificación y documentación de funciones.
 
 Trabajaremos informalmente con conceptos formales. Por ejemplo, trataremos de responder en algunos casos concretos: ¿qué condiciones debe cumplir una función al comenzar? ¿Qué condiciones se mantinen durante su ejecución? ¿Qué debemos garantizar cuando se termina de ejecutar? Y veremos algunas técnicas para tener en cuenta estas condiciones.
 
@@ -12,22 +12,13 @@ Comenzamos formalizando un poco más algunos conceptos relacionados con la docum
 
 ###  Comentarios vs documentación
 
-En Python tenemos dos convenciones diferentes para documentar nuestro código:
-la *documentación* propiamente dicha (lo que ponemos entre `'` o
-`'''` al principio de cada función o módulo se llama _docstring_), y los *comentarios* (`#`). En la mayoría de los lenguajes de programación hay convenciones similares. ¿Por qué tenemos dos formas diferentes de documentar?
+En Python tenemos dos convenciones diferentes para documentar nuestro código: la *documentación* propiamente dicha (lo que ponemos entre `'` o `'''` al principio de cada función o módulo se llama _docstring_), y los *comentarios* (`#`). En la mayoría de los lenguajes de programación hay convenciones similares. ¿Por qué tenemos dos formas diferentes de documentar?
 
-La *documentación* tiene como objetivo explicar *qué* hace el código.
-La documentación está dirigida a cualquier persona que desee utilizar la
-función o módulo, para que pueda entender cómo usarla sin necesidad de leer el
-código fuente. Esto es útil incluso cuando quien implementó la función es la
-misma persona que la va a utilizar, ya que permite separar responsabilidades.
+La *documentación* tiene como objetivo explicar *qué* hace el código. Está dirigida a cualquier persona que desee utilizar la función o módulo, para que pueda entender cómo usarla sin necesidad de leer el código fuente. Esto es útil incluso cuando quien implementó la función es la misma persona que la va a utilizar, ya que permite separar responsabilidades.
 
-Los *comentarios* tienen como objetivo explicar *cómo* funciona el
-código, y *por qué* se decidió implementarlo de esa manera. Los comentarios
-están dirigidos a quien esté leyendo el código fuente.
+Los *comentarios* tienen como objetivo explicar *cómo* funciona el código, y *por qué* se decidió implementarlo de esa manera. Los comentarios están dirigidos a quien esté leyendo el código fuente.
 
-Podemos ver la diferencia entre la documentación y los comentarios en la
-función `elegir_codigo`:
+Podemos ver la diferencia entre la documentación y los comentarios en la función `elegir_codigo()`:
 
 ```python
 def elegir_codigo():
@@ -45,22 +36,15 @@ def elegir_codigo():
 
 ### ¿Por qué documentamos?
 
-Muchas veces se plantea el siguiente interrogante: ¿Para qué repetir con
-palabras lo que ya está estipulado en el código? La documentación es algo que
-muy a menudo se deja *para después* por resultar tedioso y quizás aburrido en
-el momento de escribir el código. Pero en ese *después*, está el _yo_ del futuro, u otre del futuro que quiere volver a usar el código y que agradecerá esas líneas que le evitarán varios dolores de cabeza.
+Muchas veces se plantea el siguiente interrogante: ¿Para qué repetir con palabras lo que ya está estipulado en el código? La documentación es algo que muy a menudo se deja *para después* por resultar tedioso y quizás aburrido en el momento de escribir el código. Pero en ese *después*, está el _yo_ del futuro, u otre del futuro que quiere volver a usar el código y que agradecerá esas líneas que le evitarán varios dolores de cabeza.
 
-Es muy frecuente que durante el desarrollo de un proyecto el código evolucione
-con el tiempo. Si nos olvidamos de actualizar la documentación para reflejar
-los cambios, entonces tendremos documentación de mala calidad, ya que posiblemente esté incompleta e incluso incorrecta.
+Es muy frecuente que durante el desarrollo de un proyecto el código evolucione con el tiempo. Si nos olvidamos de actualizar la documentación para reflejar los cambios, entonces tendremos documentación de mala calidad, ya que posiblemente esté incompleta e incluso incorrecta.
 
 Una buena documentación es componente esencial de cualquier proyecto exitoso (NumPy, matplotlib, etc. tienen buena documentación). Esto en parte se debe a que el código fuente transmite en detalle las operaciones individuales que componen un algoritmo o programa, pero no suele transmitir en forma transparente cosas como la *intención* del programa, el *diseño* de alto nivel, las *razones* por las que se decidió utilizar un algoritmo u otro, etc. También se pueden incluir ejemplos para [clarificar su uso](https://numpy.org/doc/stable/reference/generated/numpy.resize.html).
 
 ### Código autodocumentado
 
-En teoría, si nuestro código pudiera transmitir en forma eficiente todos esos
-conceptos, la documentación sería menos necesaria. De hecho, existe una técnica de programación llamada *código autodocumentado*, en la que la idea principal es elegir los nombres de funciones y variables de forma tal que la
-documentación sea menos indispensable.
+En teoría, si nuestro código pudiera transmitir en forma eficiente todos esos conceptos, la documentación sería menos necesaria. De hecho, existe una técnica de programación llamada *código autodocumentado*, en la que la idea principal es elegir los nombres de funciones y variables de forma tal que la documentación sea menos indispensable.
 
 Tomemos como ejemplo el siguiente código:
 
@@ -70,9 +54,7 @@ b = 5
 c = 0.5 * a * b**2
 ```
 
-Leyendo esas tres líneas de código podemos razonar cuál será el valor final de
-las variables `a`, `b` y `c`, pero no hay nada que nos indique qué representan
-esas variables, o cuál es la intención del código. Una opción para mejorarlo sería utilizar comentarios para aclarar la intención:
+Leyendo esas tres líneas de código podemos razonar cuál será el valor final de las variables `a`, `b` y `c`, pero no hay nada que nos indique qué representan esas variables, o cuál es la intención del código. Una opción para mejorarlo sería utilizar comentarios para aclarar la intención:
 
 ```python
 a = 9.81   # Valor de la constante G (aceleración gravitacional), en m/s²
@@ -80,8 +62,7 @@ b = 5      # Tiempo en segundos
 c = 0.5 * a * b**2  # Desplazamiento (en metros)
 ```
 
-Otra opción, según la técnica de código autodocumentado, es simplemente asignar
-nombres descriptivos a las variables:
+Otra opción, según la técnica de código autodocumentado, es simplemente asignar nombres descriptivos a las variables:
 
 ```python
 aceleracion_gravitacional = 9.81
@@ -89,8 +70,7 @@ tiempo_segundos = 5
 desplazamiento_metros = 0.5 * aceleracion_gravitacional * tiempo_segundos ** 2
 ```
 
-De esta manera logramos que la intención del código esté más clara, y que
-se reduzca la necesidad de comentarios y documentación para comprenderlo.
+De esta manera logramos que la intención del código esté más clara, y que se reduzca la necesidad de comentarios y documentación para comprenderlo.
 
 La técnica de código autodocumentado presenta varias limitaciones. Entre ellas:
 
@@ -101,11 +81,7 @@ La técnica de código autodocumentado presenta varias limitaciones. Entre ellas
 
 ### Un error común: la sobredocumentación
 
-Si bien la ausencia de documentación suele ser perjudicial, el otro extremo
-también lo es: la *sobredocumentación*. Después de todo, en la vida
-diaria no necesitamos carteles que nos recuerden cosas como "esta es la
-puerta", "este es el picaporte" y "empujar hacia abajo para abrir". De
-la misma manera, podríamos decir que el siguiente código peca de ser sobredocumentado:
+Si bien la ausencia de documentación suele ser perjudicial, el otro extremo también lo es: la *sobredocumentación*. Después de todo, en la vida diaria no necesitamos carteles que nos recuerden cosas como "esta es la puerta", "este es el picaporte" y "empujar hacia abajo para abrir". De la misma manera, podríamos decir que el siguiente código peca de ser sobredocumentado:
 
 ```python
 def buscar_elemento(lista_de_numeros, numero):
@@ -129,7 +105,7 @@ Algunas cosas que podemos mejorar:
 - En la firma de la función los nombres `buscar_elemento`, `lista_de_numeros` y `numero` se pueden simplificar a `indice`, `secuencia` y `elemento`. Cambiamos `lista_de_numeros` por `lista`, ya que la función puede recibir secuencias de cualquier tipo, con elementos de cualquier tipo, y no hay ninguna razón para limitar a que sea una lista de números.
 - Las variable interna `indice` también se puede simplificar: por convención podemos usar `i`.
 - "Esta función" es redundante: cuando alguien lea la documentación ya va a saber que se trata de una función.
-- "contando desde 0" es redundante: en Python siempre contamos desde 0.
+- "Contando desde 0" es redundante: en Python siempre contamos desde 0.
 - Los comentarios son excesivos: la función es suficientemente simple y cualquier persona que sepa programación básica podrá entender el algoritmo.
 
 
@@ -199,12 +175,12 @@ Opcionalmente, la instrucción `assert` puede recibir un mensaje de error que se
 AssertionError: El divisor no puede ser 0)
 ```
 
-**Atención:**
-Es importante tener en cuenta que `assert` está pensado para ser usado en la etapa de desarrollo. Un programa terminado nunca debería dejar de funcionar por este tipo de errores.
+> [!IMPORTANT]
+> Es importante tener en cuenta que `assert` está pensado para ser usado en la etapa de desarrollo. Un programa terminado nunca debería dejar de funcionar por este tipo de errores.
 
 ### Ejemplos
 
-Usando los ejemplos anteriores, la función `division` nos quedaría de la siguiente forma:
+Usando los ejemplos anteriores, la función `division()` nos quedaría de la siguiente forma:
 
 ```python
 def division(dividendo, divisor):
@@ -268,7 +244,7 @@ En definitiva, la estipulación de pre y poscondiciones dentro de la documentaci
 En este ejercicio vas a realizar dos implementaciones correspondientes a la función `sumar_enteros` definida recién. 
 
 1. En la primera implementación te pedimos que uses un ciclo.
-2. En la segunda te pedimos que lo hagas sin ciclos: implementá la función de manera que trabaje en tiempo constante (es decir, usando una cantidad de operaciones que no depende de las entradas a la función.
+2. En la segunda te pedimos que lo hagas sin ciclos: implementá la función de manera que trabaje en tiempo constante (es decir, usando una cantidad de operaciones que no depende de las entradas a la función).
 
 _Ayuda: Estas sumas se pueden escribir como diferencia de dos [números triangulares](https://es.wikipedia.org/wiki/N%C3%BAmero_triangular)._
 
@@ -302,7 +278,7 @@ En este caso, el invariante del ciclo es la siguiente afirmación: "max_elem co
 
 **Demostración (técnica) de que se mantiene verdadero este invariante:** Veamos que este invariante se mantiene verdadero a lo largo de las iteraciones. Es evidente que es verdadera antes de entrar al ciclo ya que no se ha analizado ningún elemento por lo que se considera que la lista analizada es vacía y, como se dijo antes, por convención, el máximo es menos infinito.
 
-Ahora procedemos por inducción en la cantidad de iteraciones: supongamos que para i iteraciones (`i>=0`) el invariante se ha mantenido verdadero y que entramos en la iteración `i+1`.  Entonces, la variable `max_elem` vale el máximo de la lista entre la posición `0` y la posición `i` (considerando el valor menos infinito si `i==0`). Luego analizamos si el (`i+1`)-ésimo elemento es mayor que `max_elem` y si así fuera redefinimos esta variable, haciendo que se mantenga verdadero el invariante pues, evidentemente, `max_elem` será el máximo entre los primeros `i+1` elementos de la lista analizada.
+Ahora procedemos por inducción en la cantidad de iteraciones: supongamos que para i iteraciones (`i>=0`) el invariante se ha mantenido verdadero y que entramos en la iteración `i+1`. Entonces, la variable `max_elem` vale el máximo de la lista entre la posición `0` y la posición `i` (considerando el valor menos infinito si `i==0`). Luego analizamos si el (`i+1`)-ésimo elemento es mayor que `max_elem` y si así fuera redefinimos esta variable, haciendo que se mantenga verdadero el invariante pues, evidentemente, `max_elem` será el máximo entre los primeros `i+1` elementos de la lista analizada.
 
 Concluímos, por inducción, que el invariante se mantiene verdadero a lo largo de todas las iteraciones.
 **Fin de la demo**
@@ -326,8 +302,7 @@ def potencia(base, exp):
 
 En este caso, el invariante del ciclo es que la variable `resultado` contiene el valor de la potencia correspondiente al índice `i` de la iteración. Teniendo en cuenta esta condición, es fácil ver que `resultado` debe comenzar el ciclo con un valor de 1, ya que ese es el valor correspondiente a  `base ** 0`.
 
-De la misma manera, si la operación que se quiere realizar es sumar todos los
-elementos de una lista, el invariante será que una variable `suma` contenga la suma de todos los elementos ya recorridos. Antes de empezar a recorrer la lista, según lo expresado en este invariante, esta `suma` debe ser 0 ya que no recorrió ningún elemento.
+De la misma manera, si la operación que se quiere realizar es sumar todos los elementos de una lista, el invariante será que una variable `suma` contenga la suma de todos los elementos ya recorridos. Antes de empezar a recorrer la lista, según lo expresado en este invariante, esta `suma` debe ser 0 ya que no recorrió ningún elemento.
 
 ```python
 def suma(lista):
@@ -339,8 +314,8 @@ def suma(lista):
 ```
 
 En resumen, el concepto de invariante de ciclo es una herramienta que nos permite comprender (explicitar) mejor cómo funciona un algoritmo. Resulta fundamental en la teoría de algoritmos, donde es necesario para *demostrar* que:
-- un algoritmo es correcto, es decir que realiza la tarea descripta por la pre y poscondición.
-- un algoritmo termina (y no se cuelga).
+- Un algoritmo es correcto, es decir que realiza la tarea descripta por la pre y poscondición.
+- Un algoritmo termina (y no se cuelga).
 
 ### Ejercicio 8.10: Invariante en sumas
 En el [Ejercicio 8.9](../08_Diseño_y_Especificacion/05_Especificacion_y_Documentacion.md#ejercicio-89-sumas), escribiste una función `sumar_enteros(desde, hasta)` que utiliza un ciclo. ¿Cuál es el invariante de este ciclo?
@@ -378,11 +353,8 @@ A continuación un ejemplo en el cual se modifica la variable recibida. En este 
 [1, 8, 27, 64]
 ```
 
-**Atención:** Salvo que sea explícitamente aclarado, una función no debe modificar los valores de sus parámetros. En el caso en que por una decisión de diseño o especificación se modifiquen los parámetros mutables recibidos, esto debe estar claramente documentado como parte de las poscondiciones.
-
-## Repaso
-
-Dejamos un par de videos. En el [primer video](https://youtu.be/k-QC8WAmWr0) discutimos brevemente la importancia de establecer contratos y explicamos cómo estos y los invariantes pueden ayudarnos a _demostrar matemáticamente_ que una función hace lo que creemos que hace. En el [segundo video](https://youtu.be/uRgd9y0QNpM) damos algunos ejemplos de invariantes de ciclos discutidos paso a paso y hablamos de pre- y post-condiciones.
+> [!IMPORTANT]
+> Salvo que sea explícitamente aclarado, una función no debe modificar los valores de sus parámetros. En el caso en que por una decisión de diseño o especificación se modifiquen los parámetros mutables recibidos, esto debe estar claramente documentado como parte de las poscondiciones.
 
 
 ## Resumen 

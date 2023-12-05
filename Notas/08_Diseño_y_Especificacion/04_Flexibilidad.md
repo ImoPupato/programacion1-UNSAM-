@@ -5,7 +5,7 @@
 En esta breve sección, volvemos a discutir algunas decisiones de diseño que tomamos antes.
 
 
-### Archivos versus iterables
+## Archivos versus iterables
 
 Compará estos dos programas que resultan en la misma salida.
 
@@ -38,7 +38,7 @@ with open('file.csv') as f:
 * ¿Cuál de las funciones `read_data()` preferís y por qué?
 * ¿Cuál de las funciones permite mayor flexibilidad?
 
-### Una idea profunda: "Duck Typing" (Identificación de patos)
+## Una idea profunda: "Duck Typing" (Identificación de patos)
 
 [Duck Typing](https://en.wikipedia.org/wiki/Duck_typing) del inglés o en español ["Test del pato"](https://es.wikipedia.org/wiki/Duck_typing) es un concepto usado en programación para determinar si un objeto puede ser usado para un propósito en particular. Se trata de una aplicación particular del [test del pato](https://en.wikipedia.org/wiki/Duck_test) que puede resumirse así:
 
@@ -87,10 +87,10 @@ lines = ['Quinoto,50,91.1','Naranja,75,123.45', ... ]
 
 son iterables de texto, por lo tanto los usaremos como "patos" en la función `read_data()`.
 
-Si el concepto te resulta oscuro, tal vez [esta explicación](https://youtu.be/pxzLSMqU_7U) te ayude. La flexibilidad que este diseño permite es considerable. *Pregunta: ¿Debemos favorecer u oponernos a esta flexibilidad?* 
+La flexibilidad que este diseño permite es considerable. *Pregunta: ¿Debemos favorecer u oponernos a esta flexibilidad?* 
 
 
-### Buenas prácticas en el diseño de bibliotecas
+## Buenas prácticas en el diseño de bibliotecas
 
 Las bibliotecas de código suelen ser más útiles si son flexibles. No restrinjas las opciones innecesariamente. Con mayor flexibilidad suele venir asociada una mayor potencia.
 

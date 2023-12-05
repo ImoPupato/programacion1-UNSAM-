@@ -13,7 +13,7 @@ Utilizar siempre 4 espacios y nunca mezclar tabuladores y espacios.
 
 Si se continúa una línea hay dos opciones aceptables:
 
-```python
+```py
 # Correcto
 # opción 1, indentar a la apertura del paréntesis:
 foo = funcion_que_crea_bar(variable_1, variable2,
@@ -172,7 +172,7 @@ Más allá de los gustos por los diferentes estilos posibles, es importante reco
 
 Las reglas de estilo pueden ser discutidas, acatadas o no, en diferentes contextos. Es importante entender que un programador enfrentado a un código en Python no solo lee el código sino que percibe su diseño en el espacio, el uso de bloques y espacios, de indentaciones y mayúsculas. El diseño gráfico del código es una parte importante de las herramientas de transmisión de la información que permite nuestro archivo.
 
-Creeamos estas ideas con tres citas en inglés, extraídas de [este excelente artículo](https://optimal-codestyle.github.io/) de Aleksandr Skobelev que expresan la convicción de que el código en un lenguaje de programación no se escribe solamente para ser ejecutado por una computadora sino principalmente para ser leído y _percibido_ por otras personas:
+Creamos estas ideas con tres citas en inglés, extraídas de [este excelente artículo](https://optimal-codestyle.github.io/) de Aleksandr Skobelev que expresan la convicción de que el código en un lenguaje de programación no se escribe solamente para ser ejecutado por una computadora sino principalmente para ser leído y _percibido_ por otras personas:
 
 > Usually, when evaluating the text of a program in terms of its _ease of perception_, the term _readability_ is used. Strictly speaking, they are not exactly the same thing, because, as will be shown later, the process of *perceiving a program* is more than just reading. 
 > -- <cite> Aleksandr Skobelev, Fundamentals of Optimal Code Style. </cite>
