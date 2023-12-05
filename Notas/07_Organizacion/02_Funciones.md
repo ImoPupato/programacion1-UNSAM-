@@ -4,7 +4,7 @@
 
 Aunque ya hablamos sobre funciones, dimos pocos detalles sobre su funcionamiento a un nivel algo más profundo. En esta sección esperamos completar algunos conceptos como convenciones de uso, alcance (*scope*) y otros temas.  
 
-### Llamando a una función
+## Llamando a una función
 
 Imaginá la siguiente función:
 
@@ -14,7 +14,8 @@ def leer_precios(nombre_archivo, debug):
 ```
 
 Podés llamar a la función pasando los argumentos por orden:
-```
+
+```py
 precios = leer_precios('precios.csv', True)
 ```
 
@@ -24,7 +25,13 @@ O podés llamarla usando palabras clave (*keywords*):
 precios = leer_precios(nombre_archivo = 'precios.csv', debug = True)
 ```
 
-### Argumentos por omisión
+Si usas *keywords* podes elegir pasar los parámetros en otro orden:
+
+```python
+precios = leer_precios(debug = True, nombre_archivo = 'precios.csv')
+```
+
+## Argumentos por omisión
 
 Si preferís que un argumento sea opcional (que tenga un valor *por omisión* o  _by default_), en ese caso asignale un valor en la definición de la función. Ése será el valor del argumento si llamás a la función sin especificar un valor para ese argumento.
 
@@ -40,9 +47,10 @@ d = leer_precios('precios.csv')
 e = leer_precios('precios.dat', True)
 ```
 
-*Nota: Todos los argumentos con valores por omisión deben aparecer al final de la lista de argumentos (primero se declaran todos los argumentos no-opcionales)*
+> [!NOTE]
+> *Nota: Todos los argumentos con valores por omisión deben aparecer al final de la lista de argumentos (primero se declaran todos los argumentos no-opcionales)*
 
-### Si un argumento es opcional, dale un nombre.
+## Si un argumento es opcional, dale un nombre.
 
 Comparemos estos dos estilos de invocar funciones:
 
@@ -56,7 +64,7 @@ cortar_datos(data, debug = True, ignore_errores = True)
 
 En la mayoría de los casos los argumentos con nombre hacen al código más claro, más fácil de entender, especialmente si estos argumentos son booleanos, que determinan opciones sí-no.
 
-### Buenas prácticas de diseño
+## Buenas prácticas de diseño
 
 Compará estas dos formas de declarar una misma función. Para comprender cómo usar la primera, tendríamos que explorar dentro de la función y saber qué significan sus parámetros. Usá siempre nombres cortos para los argumentos, pero con significado.
 
@@ -76,7 +84,7 @@ d = leer_precios('precios.csv', debug = True)
 
 Hay herramientas que crean automáticamente documentación sobre el uso de las funciones y sus argumentos. Si los nombres tienen significado, la documentación resulta más clara.
 
-### Devolver un resultado
+## Devolver un resultado
 
 El comando `return` termina la función y devuelve un valor.
 
@@ -101,7 +109,7 @@ def foo(x):
 b = foo(4)          # b = None
 ```
 
-### Devolver múltiples resultados
+## Devolver múltiples resultados
 
 Las funciones sólo pueden devolver una cosa. Si necesitás devolver más de un valor, podés armar una tupla con ellos y devolver la tupla.
 
@@ -120,7 +128,7 @@ x, y = dividir(37,5) # x = 7, y = 2
 x = dividir(37, 5)   # x = (7, 2)
 ```
 
-### Alcance de variables
+## Alcance de variables
 
 En un programa se declaran variables y se les asignan valores.
 Esto ocurre dentro y fuera de funciones.
@@ -134,7 +142,7 @@ def foo():
 
 Las variables declaradas fuera de funciones son "globales". Las variables declaradas dentro de funciones son "locales". A esto se llama el alcance (*scope*) de una variable.
 
-### Variables locales
+## Variables locales
 
 Las variables locales, declaradas dentro de funciones, son privadas.
 
@@ -162,7 +170,7 @@ El error significa: *Error de Nombre: el nombre 'campos' no está definido.*
 
 No hay conflicto entre variables locales y variables declaradas en otras partes (funciones o globales).
 
-### Variables globales
+## Variables globales
 
 Desde cualquier función se puede acceder a las variables globales declaradas en ese mismo archivo.
 
@@ -187,9 +195,10 @@ print(nombre) # imprime 'Dave'
 
 Aquí hay dos variables diferentes: `nombre` global, que vale `'Dave'`, y `nombre` local, declarada dentro de la función `spam()` que vale `'Guido'`. Cambiar una no cambia la otra: al cambiar el valor de `nombre` local, `nombre` global no cambia.
 
-**Acordate: Las asignaciones de valores a variables y las declaraciones de variables  dentro de funciones son locales.**
+> [!NOTE]
+> **Acordate: Las asignaciones de valores a variables y las declaraciones de variables  dentro de funciones son locales.**
 
-### Modificar el valor de una variable global
+## Modificar el valor de una variable global
 
 Si necesitás modificar el valor de una variable global desde dentro de una función, la variable tiene que estar declarada como `global` dentro de la misma función.
 
@@ -207,7 +216,7 @@ La declaración de globalidad de la variable (con la palabra reservada `global`)
 
 Dicho esto, hay que decir también que usar variables globales se considera una mala práctica. Tratá de evitar completamente el uso de `global`. Si tenés una función que depende del estado de una variable global, tu programa es menos modular: no podés reutilizar la función en otro contexto sin agregar una variable global. Si necesitás que una función modifique el estado de algo fuera de esa función, es mejor entonces usar una clase en lugar de una función. Hablaremos de esto más adelante.
 
-### Pasaje de argumentos
+## Pasaje de argumentos
 
 Cuando llamás a una función, los argumentos son los nombres que refieren a los valores que le pasás. Estos valores no son copias de los originales (ver [Sección 5.4](../05_Listas/04_Objetos.md#54-objetos)). Si le pasás tipos mutables, como listas o diccionarios, la función *sí* los puede modificar.
 
@@ -220,9 +229,10 @@ foo(a)
 print(a)                # [1, 2, 3, 42]
 ```
 
-**Fundamental: Las funciones no reciben una *copia* de los argumentos, sino los argumentos mismos.**
+> [!IMPORTANT]
+> **Fundamental: Las funciones no reciben una *copia* de los argumentos, sino los argumentos mismos.**
 
-### Reasignar versus modificar
+## Reasignar versus modificar
 
 Existe una sutil pero importante diferencia entre *modificar* el valor de una variable y *reasignar* una variable.
 
@@ -246,7 +256,8 @@ bar(b)
 print(b)               # imprime [1, 2, 3]
 ```
 
-*Recordá: reasignar una variable nunca sobreescribe la memoria que ocupaba. Sólo se asocia el nombre de la variable a un nuevo valor.*
+> [!NOTE]
+> *Recordá: reasignar una variable nunca sobreescribe la memoria que ocupaba. Sólo se asocia el nombre de la variable a un nuevo valor.*
 
 ## Ejercicios
 
@@ -260,7 +271,8 @@ Si tu tarea fuera de verdad leer datos de archivos, entonces querrías limpiar e
 
 Comenzá este ejercicio creando un nuevo archivo `fileparse.py` en la carpeta `ejercicios_python/Clase07`. Ahí vamos a trabajar.
 
-_Nota:_ En inglés *to parse* significa analizar gramaticalmente (por ejemplo una frase), separándola en sus partes constitutivas. Es un término muy usado en ciencias de la computación que no tiene una traducción compacta al castellano. Mucha gente usa el anglicismo *parsear* para referirse a esta actividad.
+> [!NOTE]
+> En inglés *to parse* significa analizar gramaticalmente (por ejemplo una frase), separándola en sus partes constitutivas. Es un término muy usado en ciencias de la computación que no tiene una traducción compacta al castellano. Mucha gente usa el anglicismo *parsear* para referirse a esta actividad.
 
 ### Ejercicio 7.3: Parsear un archivo CSV
 Vamos a empezar por el problema simple de leer un archivo CSV para guardar los datos que contiene en una lista de diccionarios. En el archivo `fileparse.py` definí la siguiente función:
@@ -387,7 +399,6 @@ Para hacer la selección correctamente, tenés que conventir los nombres de las 
 >>>
 ```
 
-
 En otras palabras, "nombre" es la columna 0 y "cajones" es la columna 3.
 Al leer una línea de datos del archivo, usás los índices para filtrarla y rescatar sólo las columnas que te interesan:
 
@@ -448,7 +459,7 @@ Si bien no es difícil, este es un cambio muy grande en esta función. Un camino
 
 Incorporá todos estos cambios en el archivo `fileparse.py`.
 
-### Comentario
+## Comentario
 Llegaste lejos. Hasta este punto creaste una biblioteca de funciones que es genuinamente útil. La podés usar para parsear archivos CSV de formato arbitrario, eligiendo las columnas relevantes y cambiando el tipo de datos devuelto, todo esto sin tener que preocuparte mucho por el manejo de archivos o entender cómo funciona el módulo `csv`.  
 
 
