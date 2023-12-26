@@ -2,8 +2,6 @@
 
 # 10.3 Manejo de archivos y carpetas
 
-Esta sección tiene un breve [video introductorio](https://youtu.be/SeaML1O8PaI) sobre el manejo de archivos y directorios desde Python.
-
 ## Manejo de archivos y directorios
 
 Una carpeta o directorio es una colección de archivos y directorios. Python tiene el módulo `os` que ofrece muchas herramientas útiles para trabajar con directorios y archivos.
@@ -131,12 +129,14 @@ La función `rename()` también es útil para mover un archivo o directorio, cam
 
 La carpeta 'carpeta' ahora se encuentra en 'Ejercicios', y no dentro de 'Ejercicios/test'.
 
-**Ojo**: `rename()` funciona cuando el archivo (o directorio) no se cambia de disco (o más específicamente de una partición). Si querés mover un archivo del disco a un pendrive, por ejemplo, lo correcto es copiar el archivo al pendrive y luego borrarlo del disco. `rename()` no hace esto: no copia y borra, simplemente cambia el nombre. Para renombrar en caso que se pueda o copiar y borrar si lo primero no es posible, podés usar la función `move()` del módulo `shutil`. Este módulo es de más alto nivel y usa las primitivas de bajo nivel del módulo `os`. Al usar `os` tenemos un control más estricto de las operaciones. Las funciones de `shutil` pueden resultar más cómodas, pero en el camino pueden invocar a diversas funciones de bajo nivel del módulo `os`.
+> [!IMPORTANT]
+> `rename()` funciona cuando el archivo (o directorio) no se cambia de disco (o más específicamente de una partición). Si querés mover un archivo del disco a un pendrive, por ejemplo, lo correcto es copiar el archivo al pendrive y luego borrarlo del disco. `rename()` no hace esto: no copia y borra, simplemente cambia el nombre. Para renombrar en caso que se pueda o copiar y borrar si lo primero no es posible, podés usar la función `move()` del módulo `shutil`. Este módulo es de más alto nivel y usa las primitivas de bajo nivel del módulo `os`. Al usar `os` tenemos un control más estricto de las operaciones. Las funciones de `shutil` pueden resultar más cómodas, pero en el camino pueden invocar a diversas funciones de bajo nivel del módulo `os`.
 
 
 ## Eliminar un directorio o un archivo
 
-> :warning: **A continuación usaremos comandos que borran archivos sin pasar por ninguna papelera de reciclaje. Estas acciones no pueden deshacerse**: Usar con precaución, _un gran poder conlleva una gran responsabilidad_.
+> [!CAUTION]
+> **A continuación usaremos comandos que borran archivos sin pasar por ninguna papelera de reciclaje. Estas acciones no pueden deshacerse**: Usar con precaución, _un gran poder conlleva una gran responsabilidad_.
 
 
 Podés eliminar un archivo usando la función `remove()`. También podés eliminar un directorio vacío usando `rmdir()`.
@@ -163,7 +163,8 @@ otra_carpeta
 []
 ```
 
-**Ojo**: `rmdir()` solamente puede borrar directorios si están vacíos.
+> [!IMPORTANT]
+> `rmdir()` solamente puede borrar directorios si están vacíos.
 Para eliminar un directorio no vacío, podés usar `rmtree()` del módulo `shutil`.
 
 ```python

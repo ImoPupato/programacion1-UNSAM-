@@ -2,9 +2,6 @@
 
 # 10.2 Manejo de fechas y horas
 
-Esta sección tiene un breve [video introductorio](https://youtu.be/exTngw8oOp0) sobre el módulo `datetime`.
-
-
 ## El módulo datetime
 
 A continuación introducimos el módulo `datetime` que permite trabajar con fechas y horas. Este módulo define un nuevo tipo de objeto: `datetime` (sí, con el mismo nombre del módulo), que permite representar un instante temporal (fecha y hora). También  define objetos de tipo `date`  para representar sólo una fecha y de tipo `time` para guardar y trabajar con horarios. Finalmente, en esta breve introducción al módulo `datetime` mencionamos el tipo `timedelta` que se usa para representar diferencias entre instantes de tiempos, es decir, duraciones y trabajar con ellas.

@@ -2,7 +2,7 @@
 
 # 9.1 La biblioteca matplotlib
 
-Matplotlib es probablemente la biblioteca de Python más usada para crear gráficos en 2D, también llamados plots. Provee una forma rápida de graficar datos en varios formatos de alta calidad que pueden ser compartidos y/o publicados. En esta sección vamos a ver los usos  más comunes de matplotlib. En [este video](https://youtu.be/c7fR1KkvKFQ) encontrarán una introducción breve a esta sección.
+Matplotlib es probablemente la biblioteca de Python más usada para crear gráficos en 2D, también llamados plots. Provee una forma rápida de graficar datos en varios formatos de alta calidad que pueden ser compartidos y/o publicados. En esta sección vamos a ver los usos  más comunes de matplotlib.
 
 ##  pyplot
 *pyplot* proporciona una interfase a la biblioteca de matplotlib. Pyplot está diseñada siguiendo el estilo de Matlab y la mayoría de los comandos para graficar en pyplot tienen análogos en Matlab con argumentos similares. Explicaremos las instrucciones más importantes con ejemplos interactivos. 
@@ -190,7 +190,7 @@ plt.legend(loc='upper left')
 
 ### Algunos puntos interesantes 
 
- Vamos a marcar algunos puntos interesantes usando el comando `annotate`. Elegimos el valor 2π/3 y queremos marcar tanto el seno como el coseno. Vamos a dibujar una marca en la curva y una línea recta punteada. Además, vamos a usar `annotate` para mostrar texto y una flecha para destacar el valor de las funciones. 
+ Vamos a marcar algunos puntos interesantes usando el comando `annotate`. Elegimos el valor 2π/3 y queremos marcar tanto el seno como el coseno. Vamos a dibujar una marca en la curva y una línea recta punteada. Además, vamos a usar `annotate` para mostrar texto y una flecha para destacar el valor de las funciones. Lo siguiente es a modo de ejemplo para mostrar algunas otras cosas que se pueden hacer con la librería:
 
 ```python
 ...
@@ -247,14 +247,14 @@ Aunque trabajamos con figuras y subplots sin llamarlos explicitamente, es bueno 
 
 Una "figura" es la ventana en la interfase al usuarie que lleva como título "Figura #". Las figuras se enumeran comenzando en 1. Varios parámetros  determinan la pinta que tiene una figura: 
 
-Argumento | Por Omisión  | Descripción
---- | --- | ---
-num | 1 |  número de figura
-figsize |figure.figsize | tamaño de figura en pulgadas (ancho, alto)
-dpi | figure.dpi | resolución en puntos por pulgada
-facecolor |  figure.facecolor  |  color del fondo
-edgecolor |  figure.edgecolor  |  color del borde rodeando el fondo
-frameon | True |   dibujar un recuadro para la figura ?
+| Argumento | Por Omisión      | Descripción                                |
+| --------- | ---------------- | ------------------------------------------ |
+| num       | 1                | número de figura                           |
+| figsize   | figure.figsize   | tamaño de figura en pulgadas (ancho, alto) |
+| dpi       | figure.dpi       | resolución en puntos por pulgada           |
+| facecolor | figure.facecolor | color del fondo                            |
+| edgecolor | figure.edgecolor | color del borde rodeando el fondo          |
+| frameon   | True             | dibujar un recuadro para la figura ?       |
 
 Si estás trabajando en una interfaz gráfica podés cerrar una figura clickeando en la `X` de la ventana. Tambien podés cerrar una ventana desde tu programa llamando al método close(). Dependiendo del parámetro que le pases va a cerrar la figura con que estás trabajando (sin argumentos), una figura específica (como argumento le pasás el número de figura) o todas las figuras (el argumento es "all"). 
 
@@ -337,7 +337,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def randomwalk(largo):
-    pasos=np.random.randint (-1,2,largo)    
+    pasos = np.random.randint(-1, 2, largo)    
     return pasos.cumsum()
 
 N = 100000
@@ -409,9 +409,9 @@ Modificá el código que sigue para generar un gráfico similar al que se muestr
 
 ```python
 n = 1024
-X = np.random.normal(0,1,n)
-Y = np.random.normal(0,1,n)
-plt.scatter(X,Y)
+X = np.random.normal(0, 1, n)
+Y = np.random.normal(0, 1, n)
+plt.scatter(X, Y)
 ```
 
 ![COPETE](./sphx_glr_plot_scatter_001.png)

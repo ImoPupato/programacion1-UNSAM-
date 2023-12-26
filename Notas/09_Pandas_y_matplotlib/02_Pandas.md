@@ -8,8 +8,6 @@ La biblioteca Pandas es una extensión de NumPy para manipulación y análisis d
 
 Esta biblioteca tiene dos tipos de datos fundamentales: los `DataFrames` que almacenan tablas de datos y las `series` que contienen secuencias de datos.
 
-Esta sección tiene un breve [video introductorio](https://youtu.be/aQhssTeFnYY) sobre las posibilidades que ofrece la biblioteca Pandas.
-
 ## Lectura de datos
 
 Pandas permite leer diversos formatos de tablas de datos directamente. Probá el siguiente código, para leer un archivo CSV:
@@ -38,7 +36,6 @@ Con `df.head()` podés ver las primeras líneas de datos. Si a `head` le pasás 
 3 -58.478129 -34.644567    4  ...  Nativo/Autóctono  98640.439091  98302.938142
 4 -58.478121 -34.644598    5  ...  Nativo/Autóctono  98641.182166  98299.519997
 ```
-
 
 Usando `df.columns` pandas te va a devolver un índice con los nombres de las columnas del DataFrame. Recordá que en la [Sección 4.5](../04_Datos/05_Arboles1.md#descripción-de-la-base) describimos la base de datos. A su vez, `df.index` te mostrará el índice. En este caso el índice es numérico y se corresponde con el número de la línea leída del archivo. En principio `df.index` no parece muy interesante para analizar árboles, simplemente tenemos las filas numeradas, peroeremos otros ejemplos donde el índice puede contener información vital (una categoría, un timestamp, etc).
 

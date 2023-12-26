@@ -62,7 +62,6 @@ _Observación:_ Este tipo de tareas se repite con mucha frecuencia. Tener la cap
 
   * Usá docstrings y comentarios en tu código de manera que sea legible.
 
-  * Al terminar de usar el código, comentá todas las instrucciones salvo los imports y las definiciones de funciones, para poder entregarlo al cierre de la clase.
 
 
 [Contenidos](../Contenidos.md) \| [Anterior (3 Manejo de archivos y carpetas)](03_Archivos_y_Directorios.md) \| [Próximo (5 Cierre de la clase)](05_Cierre.md)
