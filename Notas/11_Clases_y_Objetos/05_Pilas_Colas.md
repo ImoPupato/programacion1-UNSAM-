@@ -2,8 +2,6 @@
 
 # 11.5 Objetos, pilas y colas
 
-Esta sección tiene un [video](https://youtu.be/-SYcwU1XOn4) donde trabajamos con colas. En este video trabajamos con los archivos que figuran en [esta carpeta comprimida](./clase9_colas.zip).
-
 En esta sección tendrás que resolver algunos ejercicios definiendo clases y objetos.
 
 ### Un ejercicio geométrico

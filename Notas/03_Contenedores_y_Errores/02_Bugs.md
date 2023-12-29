@@ -148,7 +148,7 @@ En el archivo `solucion_de_errores.py` separá las correcciones de los distintos
 def tiene_a(expresion):
     n = len(expresion)
     i = 0
-    while i<n:
+    while i < n:
         if expresion[i] == 'a':
             return True
         else:
@@ -166,7 +166,7 @@ tiene_a('La novela 1984 de George Orwell')
 def tiene_a(expresion)
     n = len(expresion)
     i = 0
-    while i<n
+    while i < n
         if expresion[i] = 'a'
             return True
         i += 1
@@ -183,7 +183,7 @@ def tiene_uno(expresion):
     n = len(expresion)
     i = 0
     tiene = False
-    while (i<n) and not tiene:
+    while (i < n) and not tiene:
         if expresion[i] == '1':
             tiene = True
         i += 1
@@ -217,8 +217,8 @@ import csv
 from pprint import pprint
 
 def leer_camion(nombre_archivo):
-    camion=[]
-    registro={}
+    camion = []
+    registro = {}
     with open(nombre_archivo,"rt") as f:
         filas = csv.reader(f)
         encabezado = next(filas)

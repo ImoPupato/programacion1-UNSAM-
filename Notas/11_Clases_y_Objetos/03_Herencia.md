@@ -2,8 +2,6 @@
 
 # 11.3 Herencia
 
-Esta sección tiene [un video](https://youtu.be/n7CxhdOmHb8) donde introducimos el tema de herencia.
-
 La herencia entre clases es una herramienta muy usada para escribir programas extensibles. Exploraremos esta idea a continuación.
 
 ### Introducción

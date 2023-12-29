@@ -2,8 +2,6 @@
 
 # 11.2 Clases
 
-Esta sección tiene un [video](https://youtu.be/h7X8rrW8JLo) donde introducimos las *clases*, damos algunos ejemplos y también introducimos el tema de la [Sección 11.4](../11_Clases_y_Objetos/04_Métodos_Especiales.md#114-métodos-especiales). En este video, y en el que veremos más adelante sobre herencia, usamos el código de [este archivo](./clase9_clases_metesp.py).
-
 La programación orientada a objetos requiere un pequeño pero importante cambio en la forma de pensar la programación tradicional. Dejá decantar los conceptos nuevos a medida que leas esta sección.
 
 En esta sección veremos el concepto de clase, cómo crear nuevos tipos de objetos, su utilidad, y las ventajas de esa forma de organizar los programas.

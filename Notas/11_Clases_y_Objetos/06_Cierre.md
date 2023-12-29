@@ -16,9 +16,6 @@ La experiencia te va a permitir decidir (quizás tardíamente) cuándo es mas co
     3. El archivo `canguros_buenos.py` del [Ejercicio 11.11](../11_Clases_y_Objetos/05_Pilas_Colas.md#ejercicio-1111-canguros-buenos-y-canguros-malos).
     4. El archivo `torre_control.py` del [Ejercicio 11.12](../11_Clases_y_Objetos/05_Pilas_Colas.md#ejercicio-1112-torre-de-control).
 
-
-Como todas las semanas, te vamos a pedir que envies tus ejercicios resueltos por mail. Recordá usar siempre la misma dirección de mail y poner como *subject* del correo **[Unidad 11]**. *Recordá:* Si cursás en el turno de los miércoles, mandá tus ejercicios a python@unsam.edu.ar, si cursás en el turno de los jueves mandalos a pythonunsam@gmail.com.
-
 ¡Gracias! 
 
 Con esto damos por terminado el curso.
