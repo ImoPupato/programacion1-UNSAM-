@@ -158,7 +158,7 @@ obteniendo
 Que es donde queremos estar.
 
 > [!NOTE]
-> Mi nombre de usuario en este Windows es `Joaco`. Adaptá el nombre al usuario que vos uses, o al directorio de trabajo (home) en tu Windows._
+> Mi nombre de usuario en este Windows es `Joaco`. Adaptá el nombre al usuario que vos uses, o al directorio de trabajo (home) en tu Windows.
 
 ## Ver el contenido de un archivo
 
