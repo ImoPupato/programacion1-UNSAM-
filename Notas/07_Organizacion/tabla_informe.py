@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Sep  7 12:34:08 2021
 
-@author: mcerdeiro
-"""
 # tabla_informe.py
 import csv
 #%%

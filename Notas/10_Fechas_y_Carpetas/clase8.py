@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Sat Sep 12 10:04:23 2020
 
-@author: rgrimson
-"""
 
 
 #%%

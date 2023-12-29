@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Wed Mar 31 13:42:38 2021
 
-@author: mlopez
-"""
 
 l1 = [x for x in range(10)]
 

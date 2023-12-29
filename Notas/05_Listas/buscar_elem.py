@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Wed Mar 31 13:21:40 2021
 
-@author: mlopez
-"""
 
 def buscar_elem(lista, e):
     i = 0
