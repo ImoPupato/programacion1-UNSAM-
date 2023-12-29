@@ -2,7 +2,7 @@
 
 # 1.6 Cadenas
 
-En esta sección veremos cómo trabajar con textos. En este [video]() introducimos el tema.
+En esta sección veremos cómo trabajar con textos.
 
 ### Representación de textos
 

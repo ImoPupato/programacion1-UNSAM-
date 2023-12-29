@@ -2,8 +2,6 @@
 
 # 1.4 Números
 
-Esta sección introduce las operaciones matemáticas elementales. Acá te dejamos un breve [video](https://youtu.be/NTWF9KKaCm0) sobre el uso de la variables booleanas.
-
 ### Tipos de variables numéricas
 
 Python tiene 4 tipos de variables numéricas:

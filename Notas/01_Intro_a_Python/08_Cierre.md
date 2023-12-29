@@ -11,8 +11,7 @@ En esta clase aprendimos a correr el intérprete de Python desde la línea de co
     4. El archivo `geringoso.py` [Ejercicio 1.18](../01_Intro_a_Python/06_Strings.md#ejercicio-118-geringoso-rustico) (Geringoso). 
 
 
-> [!NOTE]
-> Observación: si el enunciado de un ejercicio te pide que lo corras con un input particular, por favor poné la salida que obtuviste como comentario en tu código.
+
 
 
 [Contenidos](../Contenidos.md) \| [Anterior (7 Listas)](07_Listas.md)
