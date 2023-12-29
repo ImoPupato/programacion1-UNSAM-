@@ -140,6 +140,23 @@ e = math.log(x)
 
 El módulo `math` también tiene constantes (`math.e`, `math.pi`), entre otras cosas.
 
+
+### Separadores de miles
+
+A veces tenemos números grandes y cuando los queremos leer se hace difícil. Python permite separar con `_` los números para aportar mayor legibilidad:
+
+```py
+numero_grande = 1_000_000_000
+print(numero_grande)
+# La salida es: 1000000000
+
+otro_numero_grande = 83_810_204_855.73_446
+print(otro_numero_grande)
+# La salida es: 83810204855.73447
+```
+
+Fijate que el número se imprime sin los guiones bajos, esto solo sirve para quien lee el código.
+
 ### Comparaciones
 
 Las siguientes comparaciones (suelen llamarse _operadores relacionales_ ya que expresan una relación entre dos elementos) funcionan con números:
