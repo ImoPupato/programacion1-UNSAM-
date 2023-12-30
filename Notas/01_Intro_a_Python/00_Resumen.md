@@ -1,4 +1,4 @@
-[Contenidos](../Contenidos.md) \| [Próximo (1.1 Python)](01_Python.md)
+[Contenidos](../Contenidos.md) \| [Próximo (1.1 Python)](01_Python.md)  
 [Clase siguiente (2. Estructuras y funciones)](../02_Estructuras_y_Funciones/00_Resumen.md)
 
 # 1. Introducción a Python
@@ -14,5 +14,5 @@ El objetivo de esta primera clase es introducir los conceptos de condicional y d
 - [1.7 Listas](07_Listas.md)
 - [1.8 Cierre de la clase](08_Cierre.md)
 
-[Contenidos](../Contenidos.md) \| [Próximo (1.1 Python)](01_Python.md)
+[Contenidos](../Contenidos.md) \| [Próximo (1.1 Python)](01_Python.md)  
 [Clase siguiente (2. Estructuras y funciones)](../02_Estructuras_y_Funciones/00_Resumen.md)
