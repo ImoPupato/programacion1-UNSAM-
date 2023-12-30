@@ -37,6 +37,7 @@ El objetivo de este curso es enseñar los fundamentos del lenguaje Python y algu
 Este es un curso trimestral con guías de ejercicios semanales y encuentros virtuales vía Discord donde se podrán hacer consultas.
 
 Para hacer este curso solo hace falta estar inscripte, tener una PC con alguna version de Python 3.9 (o uno más nuevo) instalada, comprometerse a leer las clases y a hacer los ejercicios de las guías semanales.
+
 Solo se precisa acceso a internet para poder comunicarse por el Discord, descargar Python, poder descargar el repositorio de clases en caso que precisen y para instalar librerías. Estimamos que esto te demandará alrededor de 15 horas de dedicación semanal (en algunos casos menos, en algunos casos más, dependiendo de le estudiante).
 
 
@@ -50,7 +51,7 @@ En este curso _**no expedimos certificado**_. Creemos que las personas que curse
 1. Leé nuestro [código de honor](/Notas/Codigo.md).
 2. Leé las [condiciones de cursada](/Notas/Cursada.md).
 3. [Instalá Python](/Notas/Instalacion.md).
-4. Que comiencen [las clases :)](/Notas/Contenidos.md)
+4. Que comiencen [las clases :)](/Notas/Contenidos.md).
 
 
 ## Inscripción
@@ -58,6 +59,8 @@ En este curso _**no expedimos certificado**_. Creemos que las personas que curse
 Para inscribirse en el curso es necesario completar el siguiente [formulario de inscripcion]().
 
 
+## Bibliografía para futuro
+
+Este curso es introductorio y no cubre todos los aspectos de Python ni de las distintas ramas de programación que se pueden desprender de este lenguaje. Por eso dejamos una serie de recursos (mayormente libros) para que puedan seguir capacitándose y explorando este mundillo. Solo deben [ir a la bibliografía](/Notas/Bibliografia.md).
 
 
-[Próximo (1 Código de honor)](/Notas/Codigo.md)
