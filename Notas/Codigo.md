@@ -1,3 +1,5 @@
+[Anterior (0 Curso de Python)](/README.md) | [Próximo (2 Condiciones de cursada)](/Notas/Cursada.md)
+
 # Código de Honor
 
 ### Integridad
@@ -15,3 +17,5 @@ Plagiar es copiar ideas, palabra o fragmentos de código sin dar el crédito ade
 ### Respeto
 
 Esperamos que en todas las instancias del curso tanto oficiales como no oficiales (chats, foros, videoconferencias, correcciones de ejercicios, etc.) mantengas un trato cordial y respetuoso con tus compañeres y docentes.
+
+[Anterior (0 Curso de Python)](/README.md) | [Próximo (2 Condiciones de cursada)](/Notas/Cursada.md)

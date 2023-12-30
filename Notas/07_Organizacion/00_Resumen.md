@@ -1,4 +1,5 @@
-[Contenidos](../Contenidos.md) \| [Anterior (6 Aleatoriedad)](../06_Aleatoriedad/00_Resumen.md) \| [Próximo (8 Diseño, especificación, documentación y estilo)](../08_Diseño_y_Especificacion/00_Resumen.md)
+[Contenidos](../Contenidos.md) \| [Próximo (7.1 Scripting)](01_Scripts.md)
+[Clase anterior (6. Aleatoriedad)](../06_Aleatoriedad/00_Resumen.md) \| [Clase siguiente (8. Diseño, especificación, documentación y estilo)](../08_Diseño_y_Especificacion/00_Resumen.md)
 
 # 7. Complejidad y Organización de programas
 
@@ -18,4 +19,6 @@ En esta segunda mitad retomamos nuestra discusión sobre algoritmos de búsqueda
 * [7.7 Cierre de la clase](07_Cierre.md)
 
 
-[Contenidos](../Contenidos.md) \| [Anterior (6 Aleatoriedad)](../06_Aleatoriedad/00_Resumen.md) \| [Próximo (8 Diseño, especificación, documentación y estilo)](../08_Diseño_y_Especificacion/00_Resumen.md)
+[Contenidos](../Contenidos.md) \| [Próximo (7.1 Scripting)](01_Scripts.md)
+[Clase anterior (6. Aleatoriedad)](../06_Aleatoriedad/00_Resumen.md) \| [Clase siguiente (8. Diseño, especificación, documentación y estilo)](../08_Diseño_y_Especificacion/00_Resumen.md)
+

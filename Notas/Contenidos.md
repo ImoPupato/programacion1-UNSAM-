@@ -1,3 +1,5 @@
+[Anterior (3 Instalá Python)](/Notas/Instalacion.md) | [Próximo (1. Introducción a Python)](01_Intro_a_Python/00_Resumen.md)
+
 # Curso de programación en Python
 
 ## Contenidos
@@ -12,8 +14,8 @@
 * [8. Diseño, especificación, documentación y estilo](08_Diseño_y_Especificacion/00_Resumen.md)
 * [9. Pandas y Matplotlib](09_Pandas_y_matplotlib/00_Resumen.md)
 * [10. Fechas y Carpetas](10_Fechas_y_Carpetas/00_Resumen.md)
-* [11. Clases y objetos](11_Clases_y_Objetos/00_Resumen.md)
+<!-- * [11. Clases y objetos](11_Clases_y_Objetos/00_Resumen.md) -->
 
+[Anterior (3 Instalá Python)](/Notas/Instalacion.md) | [Próximo (1. Introducción a Python)](01_Intro_a_Python/00_Resumen.md)
 
-[Información sobre el curso](index.md) 
 

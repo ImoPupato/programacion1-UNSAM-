@@ -1,4 +1,5 @@
-[Contenidos](../Contenidos.md) \| [Anterior (1 Introducción a Python)](../01_Intro_a_Python/00_Resumen.md) \| [Próximo (3 Contenedores y Errores)](../03_Contenedores_y_Errores/00_Resumen.md)
+[Contenidos](../Contenidos.md) \| [Próximo (2.1 Introducción y repaso)](01_Introduccion_y_repaso.md)
+[Clase anterior (1. Introducción a Python)](../01_Intro_a_Python/00_Resumen.md) | [Clase siguiente (3. Contenedores y Errores)](../03_Contenedores_y_Errores/00_Resumen.md)
 
 # 2. Estructuras y funciones
 Esta clase comenzamos a utilizar un entorno de desarrollo integrado (IDE). 
@@ -15,4 +16,5 @@ Para escribir programas útiles, necesitamos aprender a trabajar con algunas est
 * [2.6 Cierre de la clase](06_Cierre.md)
 
 
-[Contenidos](../Contenidos.md) \| [Anterior (1 Introducción a Python)](../01_Intro_a_Python/00_Resumen.md) \| [Próximo (3 Contenedores y Errores)](../03_Contenedores_y_Errores/00_Resumen.md)
+[Contenidos](../Contenidos.md) \| [Próximo (2.1 Introducción y repaso)](01_Introduccion_y_repaso.md)
+[Clase anterior (1. Introducción a Python)](../01_Intro_a_Python/00_Resumen.md) | [Clase siguiente (3. Contenedores y Errores)](../03_Contenedores_y_Errores/00_Resumen.md)

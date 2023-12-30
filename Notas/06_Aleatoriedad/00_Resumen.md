@@ -1,4 +1,5 @@
-[Contenidos](../Contenidos.md) \| [Anterior (5 Algoritmos sobre listas y comprensión de listas)](../05_Listas/00_Resumen.md) \| [Próximo (7 Complejidad y Organización de programas)](../07_Organizacion/00_Resumen.md)
+[Contenidos](../Contenidos.md) \| [Próximo (6.1 Repaso)](01_Repaso.md)
+[Clase anterior (5. Algoritmos sobre listas y comprensión de listas)](../05_Listas/00_Resumen.md) \| [Clase siguiente (7. Complejidad y Organización de programas)](../07_Organizacion/00_Resumen.md)
 
 # 6. Aleatoriedad
 En esta clase introducimos conceptos y técnicas relacionadas con el azar. La aleatoriedad puede ser una gran aliada a la hora de realizar cálculos de fenómenos estocásticos pero también de fenómenos deterministicos.
@@ -20,4 +21,5 @@ Por último y como ejercicio integrador, presentamos una versión libre de un ej
 * [6.7 Revisitando ejercicios.](07_Repaso.md)
 
 
-[Contenidos](../Contenidos.md) \| [Anterior (5 Algoritmos sobre listas y comprensión de listas)](../05_Listas/00_Resumen.md) \| [Próximo (7 Complejidad y Organización de programas)](../07_Organizacion/00_Resumen.md)
+[Contenidos](../Contenidos.md) \| [Próximo (6.1 Repaso)](01_Repaso.md)
+[Clase anterior (5. Algoritmos sobre listas y comprensión de listas)](../05_Listas/00_Resumen.md) \| [Clase siguiente (7. Complejidad y Organización de programas)](../07_Organizacion/00_Resumen.md)

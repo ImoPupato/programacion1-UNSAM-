@@ -34,13 +34,6 @@ Este es un curso trimestral con guías de ejercicios semanales y encuentros virt
 
 Para hacer este curso solo hace falta estar inscripte, tener una PC con alguna version de Python 3.9 (o uno más nuevo) instalada, comprometerse a leer las clases y a hacer los ejercicios de las guías semanales. Solo se precisa acceso a internet para poder comunicarse por el Discord, descargar Python, poder descargar el repositorio de clases en caso que precisen y para instalar librerías. Estimamos que esto te demandará alrededor de 15 horas de dedicación semanal (en algunos casos menos, en algunos casos más, dependiendo de le estudiante).
 
-## Consideraciones adicionales sobre el curso
-
-* Para aprender a programar es sumamente importante realizar todos los ejercicios y también ir probando cosas por su cuenta.
-* En cada clase van a encontrar un párrafo de explicación e inmediatamente un bloque de código para que ejecuten. Es de mucha ayuda escribir el código por su cuenta en vez de copiar y pegarlo en la consola o en su script.
-* Cómo se dijo, el curso es muy desafiante, pudiendo requerir varias horas semanales dependiendo de la persona. Las primeros 5 o 6 clases son las que les pueden demandar más tiempo, ya que es cuando están aprendiendo la lógica de la programación y el pensamiento algorítmico.
-* Se van a encontrar con muuuuchos (muchísimos) errores y es super normal. No se frustren. Traten de tomarse el tiempo de resolverlos y si están muy quemades, déjenlo para el día siguiente. Recuerden que pueden pedir ayuda por el Discord en los canales apropiados. Sugerimos que lo hagan una vez agotada toda neurona.
-* No recomendamos usar Chat-GPT cuando estén aprendiendo. Esto se debe a que **se están perdiendo la oportunidad de resolver un problema por su cuenta y desarrollar esa capacidad resolutiva**. En su vida profesional o lo que sea, úsenlo si quieren, pero para aprender recomendamos que lo dejen de lado. Además, a veces los prompts que hay que mandarle tienen que ser muy buenos para que dé un resultado preciso con lo que se pide.
 
 ## Hoja de ruta de cómo empezar
 
@@ -54,3 +47,4 @@ Para hacer este curso solo hace falta estar inscripte, tener una PC con alguna v
 Para inscribirse en el curso es necesario completar el siguiente [formulario de inscripcion]().
 
 
+[Próximo (1 Código de honor)](/Notas/Codigo.md)
