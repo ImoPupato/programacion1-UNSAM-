@@ -1,4 +1,4 @@
-[Anterior (Código de honor)](/Notas/Codigo.md) | [Próximo (Instalá Python)](/Notas/Instalacion.md)
+[Anterior (1 Código de honor)](/Notas/Codigo.md) | [Próximo (3 Instalá Python)](/Notas/Instalacion.md)
 
 # Condiciones de cursada
 
@@ -50,4 +50,4 @@ Por favor, leé el [código de honor](./Codigo.md#código) del curso en el que h
 > Está bueno ver código ajeno una vez resuelto el problema por nuestra cuenta, para conocer otras formas de pensarlo. Pero solo después de haberlo hecho nosotres.
 
 
-[Anterior (Código de honor)](/Notas/Codigo.md) | [Próximo (Instalá Python)](/Notas/Instalacion.md)
+[Anterior (1 Código de honor)](/Notas/Codigo.md) | [Próximo (3 Instalá Python)](/Notas/Instalacion.md)
