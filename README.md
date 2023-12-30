@@ -56,7 +56,7 @@ En este curso _**no expedimos certificado**_. Creemos que las personas que curse
 
 ## Inscripción
 
-Para inscribirse en el curso es necesario completar el siguiente [formulario de inscripcion]().
+El curso se puede realizar de forma autodidacta leyendo las clases, pero cada tanto lo damos de forma virtual. Para inscribirse en el curso es necesario completar el siguiente [formulario de inscripción]().
 
 
 ## Reportes de errores
