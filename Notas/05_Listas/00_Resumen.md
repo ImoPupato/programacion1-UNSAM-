@@ -1,4 +1,4 @@
-[Contenidos](../Contenidos.md) \| [Próximo (5.1 Debuggear programas)](01_Debugger.md)
+[Contenidos](../Contenidos.md) \| [Próximo (5.1 Debuggear programas)](01_Debugger.md)  
 [Clase anterior (4. Trabajando con datos)](../04_Datos/00_Resumen.md) \| [Clase siguiente (6. Aleatoriedad)](../06_Aleatoriedad/00_Resumen.md)
 
 # 5. Algoritmos sobre listas y comprensión de listas
@@ -13,5 +13,5 @@ En esta clase introducimos el debugger y les proponemos una serie de ejercicios 
 * [5.6 Cierre de la clase](06_Cierre.md)
 
 
-[Contenidos](../Contenidos.md) \| [Próximo (5.1 Debuggear programas)](01_Debugger.md)
+[Contenidos](../Contenidos.md) \| [Próximo (5.1 Debuggear programas)](01_Debugger.md)  
 [Clase anterior (4. Trabajando con datos)](../04_Datos/00_Resumen.md) \| [Clase siguiente (6. Aleatoriedad)](../06_Aleatoriedad/00_Resumen.md)

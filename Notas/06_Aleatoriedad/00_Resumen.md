@@ -1,4 +1,4 @@
-[Contenidos](../Contenidos.md) \| [Próximo (6.1 Repaso)](01_Repaso.md)
+[Contenidos](../Contenidos.md) \| [Próximo (6.1 Repaso)](01_Repaso.md)  
 [Clase anterior (5. Algoritmos sobre listas y comprensión de listas)](../05_Listas/00_Resumen.md) \| [Clase siguiente (7. Complejidad y Organización de programas)](../07_Organizacion/00_Resumen.md)
 
 # 6. Aleatoriedad
@@ -21,5 +21,5 @@ Por último y como ejercicio integrador, presentamos una versión libre de un ej
 * [6.7 Revisitando ejercicios.](07_Repaso.md)
 
 
-[Contenidos](../Contenidos.md) \| [Próximo (6.1 Repaso)](01_Repaso.md)
+[Contenidos](../Contenidos.md) \| [Próximo (6.1 Repaso)](01_Repaso.md)  
 [Clase anterior (5. Algoritmos sobre listas y comprensión de listas)](../05_Listas/00_Resumen.md) \| [Clase siguiente (7. Complejidad y Organización de programas)](../07_Organizacion/00_Resumen.md)

@@ -1,4 +1,4 @@
-[Contenidos](../Contenidos.md) \| [Próximo (3.1 Contenedores)](01_Contenedores.md)
+[Contenidos](../Contenidos.md) \| [Próximo (3.1 Contenedores)](01_Contenedores.md)  
 [Clase anterior (2. Estructuras y funciones)](../02_Estructuras_y_Funciones/00_Resumen.md) | [Clase siguiente (4. Trabajando con datos)](../04_Datos/00_Resumen.md)
 
 # 3. Contenedores y Errores
@@ -15,5 +15,5 @@ Por último, vemos como se puede invocar un programa en Python desde la línea d
 * [3.4 Cierre de la clase](04_Cierre.md)
 
 
-[Contenidos](../Contenidos.md) \| [Próximo (3.1 Contenedores)](01_Contenedores.md)
+[Contenidos](../Contenidos.md) \| [Próximo (3.1 Contenedores)](01_Contenedores.md)  
 [Clase anterior (2. Estructuras y funciones)](../02_Estructuras_y_Funciones/00_Resumen.md) | [Clase siguiente (4. Trabajando con datos)](../04_Datos/00_Resumen.md)

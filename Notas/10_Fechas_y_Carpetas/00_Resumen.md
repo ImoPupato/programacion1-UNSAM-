@@ -1,4 +1,4 @@
-[Contenidos](../Contenidos.md) \| [Próximo (10.1 Introducción)](01_Intro.md)
+[Contenidos](../Contenidos.md) \| [Próximo (10.1 Introducción)](01_Intro.md)  
 [Clase anterior (9. Pandas y Matplotlib)](../09_Pandas_y_matplotlib/00_Resumen.md)
 <!-- [Clase siguiente (11 Clases y objetos)](../11_Clases_y_Objetos/00_Resumen.md) -->
 
@@ -14,6 +14,6 @@ En esta clase introducimos el módulo `datetime` para manejar datos relacionados
 * [10.5 Cierre de la clase](05_Cierre.md)
 
 
-[Contenidos](../Contenidos.md) \| [Próximo (10.1 Introducción)](01_Intro.md)
+[Contenidos](../Contenidos.md) \| [Próximo (10.1 Introducción)](01_Intro.md)  
 [Clase anterior (9. Pandas y Matplotlib)](../09_Pandas_y_matplotlib/00_Resumen.md)
 <!-- [Clase siguiente (11 Clases y objetos)](../11_Clases_y_Objetos/00_Resumen.md) -->

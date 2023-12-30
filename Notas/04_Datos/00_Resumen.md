@@ -1,4 +1,4 @@
-[Contenidos](../Contenidos.md) \| [Próximo (4.1 Introducción)](01_Introduccion.md)
+[Contenidos](../Contenidos.md) \| [Próximo (4.1 Introducción)](01_Introduccion.md)  
 [Clase anterior (3. Contenedores y Errores)](../03_Contenedores_y_Errores/00_Resumen.md) \| [Clase siguiente (5. Algoritmos sobre listas y comprensión de listas)](../05_Listas/00_Resumen.md)
 
 # 4. Trabajando con datos
@@ -16,5 +16,5 @@ Al final de la clase, vamos a trabajar con datos reales sobre los árboles de la
 * [4.6 Cierre de la clase](06_Cierre.md)
 
 
-[Contenidos](../Contenidos.md) \| [Próximo (4.1 Introducción)](01_Introduccion.md)
+[Contenidos](../Contenidos.md) \| [Próximo (4.1 Introducción)](01_Introduccion.md)  
 [Clase anterior (3. Contenedores y Errores)](../03_Contenedores_y_Errores/00_Resumen.md) \| [Clase siguiente (5. Algoritmos sobre listas y comprensión de listas)](../05_Listas/00_Resumen.md)

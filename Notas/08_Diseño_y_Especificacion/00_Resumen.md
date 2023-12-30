@@ -1,4 +1,4 @@
-[Contenidos](../Contenidos.md) \| [Próximo (8.1 Repaso de temas pasados)](01_Repaso.md)
+[Contenidos](../Contenidos.md) \| [Próximo (8.1 Repaso de temas pasados)](01_Repaso.md)  
 [Clase anterior (7. Complejidad y Organización de programas)](../07_Organizacion/00_Resumen.md) \| [Clase siguiente (9. Pandas y Matplotlib)](../09_Pandas_y_matplotlib/00_Resumen.md)
 
 # 8. Diseño, especificación, documentación y estilo
@@ -18,5 +18,5 @@ También se vuelve indispensable estructurar adecuadamente el código y aprender
 * [8.7 Cierre de la clase](07_Cierre.md)
 
 
-[Contenidos](../Contenidos.md) \| [Próximo (8.1 Repaso de temas pasados)](01_Repaso.md)
+[Contenidos](../Contenidos.md) \| [Próximo (8.1 Repaso de temas pasados)](01_Repaso.md)  
 [Clase anterior (7. Complejidad y Organización de programas)](../07_Organizacion/00_Resumen.md) \| [Clase siguiente (9. Pandas y Matplotlib)](../09_Pandas_y_matplotlib/00_Resumen.md)
