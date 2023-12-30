@@ -59,6 +59,11 @@ En este curso _**no expedimos certificado**_. Creemos que las personas que curse
 Para inscribirse en el curso es necesario completar el siguiente [formulario de inscripcion]().
 
 
+## Reportes de errores
+
+Somos humanos y nos podemos equivocar. Si viste algún error de tipeo, alguna explicación ambigua o código que no funciona (a excepción del módulo de errores), anotá: el nombre del archivo .md y en qué parte se encuentra el error, para mandarlo por el Discord así lo corregimos. También podés enviar una captura de pantalla.
+
+
 ## Bibliografía para futuro
 
 Este curso es introductorio y no cubre todos los aspectos de Python ni de las distintas ramas de programación que se pueden desprender de este lenguaje. Por eso dejamos una serie de recursos (mayormente libros) para que puedan seguir capacitándose y explorando este mundillo. Solo deben [ir a la bibliografía](/Notas/Bibliografia.md).
