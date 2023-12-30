@@ -1,5 +1,6 @@
 # Curso de Programación en Python
 
+
 ## Atribuciones
 
 El presente curso está basado en los contenidos de la [materia Programación 1](https://github.com/python-unsam/programacion1/tree/main) de la [Licenciatura en Ciencia de Datos](https://www.unsam.edu.ar/escuelas/ciencia/661/ciencia/ciencia-de-datos) de la [Escuela de Ciencia y Tecnología](http://www.unsam.edu.ar/escuelas/ciencia/) de la [UNSAM](https://www.unsam.edu.ar/).
@@ -11,6 +12,7 @@ El presente curso está basado en los contenidos de la [materia Programación 1]
 * Se detalló un poco más algunos conceptos como el uso de listas, diccionarios y funciones.
 * También se decidió cambiar la utilización del IDE Spyder por VS Code en las clases.
 
+
 ## ¿De qué es el curso?
 
 Este es un curso trimestral de algoritmos y programación en Python que combina material de lectura con clases virtuales. Está pensado para que se puedan aprender los contenidos de forma autodidacta, complementando con videos y clases virtuales.
@@ -19,9 +21,11 @@ Se prepara a les estudiantes para poder **programar algoritmos** y comprender lo
 
 El material de las clases teóricas, tanto escrito como videos, está disponible [en la carpeta "Notas"](https://github.com/jsapo95/programacion1/blob/main/Notas/index.md).
 
+
 ## Estudiantes ¿para quién está pensado?
 
 El curso está orientado, pero no limitado, a personas que les interese aprender sobre programación en Python orientada a ciencia de datos. Es un curso intenso y desafiante, que invita a pensar y a desarrollar algoritmos.
+
 
 ## Contenidos
 
@@ -32,7 +36,13 @@ El objetivo de este curso es enseñar los fundamentos del lenguaje Python y algu
 
 Este es un curso trimestral con guías de ejercicios semanales y encuentros virtuales vía Discord donde se podrán hacer consultas.
 
-Para hacer este curso solo hace falta estar inscripte, tener una PC con alguna version de Python 3.9 (o uno más nuevo) instalada, comprometerse a leer las clases y a hacer los ejercicios de las guías semanales. Solo se precisa acceso a internet para poder comunicarse por el Discord, descargar Python, poder descargar el repositorio de clases en caso que precisen y para instalar librerías. Estimamos que esto te demandará alrededor de 15 horas de dedicación semanal (en algunos casos menos, en algunos casos más, dependiendo de le estudiante).
+Para hacer este curso solo hace falta estar inscripte, tener una PC con alguna version de Python 3.9 (o uno más nuevo) instalada, comprometerse a leer las clases y a hacer los ejercicios de las guías semanales.
+Solo se precisa acceso a internet para poder comunicarse por el Discord, descargar Python, poder descargar el repositorio de clases en caso que precisen y para instalar librerías. Estimamos que esto te demandará alrededor de 15 horas de dedicación semanal (en algunos casos menos, en algunos casos más, dependiendo de le estudiante).
+
+
+## Sobre certificado de aprobación
+
+En este curso _**no expedimos certificado**_. Creemos que las personas que cursen deben estar motivadas por la curiosidad y las ganas de aprender una nueva herramienta más que por conseguir una titulación. Además, luego de haber finalizado el curso, van a poder encarar proyectos propios de programación y presentarlos en sus portfolios.
 
 
 ## Hoja de ruta de cómo empezar
@@ -42,9 +52,12 @@ Para hacer este curso solo hace falta estar inscripte, tener una PC con alguna v
 3. [Instalá Python](/Notas/Instalacion.md).
 4. Que comiencen [las clases :)](/Notas/Contenidos.md)
 
+
 ## Inscripción
 
 Para inscribirse en el curso es necesario completar el siguiente [formulario de inscripcion]().
+
+
 
 
 [Próximo (1 Código de honor)](/Notas/Codigo.md)
