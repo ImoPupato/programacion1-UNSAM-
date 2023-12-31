@@ -8,9 +8,11 @@ El presente curso está basado en los contenidos de la [materia Programación 1]
 
 ## Modificaciones con respecto al trabajo original
 
-* La mayor parte del trabajo está intácto. Se hicieron correcciones en las clases dónde podía haber errores de tipeo y también algunas ambigüedades.
+La mayor parte del trabajo está intacto.
+* Se hicieron correcciones en las clases dónde podía haber errores de tipeo y también algunas ambigüedades.
 * Se detalló un poco más algunos conceptos como el uso de listas, diccionarios y funciones.
 * También se decidió cambiar la utilización del IDE Spyder por VS Code en las clases.
+* Se agregó bibliografía
 
 
 ## ¿De qué es el curso?
@@ -43,7 +45,7 @@ Solo se precisa acceso a internet para poder comunicarse por el Discord, descarg
 
 ## Sobre certificado de aprobación
 
-En este curso _**no expedimos certificado**_. Creemos que las personas que cursen deben estar motivadas por la curiosidad y las ganas de aprender una nueva herramienta más que por conseguir una titulación. Además, luego de haber finalizado el curso, van a poder encarar proyectos propios de programación y presentarlos en sus portfolios.
+En este curso _**no expedimos certificado**_. Creemos que las personas que cursen deben estar motivadas por la curiosidad y las ganas de aprender una nueva herramienta más que por conseguir una titulación. Además, luego de haber finalizado el curso, van a poder encarar proyectos propios de programación y presentarlos en sus portfolios, lo cual es más importante que un certificado.
 
 
 ## Hoja de ruta de cómo empezar
@@ -64,7 +66,7 @@ El curso se puede realizar de forma autodidacta leyendo las clases, pero cada ta
 Somos humanos y nos podemos equivocar. Si viste algún error de tipeo, alguna explicación ambigua o código que no funciona (a excepción del módulo de errores), anotá: el nombre del archivo .md y en qué parte se encuentra el error, para mandarlo por el Discord así lo corregimos. También podés enviar una captura de pantalla.
 
 
-## Bibliografía para futuro
+## Bibliografía para futuro y recursos
 
 Este curso es introductorio y no cubre todos los aspectos de Python ni de las distintas ramas de programación que se pueden desprender de este lenguaje. Por eso dejamos una serie de recursos (mayormente libros) para que puedan seguir capacitándose y explorando este mundillo. Solo deben [ir a la bibliografía](/Notas/Bibliografia.md).
 

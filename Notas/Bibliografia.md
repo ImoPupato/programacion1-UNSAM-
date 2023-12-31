@@ -1,6 +1,6 @@
 [Volver al inicio](/README.md)
 
-# Bibliografía
+# Bibliografía y recursos
 
 Algunos de los recursos son gratuitos mientras que otros son pagos. La editorial por excelencia para libros de informática es [O'Reilly](https://www.oreilly.com/), allí van a poder encontrar libros muy buenos (además de que las portadas de los libros suelen tener animalitos, son geniales).
 
@@ -66,6 +66,13 @@ Otra forma de buscar libros es preguntarle a Chat-GPT que te recomiende buenos l
 * [Edx](https://www.edx.org/es)
 * [Open HPI](https://open.hpi.de/)
 * [Open Source Society University (tienen repos con distintas carreras para seguir)](https://github.com/ossu)
+* [Free Code Camp](https://www.freecodecamp.org/)
+
+
+## Recursos útiles
+
+* [Python Tutor](https://pythontutor.com/python-compiler.html)
+* [W3Schools Python](https://www.w3schools.com/python/)
 
 
 [Volver al inicio](/README.md)
