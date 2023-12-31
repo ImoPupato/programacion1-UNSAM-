@@ -15,6 +15,7 @@
 * [9. Pandas y Matplotlib](09_Pandas_y_matplotlib/00_Resumen.md)
 * [10. Fechas y Carpetas](10_Fechas_y_Carpetas/00_Resumen.md)
 <!-- * [11. Clases y objetos](11_Clases_y_Objetos/00_Resumen.md) -->
+* [Bibliografía y recursos](Bibliografia.md)
 
 [Anterior (3 Instalá Python)](/Notas/Instalacion.md) | [Próximo (1. Introducción a Python)](01_Intro_a_Python/00_Resumen.md)
 
