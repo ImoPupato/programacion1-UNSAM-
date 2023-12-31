@@ -4,7 +4,7 @@
 
 Algunos de los recursos son gratuitos mientras que otros son pagos. La editorial por excelencia para libros de informática es [O'Reilly](https://www.oreilly.com/), allí van a poder encontrar libros muy buenos (además de que las portadas de los libros suelen tener animalitos, son geniales).
 
-No tenemos afiliación alguna con esta editorial, aunque, si alguien de ahí nos está viendo, no nos vendría nada mal un señor billetín.
+No estamos entongadxs con esta editorial, aunque, si alguien de ahí nos está viendo, no nos vendría nada mal un señor billetín.
 
 Otra forma de buscar libros es preguntarle a Chat-GPT que te recomiende buenos libros recientes sobre alguna temática en particular.
 
@@ -73,6 +73,6 @@ Otra forma de buscar libros es preguntarle a Chat-GPT que te recomiende buenos l
 
 * [Python Tutor](https://pythontutor.com/python-compiler.html)
 * [W3Schools Python](https://www.w3schools.com/python/)
-
+* [Notion de la comunidad de Cs. de Datos DATA SAM](https://datasam.notion.site/datasam/1e9dc7b00cd6444897be928a234e2e32?v=42ef38f5d4094f16bc159d973c1499f8)
 
 [Volver al inicio](/README.md)
