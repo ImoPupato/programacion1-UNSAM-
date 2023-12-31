@@ -54,6 +54,7 @@ En este curso _**no expedimos certificado**_. Creemos que las personas que curse
 2. Leé las [condiciones de cursada](/Notas/Cursada.md).
 3. [Instalá Python](/Notas/Instalacion.md).
 4. Que comiencen [las clases :)](/Notas/Contenidos.md).
+5. Terminado el curso podés [continuar con la bibliografía](/Notas/Bibliografia.md).
 
 
 ## Inscripción
