@@ -78,20 +78,30 @@ def mi_funcion():
 
 Podés encontrar instrucciones detalladas [acá](https://docs.python.org/3/library/pdb.html) sobre como usarlo. 
 
-Nos resulta más cómodo usar un IDE como VS Code para hacer debugging y ése es el método que describiremos aquí. Para poder acceder al debugger primero colocamos un `breakpoint` en donde creemos que está el problema. Luego en el panel izquierdo vamos a donde dice _debugger_ (o tocamos F5) e iniciamos el debugger: [COMPLETAR]
+Nos resulta más cómodo usar un IDE como VS Code para hacer debugging y ése es el método que describiremos aquí.
 
-![Menu Debug, en Spyder](./debug_menu.png)
+Para poder acceder al debugger primero colocamos un `breakpoint` en donde creemos que está el problema. Para hacerlo tenemos que hacer click a la izquierda del número de línea y vamos a ver que aparece un punto rojo. Luego en el panel izquierdo vamos a donde dice _debugger_ (o tocamos Ctrl + F5) e iniciamos el _debugger_:
+
+
+![Debugger en VS Code](./1_debug.png)
+
+
+Nos va a aparecer la siguiente barra de opciones:
+
+
+![Debugger opciones](./2_debug.png)
+
 
 Fijate los nombres de cada ícono: 
 
-| Nombre      | Acción                            |
-| ----------- | --------------------------------- |
-| Debug       | inicia el modo debug              |
-| Step        | da un paso en el programa         |
-| Step Into   | entra en la función referida      |
-| Step Return | ejecuta hasta salir de la función |
-| Continue    | retoma la ejecución normal        |
-| Stop        | detiene el programa               |
+| Nombre    | Acción                            |
+| --------- | --------------------------------- |
+| Continue  | retoma la ejecución normal        |
+| Step Over | da un paso en el programa         |
+| Step Into | entra en la función referida      |
+| Step Out  | ejecuta hasta salir de la función |
+| Restart   | reinicia la ejecución             |
+| Stop      | detiene el programa               |
 
 Vamos a volver a analizar el siguiente código, similar al del [Ejercicio 3.5](../03_Contenedores_y_Errores/02_Bugs.md#ejercicio-35-semantica) para que veas la utilidad del debugger:
 
@@ -100,57 +110,59 @@ Vamos a volver a analizar el siguiente código, similar al del [Ejercicio 3.5](.
 def tiene_a(expresion):
     n = len(expresion)
     i = 0
-    while i<n:
+    while i < n:
         if expresion[i] == 'a':
             return True
         else:
             return False
         i += 1
 
-rta = tiene_a ('palabra')
+rta = tiene_a('palabra')
 print(rta)
 ```
 
-Una vez que tengas el código copiado en el Spyder, vamos a ejecutarlo en _modo debug_:
+Una vez que tengas el código copiado en el VS Code, vamos a ejecutarlo en _modo debug_:
 
-Primero entramos al _modo debug_ (Ctrl+F5): El programa queda pausado antes de comenzar. Notá los cambios en la ventana interactiva.
+Primero colocamos el `breakpoint` en la línea que tiene la variable `rta` y entramos al _modo debug_ (Ctrl+F5). El programa queda pausado antes de comenzar. Notá los cambios en la ventana interactiva.
+
+El programa se ejecutó hasta la línea donde colocamos el `breakpoint` sin ejecutarla. Luego seleccionamos `Step Into` (F11) para entrar en la función:
 
 
-![Menu Debug, en Spyder](./debug2.jpg)
+![Debugger step into](./3_debug.png)
+
+
+Fijate en el panel izquierdo que se muestran las variables locales y globales. Ese es el _Variable Explorer_. En este caso, como entramos en la función ``tiene_a()``, nos muestra las variables locales en `Locals`. Por el momento la que aparece es `expresion` con el valor `'palabra'`.
 
 Si damos un paso en el programa: ¿qué va a ocurrir? Debemos tratar de responder esta pregunta antes de avanzar cada paso. *Es nuestra predicción, contrastada con lo que realmente sucede, lo que delata el error*.
 
-Queremos ver la evolución de las variables en la solapa _Variable Explorer_ (solapa del centro en el panel superior de la derecha). El programa está en ejecución pero pausado. Sabemos que estamos en _modo debug_ por el prompt `ipdb>` abajo.
+Queremos ver la evolución de las variables en la solapa _Variable Explorer_. 
 
-Damos algunos pasos (con `Step`, Ctrl + F10) hasta llegar a la llamada a la función `tiene_a()` que queremos analizar. 
+Damos algunos pasos con `Step` (F10), siempre pensando qué esperamos que haga la función y observando la evolución de las variables en el explorador de variables. Sigamos así hasta llegar al condicional `if`. Vemos en el _Variable Explorer_ que todas las variables internas de la función están definidas y con sus valores asignados:
 
-![Menu Debug, en Spyder](./debug3.jpg)
 
-Fijate que el debugger pasó por la línea de definición de la función (y ahora sabe dónde ir a buscarla) pero nunca entró al cuerpo de la función aún. Eso va a ocurrir recién al llamarla.
+![Menu Debug, en Spyder](./6_debug.png)
 
-A esta altura, no queremos simplemente dar un paso (eso ejecutaría la función entera, de una) sino entrar en los detalles de esta función. Para eso usamos `Step Into` (Ctrl + F11) de forma de entrar en la ejecución de la función `tiene_a()`. Una vez dentro, seguimos dando pasos (con `Step`, Ctrl + F10), siempre pensando qué esperamos que haga la función y observando la evolución de las variables en el explorador de variables. Sigamos así hasta llegar al condicional `if`. Vemos en el _Variable Explorer_ que todas las variables internas de la función están definidas y con sus valores asignados.
-
-![Menu Debug, en Spyder](./debug4.jpg)
 
 Como `i = 0` sabemos que es la primera iteración. Corroboramos que `n=7` (“palabra” tiene 7 letras). En este punto se evalúa `if palabra[i] == 'a':`, y saltaremos a alguna de las dos ramas de ejecución según la evaluación resulte `True` o `False`.
 
 
 La expresión resulta `False` ya que la primera letra de 'palabra' es la 'p' y no una 'a'. Pero entonces la siguiente instrucción será `return False` con lo que saldremos de la función habiendo sólo evaluado la primera letra de la palabra pasada como parámetro. ¿Esto es lo que queríamos?
 
-![Menu Debug, en Spyder](./debug5.jpg)
+
+![Menu Debug, en Spyder](./5_debug.png)
+
 
 Acabamos de volver de la función. Las variables internas a la función ya no están visibles (salimos de su alcance o _scope_). El programa sigue en ejecución, en _modo debug_.
 
-Si seguimos dando pasos con `Step` (Ctrl + F10) vamos a pasar por el `print()` y terminar la ejecución del programa, saliendo del _modo debug_.
+Si seguimos dando pasos con `Step` (F10) vamos a pasar por el `print()` y terminar la ejecución del programa, saliendo del _modo debug_.
 
-Si, en cambio, al llegar a la línea del `print()` en lugar de `Step` (Ctrl + F10) avanzáramos con un `Step Into` (Ctrl + F11), entraríamos en los detalles de la definición de esta función y la cosa se pondría un toque técnica. Cuando esto ocurre es útil usar el `Step Return` (Ctrl + Shift + F11) para salir de tanto nivel de detalle.
+Si, en cambio, al llegar a la línea del `print()` en lugar de `Step` (F10) avanzáramos con un `Step Into` (F11), entraríamos en los detalles de la definición de esta función y la cosa se pondría un toque técnica. En VS Code esto no suele suceder, pero en otros IDEs como Spyder puede llegar a ocurrir. Cuando esto ocurre es útil usar el `Step Return` (Ctrl + Shift + F11) para salir de tanto nivel de detalle.
 
 En todo caso, lo que observamos en esta ejecución de `tiene_a()` es que salimos de la función después de haber analizado sólo la primera letra de la palabra. ¿Es correcto esto? ¿Donde está el error? ¿Cómo lo podemos resolver?
 
 > [!NOTE]
 > Recorrer la ejecución de un programa como un simple espectador no nos muestra claramente un error en el código. Es la incongruencia entre lo esperado y lo que realmente sucede lo que lo marca. Esto exige mucha atención para, antes de ejecutar cada paso, preguntarse: ¿qué espero que ocurra? Luego, al avanzar un paso en la ejecución, puede ocurrir que lo que esperamos que pase no sea lo que realmente pasa. Entonces estamos en un **paso clave** de la  ejecución, que nos marca que estamos frente a una de dos: ó frente a un error en el código ó frente a la oportunidad de mejorar nuestra comprensión del mismo.
 
-Te dejamos un [video]() (un poco largo) donde usamos el debugger y repasamos el [Ejercicio 4.12](../04_Datos/04_Formato.md#ejercicio-412-tablas-de-multiplicar) de tablas de multipicar.
 
 ## Ejercicios
 
