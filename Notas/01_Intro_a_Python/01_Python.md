@@ -20,13 +20,15 @@ El objetivo original de su autor fue crear un lenguaje de programación con el q
 
 Existen diferentes entornos en los que podés correr Python en tu computadora. Es importante saber que Python está instalado normalmente como un programa que se ejecuta desde la consola. Desde la terminal deberías poder ejecutar `python` utilizando el comando `python` o `python3` dependiendo tu sistema operativo:
 
-```bash
-bash $ python
-Python 3.8.1 (default, Feb 20 2020, 09:29:22)
-[Clang 10.0.0 (clang-1000.10.44.4)] on darwin
+```powershell
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Prueba la nueva tecnología PowerShell multiplataforma https://aka.ms/pscore6
+
+PS C:\Users\Joaco> python
+Python 3.10.6 (tags/v3.10.6:9c7b4bd, Aug  1 2022, 21:53:49) [MSC v.1932 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
->>> print("hello world")
-hello world
 >>>
 ```
 
@@ -35,14 +37,6 @@ Si es la primera vez que ves una consola o terminal, sería conveniente que pare
 Existen diversos entornos fuera de la terminal en los que se puede escribir y ejecutar código Python. Pero para nosotres es importante que primero aprendas a usarlo desde la terminal: si lo sabés usar bien desde la terminal (que es su entorno natural) lo podrás usar en cualquier otro entorno. Ya en la próxima clase usarás Python dentro de un entorno de desarrollo. Por ahora, te recomendamos usarlo de esta manera que acabamos de explicar.
 
 El intérprete es una aplicación que funciona en la consola y se ejecuta desde la terminal.
-
-```bash
-python3
-Python 3.6.1 (v3.6.1:69c0db5050, Mar 21 2017, 01:21:04)
-[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
-Type "help", "copyright", "credits" or "license" for more information.
->>>
-```
 
 Les programadores no suelen tener problemas en usar el intérprete de esta forma, aunque no es la más cómoda para principiantes. Más adelante vamos a proponerles usar entornos de desarrollo más sofisticados y amistosos, pero por el momento quedémosnos con la incomodidad que nos va a enseñar cosas útiles.
 
