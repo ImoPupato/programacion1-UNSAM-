@@ -1,4 +1,6 @@
-[Contenidos](../Contenidos.md) \| [Anterior (2 Introducción a Pandas)](02_Pandas.md)
+[Contenidos](../Contenidos.md) \| [Anterior (2 Introducción a Pandas)](02_Pandas.md)  
+[Clase siguiente (10. Fechas y Carpetas)](../10_Fechas_y_Carpetas/00_Resumen.md)
+
 
 # 9.3 Cierre de la clase
 
@@ -10,5 +12,6 @@
 ¡Gracias! 
 
 
-[Contenidos](../Contenidos.md) \| [Anterior (2 Introducción a Pandas)](02_Pandas.md)
+[Contenidos](../Contenidos.md) \| [Anterior (2 Introducción a Pandas)](02_Pandas.md)  
+[Clase siguiente (10. Fechas y Carpetas)](../10_Fechas_y_Carpetas/00_Resumen.md)
 

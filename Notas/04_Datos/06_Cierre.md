@@ -1,4 +1,5 @@
-[Contenidos](../Contenidos.md) \| [Anterior (5 Arbolado porteño)](05_Arboles1.md)
+[Contenidos](../Contenidos.md) \| [Anterior (5 Arbolado porteño)](05_Arboles1.md)  
+[Clase siguiente (5. Algoritmos sobre listas y comprensión de listas)](../05_Listas/00_Resumen.md)
 
 # 4.6 Cierre de la clase
 
@@ -14,5 +15,6 @@ Tené en cuenta que quizás algunos ejercicios sean corregidos automáticamente:
 
 
 
-[Contenidos](../Contenidos.md) \| [Anterior (5 Arbolado porteño)](05_Arboles1.md)
+[Contenidos](../Contenidos.md) \| [Anterior (5 Arbolado porteño)](05_Arboles1.md)  
+[Clase siguiente (5. Algoritmos sobre listas y comprensión de listas)](../05_Listas/00_Resumen.md)
 

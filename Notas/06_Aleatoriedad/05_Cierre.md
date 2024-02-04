@@ -1,4 +1,5 @@
-[Contenidos](../Contenidos.md) \| [Anterior (4 Gráficos del Arbolado porteño)](04_Arboles3_plt.md) \| [Próximo (6 Integrador: El album de Figuritas)](06_Figuritas.md)
+[Contenidos](../Contenidos.md) \| [Anterior (4 Gráficos del Arbolado porteño)](04_Arboles3_plt.md) \| [Próximo (6 Integrador: El album de Figuritas)](06_Figuritas.md)  
+[Clase siguiente (7. Complejidad y Organización de programas)](../07_Organizacion/00_Resumen.md)
 
 # 6.5 Cierre de la clase
 
@@ -21,5 +22,6 @@ Lo que sigue son actividades de integración para hacer en el tiempo que queda a
     6. El archivo `figuritas.py` abarcando lo hecho con figuritas, al menos hasta el [Ejercicio 6.18](../06_Aleatoriedad/06_Figuritas.md#ejercicio-618) (¡Mirá la próxima sección para saber de qué hablamos!).
 
 
-[Contenidos](../Contenidos.md) \| [Anterior (4 Gráficos del Arbolado porteño)](04_Arboles3_plt.md) \| [Próximo (6 Integrador: El album de Figuritas)](06_Figuritas.md)
+[Contenidos](../Contenidos.md) \| [Anterior (4 Gráficos del Arbolado porteño)](04_Arboles3_plt.md) \| [Próximo (6 Integrador: El album de Figuritas)](06_Figuritas.md)  
+[Clase siguiente (7. Complejidad y Organización de programas)](../07_Organizacion/00_Resumen.md)
 

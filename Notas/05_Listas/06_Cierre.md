@@ -1,4 +1,5 @@
-[Contenidos](../Contenidos.md) \| [Anterior (5 Arbolado porteño y comprensión de listas)](05_Arboles2_LC.md)
+[Contenidos](../Contenidos.md) \| [Anterior (5 Arbolado porteño y comprensión de listas)](05_Arboles2_LC.md)  
+[Clase siguiente (6. Aleatoriedad)](../06_Aleatoriedad/00_Resumen.md)
 
 # 5.6 Cierre de la clase
 
@@ -16,5 +17,6 @@ Ya no es necesario que te recordemos el [código de honor](../Codigo.md) del cur
 ¡Gracias! Nos vemos en la próxima clase.
 
 
-[Contenidos](../Contenidos.md) \| [Anterior (5 Arbolado porteño y comprensión de listas)](05_Arboles2_LC.md)
+[Contenidos](../Contenidos.md) \| [Anterior (5 Arbolado porteño y comprensión de listas)](05_Arboles2_LC.md)  
+[Clase siguiente (6. Aleatoriedad)](../06_Aleatoriedad/00_Resumen.md)
 

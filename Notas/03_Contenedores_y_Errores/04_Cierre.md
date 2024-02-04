@@ -1,4 +1,5 @@
-[Contenidos](../Contenidos.md) \| [Anterior (3 Llamados desde consola)](03_Llamados_desde_cmd.md)
+[Contenidos](../Contenidos.md) \| [Anterior (3 Llamados desde consola)](03_Llamados_desde_cmd.md)  
+[Clase siguiente (4. Trabajando con datos)](../04_Datos/00_Resumen.md)
 
 # 3.4 Cierre de la clase
 
@@ -11,5 +12,6 @@
 ¡Nos vemos pronto!
 
 
-[Contenidos](../Contenidos.md) \| [Anterior (3 Llamados desde consola)](03_Llamados_desde_cmd.md)
+[Contenidos](../Contenidos.md) \| [Anterior (3 Llamados desde consola)](03_Llamados_desde_cmd.md)  
+[Clase siguiente (4. Trabajando con datos)](../04_Datos/00_Resumen.md)
 

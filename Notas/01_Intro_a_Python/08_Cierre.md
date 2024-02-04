@@ -1,4 +1,5 @@
-[Contenidos](../Contenidos.md) \| [Anterior (7 Listas)](07_Listas.md)
+[Contenidos](../Contenidos.md) \| [Anterior (7 Listas)](07_Listas.md)  
+[Clase siguiente (2. Estructuras y funciones)](../02_Estructuras_y_Funciones/00_Resumen.md)
 
 # 1.8 Cierre de la clase
 
@@ -14,5 +15,5 @@ En esta clase aprendimos a correr el intérprete de Python desde la línea de co
 
 
 
-[Contenidos](../Contenidos.md) \| [Anterior (7 Listas)](07_Listas.md)
-
+[Contenidos](../Contenidos.md) \| [Anterior (7 Listas)](07_Listas.md)  
+[Clase siguiente (2. Estructuras y funciones)](../02_Estructuras_y_Funciones/00_Resumen.md)

@@ -1,4 +1,5 @@
-[Contenidos](../Contenidos.md) \| [Anterior (5 Tipos y estructuras de datos)](05_TiposDatos.md)
+[Contenidos](../Contenidos.md) \| [Anterior (5 Tipos y estructuras de datos)](05_TiposDatos.md)  
+[Clase siguiente (3. Contenedores y Errores)](../03_Contenedores_y_Errores/00_Resumen.md)
 
 # 2.6 Cierre de la clase
 
@@ -17,5 +18,6 @@ Observación: Si el enunciado de un ejercicio te pide que lo corras con un input
 
 
 
-[Contenidos](../Contenidos.md) \| [Anterior (5 Tipos y estructuras de datos)](05_TiposDatos.md)
+[Contenidos](../Contenidos.md) \| [Anterior (5 Tipos y estructuras de datos)](05_TiposDatos.md)  
+[Clase siguiente (3. Contenedores y Errores)](../03_Contenedores_y_Errores/00_Resumen.md)
 

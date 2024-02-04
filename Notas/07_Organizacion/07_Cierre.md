@@ -1,4 +1,5 @@
-[Contenidos](../Contenidos.md) \| [Anterior (6 Gráficos de complejidad)](06_graficos_de_complejidad.md)
+[Contenidos](../Contenidos.md) \| [Anterior (6 Gráficos de complejidad)](06_graficos_de_complejidad.md)  
+[Clase siguiente (8. Diseño, especificación, documentación y estilo)](../08_Diseño_y_Especificacion/00_Resumen.md)
 
 # 7.7 Cierre de la clase
 
@@ -15,5 +16,6 @@ En esta clase trabajamos con funciones y creamos módulos. También aprendimos a
 ¡Gracias! 
 
 
-[Contenidos](../Contenidos.md) \| [Anterior (6 Gráficos de complejidad)](06_graficos_de_complejidad.md)
+[Contenidos](../Contenidos.md) \| [Anterior (6 Gráficos de complejidad)](06_graficos_de_complejidad.md)  
+[Clase siguiente (8. Diseño, especificación, documentación y estilo)](../08_Diseño_y_Especificacion/00_Resumen.md)
 

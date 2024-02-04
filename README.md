@@ -15,6 +15,13 @@ La mayor parte del trabajo está intacto.
 * Se agregó bibliografía
 
 
+## Prólogo
+
+> *"¿Para qué trabajáis? Mi opinión es que el único fin de la ciencia debe ser aliviar las fatigas de la existencia humana. Si los hombres de ciencia, atemorizados por los déspotas, se conforman solamente con acumular saber por el saber mismo, se corre el peligro de que la ciencia sea mutilada y que vuestras máquinas sólo signifiquen nuevas calamidades. Así vayáis descubriendo con el tiempo todo lo que hay que descubrir, vuestro progreso sólo será un alejamiento progresivo de la humanidad. El abismo entre vosotros y ella puede llegar a ser tan grande que vuestras exclamaciones de júbilo por un invento cualquiera recibirán como eco un aterrador griterío universal."*
+>
+> *-- Bertolt Brecht, "La vida de Galileo"*
+
+
 ## ¿De qué es el curso?
 
 Este es un curso trimestral de algoritmos y programación en Python que combina material de lectura con clases virtuales. Está pensado para que se puedan aprender los contenidos de forma autodidacta, complementando con videos y clases virtuales.

@@ -1,4 +1,5 @@
-[Contenidos](../Contenidos.md) \| [Anterior (6 Estilos de codeo)](06_Estilo.md)
+[Contenidos](../Contenidos.md) \| [Anterior (6 Estilos de codeo)](06_Estilo.md)  
+[Clase siguiente (9. Pandas y Matplotlib)](../09_Pandas_y_matplotlib/00_Resumen.md)
 
 # 8.7 Cierre de la clase
 
@@ -22,5 +23,6 @@ También estudiamos diversos estilos de gráficos, como obtener un vistazo rápi
 
 
 
-[Contenidos](../Contenidos.md) \| [Anterior (6 Estilos de codeo)](06_Estilo.md)
+[Contenidos](../Contenidos.md) \| [Anterior (6 Estilos de codeo)](06_Estilo.md)  
+[Clase siguiente (9. Pandas y Matplotlib)](../09_Pandas_y_matplotlib/00_Resumen.md)
 
