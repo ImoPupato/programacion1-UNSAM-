@@ -47,7 +47,9 @@ Este es un curso trimestral con guías de ejercicios semanales y encuentros virt
 
 Para hacer este curso solo hace falta estar inscripte, tener una PC con alguna version de Python 3.9 (o uno más nuevo) instalada, comprometerse a leer las clases y a hacer los ejercicios de las guías semanales.
 
-Solo se precisa acceso a internet para poder comunicarse por el Discord, descargar Python, poder descargar el repositorio de clases en caso que precisen y para instalar librerías. Estimamos que esto te demandará alrededor de 15 horas de dedicación semanal (en algunos casos menos, en algunos casos más, dependiendo de le estudiante).
+Solo se precisa acceso a internet para poder comunicarse por el Discord, descargar Python, poder descargar el repositorio de clases en caso que precisen y para instalar librerías.
+
+Estimamos que el curso te demandará alrededor de 15 horas de dedicación semanal (en algunos casos menos, en algunos casos más, dependiendo de le estudiante).
 
 
 ## Sobre certificado de aprobación
