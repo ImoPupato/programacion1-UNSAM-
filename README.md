@@ -64,11 +64,6 @@ En este curso _**no expedimos certificado**_. Creemos que las personas que curse
 5. Terminado el curso podés [continuar con la bibliografía](/Notas/Bibliografia.md).
 
 
-## Inscripción
-
-El curso se puede realizar de forma autodidacta leyendo las clases, pero cada tanto lo damos de forma virtual. Para inscribirse en el curso es necesario completar el siguiente [formulario de inscripción]().
-
-
 ## Reportes de errores
 
 Somos humanos y nos podemos equivocar. Si viste algún error de tipeo, alguna explicación ambigua o código que no funciona (a excepción del módulo de errores), anotá: el nombre del archivo .md y en qué parte se encuentra el error, para mandarlo por el Discord así lo corregimos. También podés enviar una captura de pantalla.
