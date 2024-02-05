@@ -14,6 +14,11 @@ Ya no es necesario que te recordemos el [código de honor](../Codigo.md) del cur
     4. El archivo `arboles.py` sobre arbolado porteño y comprensión de listas incluyendo el [Ejercicio 5.16](../05_Listas/05_Arboles2_LC.md#ejercicio-516-lista-de-altos-de-jacaranda) y el [Ejercicio 5.17](../05_Listas/05_Arboles2_LC.md#ejercicio-517-lista-de-altos-y-diametros-de-jacaranda).
 
 
+Para finalizar, te pedimos que, si podés, completes 2 encuestas breves: la primera es sobre los contenidos de la clase para saber cómo te fué y la segunda es una encuesta anónima sobre la clase virtual:
+
+* [Encuesta de contenidos](https://forms.gle/pK7QD6VDechezow56)
+* [Encuesta anónima sobre la clase virtual](https://forms.gle/MoHfszVbSZTz9XNG6)
+
 ¡Gracias! Nos vemos en la próxima clase.
 
 

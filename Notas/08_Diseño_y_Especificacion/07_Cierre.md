@@ -19,7 +19,13 @@ También estudiamos diversos estilos de gráficos, como obtener un vistazo rápi
     3. El archivo `documentacion.py` del [Ejercicio 8.11](../08_Diseño_y_Especificacion/05_Especificacion_y_Documentacion.md#ejercicio-811-funciones-y-documentacion).
     
 
-¡Gracias! 
+Para finalizar, te pedimos que, si podés, completes 2 encuestas breves: la primera es sobre los contenidos de la clase para saber cómo te fué y la segunda es una encuesta anónima sobre la clase virtual:
+
+* [Encuesta de contenidos](https://forms.gle/7HsJdCwYek9rLQZH9)
+* [Encuesta anónima sobre la clase virtual](https://forms.gle/MoHfszVbSZTz9XNG6)
+
+
+¡Gracias, nos vemos la siguiente clase!
 
 
 

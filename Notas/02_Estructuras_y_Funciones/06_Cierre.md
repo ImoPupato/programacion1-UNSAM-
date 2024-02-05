@@ -16,6 +16,12 @@ Te recordamos que leas el [código de honor](../Codigo.md) del curso en el que h
 
 Observación: Si el enunciado de un ejercicio te pide que lo corras con un input particular, por favor poné la salida que obtuviste como comentario en tu código. 
 
+Para finalizar, te pedimos que, si podés, completes 2 encuestas breves: la primera es sobre los contenidos de la clase para saber cómo te fué y la segunda es una encuesta anónima sobre la clase virtual:
+
+* [Encuesta de contenidos](https://forms.gle/iQduCJnnWRV6uKdV7)
+* [Encuesta anónima sobre la clase virtual](https://forms.gle/MoHfszVbSZTz9XNG6)
+
+¡Gracias, nos vemos la siguiente clase!
 
 
 [Contenidos](../Contenidos.md) \| [Anterior (5 Tipos y estructuras de datos)](05_TiposDatos.md)  

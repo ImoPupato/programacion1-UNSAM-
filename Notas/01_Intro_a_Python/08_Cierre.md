@@ -12,7 +12,13 @@ En esta clase aprendimos a correr el intérprete de Python desde la línea de co
     4. El archivo `geringoso.py` [Ejercicio 1.18](../01_Intro_a_Python/06_Strings.md#ejercicio-118-geringoso-rustico) (Geringoso). 
 
 
+Para finalizar, te pedimos que, si podés, completes 2 encuestas breves: la primera es sobre los contenidos de la clase para saber cómo te fué y la segunda es una encuesta anónima sobre la clase virtual:
 
+* [Encuesta de contenidos](https://forms.gle/E8Pvc9qF24UckHtT6)
+* [Encuesta anónima sobre la clase virtual](https://forms.gle/MoHfszVbSZTz9XNG6)
+
+
+¡Gracias, nos vemos la siguiente clase!
 
 
 [Contenidos](../Contenidos.md) \| [Anterior (7 Listas)](07_Listas.md)  

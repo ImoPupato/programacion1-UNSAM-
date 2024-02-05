@@ -13,7 +13,13 @@ En esta clase trabajamos con funciones y creamos módulos. También aprendimos a
     5. El archivo `plot_bbin_vs_bsec.py` del [Ejercicio 7.17](../07_Organizacion/06_graficos_de_complejidad.md#ejercicio-717-busqueda-binaria-vs-busqueda-secuencial).
 
 
-¡Gracias! 
+Para finalizar, te pedimos que, si podés, completes 2 encuestas breves: la primera es sobre los contenidos de la clase para saber cómo te fué y la segunda es una encuesta anónima sobre la clase virtual:
+
+* [Encuesta de contenidos](https://forms.gle/k3CRRwHW8vARNB9G7)
+* [Encuesta anónima sobre la clase virtual](https://forms.gle/MoHfszVbSZTz9XNG6)
+
+
+¡Gracias, nos vemos la siguiente clase!
 
 
 [Contenidos](../Contenidos.md) \| [Anterior (6 Gráficos de complejidad)](06_graficos_de_complejidad.md)  

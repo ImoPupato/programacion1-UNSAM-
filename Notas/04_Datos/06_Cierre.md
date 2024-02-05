@@ -14,6 +14,13 @@ Tené en cuenta que quizás algunos ejercicios sean corregidos automáticamente:
     4. El archivo `arboles.py` con los ejercicios [Ejercicio 4.13](../04_Datos/05_Arboles1.md#ejercicio-413-lectura-de-los-arboles-de-un-parque) al [Ejercicio 4.19](../04_Datos/05_Arboles1.md#ejercicio-419-especie-mas-inclinada-en-promedio).
 
 
+Para finalizar, te pedimos que, si podés, completes 2 encuestas breves: la primera es sobre los contenidos de la clase para saber cómo te fué y la segunda es una encuesta anónima sobre la clase virtual:
+
+* [Encuesta de contenidos](https://forms.gle/g71QLEN2Bfk95j238)
+* [Encuesta anónima sobre la clase virtual](https://forms.gle/MoHfszVbSZTz9XNG6)
+
+¡Gracias, y nos vemos la próxima clase!
+
 
 [Contenidos](../Contenidos.md) \| [Anterior (5 Arbolado porteño)](05_Arboles1.md)  
 [Clase siguiente (5. Algoritmos sobre listas y comprensión de listas)](../05_Listas/00_Resumen.md)
