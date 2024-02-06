@@ -74,6 +74,6 @@ Otra forma de buscar libros es preguntarle a Chat-GPT que te recomiende buenos l
 * [Python Tutor](https://pythontutor.com/python-compiler.html)
 * [W3Schools Python](https://www.w3schools.com/python/)
 * [Notion de la comunidad de Cs. de Datos DATA SAM](https://datasam.notion.site/datasam/1e9dc7b00cd6444897be928a234e2e32?v=42ef38f5d4094f16bc159d973c1499f8)
-* [Campus Exactas UBA](https://campus.exactas.uba.ar/course/index.php): acá pueden acceder a las cátedras de las materias de las distintas carreras de exactas. El Departamente de Computación suele dar acceso a invitados y pueden conseguir los materiales que se dictan en las materias. Para saber si un curso tiene acceso de invitado, tiene que tener un ícono de una persona a la derecha en la cual si posamos el cursor nos dice "Acceso de invitados".
+* [Campus Exactas UBA](https://campus.exactas.uba.ar/course/index.php): acá pueden acceder a las cátedras de las materias de las distintas carreras de exactas. El Departamento de Computación suele dar acceso a invitados y pueden conseguir los materiales que se dictan en las materias. Para saber si un curso tiene acceso de invitado, tiene que tener un ícono de una persona a la derecha en la cual si posamos el cursor nos dice "Acceso de invitados".
 
 [Volver al inicio](/README.md)

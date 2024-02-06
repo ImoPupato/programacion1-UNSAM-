@@ -16,7 +16,7 @@ La mayor parte del trabajo está intacto.
 * Se hicieron correcciones en las clases dónde podía haber errores de tipeo y también algunas ambigüedades.
 * Se detalló un poco más algunos conceptos como el uso de listas, diccionarios y funciones.
 * También se decidió cambiar la utilización del IDE Spyder por VS Code en las clases.
-* Se agregó bibliografía
+* Se agregó bibliografía.
 
 
 ## Prólogo
