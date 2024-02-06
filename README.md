@@ -2,6 +2,10 @@
 
 
 ## Atribuciones
+> *"Si he visto más lejos es por haber estado parado sobre hombros de gigantes."*
+>
+> *-- Isacc Newton*
+
 
 El presente curso está basado en los contenidos de la [materia Programación 1](https://github.com/python-unsam/programacion1/tree/main) de la [Licenciatura en Ciencia de Datos](https://www.unsam.edu.ar/escuelas/ciencia/661/ciencia/ciencia-de-datos) de la [Escuela de Ciencia y Tecnología](http://www.unsam.edu.ar/escuelas/ciencia/) de la [UNSAM](https://www.unsam.edu.ar/).
 
