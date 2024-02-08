@@ -70,14 +70,9 @@ Si estás en Windows, seguí estos pasos para poder instalarlo correctamente ya 
 
 Luego les propondremos usar [VS Code](https://code.visualstudio.com/) como entorno de desarrollo.
 
-Otra posiblidad es descargarse el [Anaconda](https://www.anaconda.com/products/individual) que es un distribución libre y abierta​ de los lenguajes Python y R utilizada en ciencia de datos y aprendizaje automático. La ventaja de esta descarga es que ya trae Python, el IDE Spyder y una serie de módulos preinstalados para trabajar con datos y aprendizaje automático. Sin embargo, si estás aprendiendo a programar, puede resultar mucha info junta. Recomendamos que sigas con VS Code.
 
 
-## Powershell (para usuaries en Windows)
 
-Si estás trabajando en Windows, te recomendamos que bajes e instales la consola Powershell en caso que no la tengas en tu sistema.
-
-Podes bajar la consola desde la aplicación de Microsoft Store buscando "Powershell" o [siguiendo los pasos en la web de microsoft](https://learn.microsoft.com/es-es/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4#winget)
 
 
 [Anterior (2 Condiciones de cursada)](/Notas/Cursada.md) | [Próximo (4 Contenidos del curso)](/Notas/Contenidos.md)
