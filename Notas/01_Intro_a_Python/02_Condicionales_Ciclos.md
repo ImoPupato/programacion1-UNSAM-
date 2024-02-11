@@ -303,9 +303,9 @@ Tamién podemos usar el for para realizar una determinada cantidad de acciones t
 Por ejemplo, imaginemos que queremos ver la tabla del 5, para esto le pasamos como argumento el número ``10`` para que vaya desde el `0` hasta el `9` (o sea, 10 números), luego multiplicamos cada número por `5` y lo imprimimos en pantalla:
 
 ```python
->>> for numero in range(10)
->>> 	tabla = 5 * numero
->>> 	print("5 x", numero, "=",tabla)
+>>> for numero in range(10):
+>>>     tabla = 5 * numero
+>>>     print("5 x", numero, "=",tabla)
 
 # Obtenemos la siguiente salida
 5 x 0 = 0
@@ -325,8 +325,8 @@ Dijimos que también podemos usar el for para realizar acciones sin tener en cue
 Por ejemplo, si queremos imprimir `3` veces la string `"Hola, mundo!`, podemos hacer esto:
 
 ```python
->>> for _ in range(3)
->>> 	print("Hola, mundo!")
+>>> for _ in range(3):
+>>>     print("Hola, mundo!")
 
 # Obtenemos la siguiente salida
 Hola, mundo!
