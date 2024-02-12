@@ -261,6 +261,14 @@ pago_extra = 1000
 
 Hacé que el programa tenga en cuenta estas variables para calcular el total a pagar apropiadamente.
 
+Deberías obtener una salida parecida a esta:
+
+```python
+Saldo restante: -1871.53
+Total pagado: 880074.1
+Meses: 310
+```
+
 ### Ejercicio 1.10: Tablas
 
 Modicá tu programa para que imprima una tabla mostrando el mes, el total pagado hasta el momento y el saldo restante. La salida debería verse aproximadamente así:
