@@ -262,7 +262,7 @@ Para ejecutar una porción de código reiteradamente mientras ciertas condicione
 >>> while una < otra:
 ...     una = una + 1
 ...     print(una)
-...     print('una:', una, 'otra:', otra)
+>>> print('una:', una, 'otra:', otra)
 ```
 
 Los comandos indentados debajo del `while` se van a a ejecutar mientras la condición del `while` sea verdadera (`True`). Cuando esta condición sea falsa, ese bloque indentado no se ejecutará más y la ejecución continuará con el código que sigue.
@@ -346,7 +346,7 @@ Considerá el ejemplo anterior:
 >>> while una < otra:
 ...     una = una + 1
 ...     print(una)
-...     print('una:',una,'otra:',otra)
+>>> print('una:',una,'otra:',otra)
 ```
 
 La indentación agrupa los comandos siguientes como las operaciones a repetir:
