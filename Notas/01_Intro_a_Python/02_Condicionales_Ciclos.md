@@ -209,7 +209,9 @@ El comando `else` define un bloque que sólo se ejecutará si la condición del 
 ...     print('Gana otra')
 ... else:
 ...     print('Gana una')
-Gana una
+
+# Salida
+Gana otra
 ```
 
 _Nota_: si este fragmento de código no funciona como esperás, revisá los valores guardados en `una` y `otra`.
