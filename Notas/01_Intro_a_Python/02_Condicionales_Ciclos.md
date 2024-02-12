@@ -352,8 +352,8 @@ Considerá el ejemplo anterior:
 La indentación agrupa los comandos siguientes como las operaciones a repetir:
 
 ```python
-     una = una + 1
-     print(una)
+        una = una + 1
+        print(una)
 ```
 
 Como el comando `print()` del final no está indentado, no pertenece al ciclo.
