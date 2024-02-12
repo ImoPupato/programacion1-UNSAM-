@@ -4,6 +4,9 @@
 
 En esta sección comenzamos a hablar de la terminal, o la línea de comandos del sistema operativo. Es un programa que podés instalar como cualquier otro, aunque tanto en Windows como en Linux y Mac OS se instala junto con el sistema operativo, y aunque es la forma más primitiva de interactuar con le usuarie, es también en muchos casos la más rápida, la más versátil, y la más segura.
 
+> [!CAUTION]
+> En caso que no te funcione descomprimir archivos desde la línea de comandos, no te preocupes, descomprimilos como lo haces normalmente y seguí adelante con las clases.
+
 ### La línea de comandos:
 
 La línea de comandos (command line) suele usarse para pedirle al sistema operativo cosas que se puedan escribir en una o dos líneas, tales como listar un directorio, moverse entre carpetas, borrar un archivo, ejecutar un programa.
@@ -18,7 +21,7 @@ Ver "man sudo_root" para mas detalles.
 joaco@paleo:~$
 ```
 
-Quienes estén en Windows usen "Windows PowerShell".
+Quienes estén en Windows usen CMD o "Windows PowerShell".
 
 ```powershell
 Windows PowerShell
