@@ -251,7 +251,7 @@ Aclaración: aunque puede parecer sencillo, este ejercicio requiere que agregues
 
 ¿Cuánto pagaría David si agrega $1000 por mes durante cuatro años, comenzando en el sexto año de la hipoteca (es decir, luego de 5 años)?
 
-Modificá tu programa de forma que la información sobre pagos extras sea incorporada de manera versátil. Agregá las siguientes variables antes del ciclo, para definir el comienzo, fin y monto de los pagos extras:
+Modificá tu programa original (el del 1.7) de forma que la información sobre pagos extras sea incorporada de manera versátil. Agregá las siguientes variables antes del ciclo, para definir el comienzo, fin y monto de los pagos extras:
 
 ```python
 pago_extra_mes_comienzo = 61
