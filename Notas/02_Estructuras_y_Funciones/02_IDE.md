@@ -28,7 +28,9 @@ Vamos a listar algunas de las extensiones que vas a precisar y otras que son opc
 2. **Guardar al ejecutar el código:** esta configuración permite guardar el script automáticamente al ejecutarlo. **Solo está disponible si tenés la extensión de Code Runner**. Para activarla tenés que ir a configuración y en la barra de búsqueda de configuraciones escribí: Code-runner: Save File Before Run.
 ![save file before run](/Notas/02_Estructuras_y_Funciones/img/save_file_before_run.png)
 
-## Atajo de teclado
+## Atajos de teclado
+
+Estos son algunos atajos de teclado útiles que les pueden servir para agilizar la programación. Si alguna de estas funciones no hace lo que corresponde, tienen que modificar dicha función en File > Preferences > Keyboard Shortcuts. Ahí pueden buscar por descripción del comando o por teclas asociadas.
 
 - **Alt + Z:** esto nos permite ajustar el código a la ventana. A veces sucede que tenemos un choclo de código y no queremos usar la barra lateral para andar moviéndonos de izquierda a derecha y viceversa. Entonces podemos usar este atajo para poder ajustar el código a la ventana.
 
