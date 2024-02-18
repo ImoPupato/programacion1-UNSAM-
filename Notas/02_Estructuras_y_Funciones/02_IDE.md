@@ -6,7 +6,7 @@ A partir de aquí te vamos a proponer trabajar principalmente dentro de un entor
 
 En este curso vamos a trabajar usando [VS Code](https://code.visualstudio.com/) (Visual Studio Code), aunque podés usar el que más te guste. Otro IDE muy utilizado es [Spyder](https://www.spyder-ide.org/), pero en todos los ejemplos que veamos vamos a usar VS Code.
 
-Te dejamos un [video]() para que sepas cómo utilizar el VS Code.
+Te dejamos un [video](https://www.youtube.com/watch?v=nllg_MCZm6I) para que sepas cómo utilizar el VS Code.
 
 ## Extensiones de VS Code
 
@@ -17,6 +17,8 @@ Vamos a listar algunas de las extensiones que vas a precisar y otras que son opc
 3. **Error Lens - (Author: Alexander):** esta extensión te permite ver errores en tiempo real. Puede ser un poco molesta, si no te gusta la podes deshabilitar/desinstalar.
 4. **autopep8 - (Author: Microsoft):** esta extensión te permite formatear tu script según la convención PEP 8 que es una guía de estilo.
 5. **indent-rainbow - (Author: oderwat):** esta extensión agrega colores a las indentaciones, así se identifican más fácilmente.
+6. **Indent one space - (Author: Alexander):** Visual Studio no permite por defecto indentar a un espacio hacia atras. Para poder hacerlo existe esta extensión. Seleccionamos código y tocamos Shift + Barra espaciadora para usarlo.
+7. **Jupyter - (Author: Microsoft):** Si queremos usar bloques de código como en las Jupyer Notebooks o Google Colab, podemos descargar esta extensión.
 
 ## Configuraciones muy útiles:
 
@@ -25,6 +27,22 @@ Vamos a listar algunas de las extensiones que vas a precisar y otras que son opc
 
 2. **Guardar al ejecutar el código:** esta configuración permite guardar el script automáticamente al ejecutarlo. **Solo está disponible si tenés la extensión de Code Runner**. Para activarla tenés que ir a configuración y en la barra de búsqueda de configuraciones escribí: Code-runner: Save File Before Run.
 ![save file before run](/Notas/02_Estructuras_y_Funciones/img/save_file_before_run.png)
+
+## Atajo de teclado
+
+- **Alt + Z:** esto nos permite ajustar el código a la ventana. A veces sucede que tenemos un choclo de código y no queremos usar la barra lateral para andar moviéndonos de izquierda a derecha y viceversa. Entonces podemos usar este atajo para poder ajustar el código a la ventana.
+
+- **Ctrl + K + C:** este atajo nos permite comentar varias líneas de código al mismo tiempo. Y si las queremos descomentar tocamos **Ctrl + K + U**
+
+- Para indentar código hacia la derecha con tabulaciones podemos seleccionar todo el código que queramos y tocar **tabulación**. Y si quisieramos indentar hacia la izquierda tocamos **Shift + Tabulación**.
+
+- Si quisieramos indentar de a 1 espacio a la vez tenemos que tener instalada la extensión de indent one space que mencionamos antes. Y es lo mismo que con la tabulación solo que con la barra espaciadora: seleccionamos el código y tocamos **espacio** para indentar hacia la derecha y **shift + espacio** para indentar hacia la izquierda.
+
+- Si mantenemos **Alt** podemos correr lineas de codigo hacia arriba o abajo con las flechas.
+
+- Si mantenemos **Alt + Shift** y tocamos la flecha hacia abajo podemos duplicar las lineas.
+
+- Otro atajo para seleccionar líneas de código con cierto patrón de caracteres es **Ctrl + D**. Lo que va a hacer esto es colocar **cursores**. Por ejemplo, imaginemos que tenemos varios print() en nuestro código que queremos seleccionar para comentarlos. En vez de hacerlo manualmente, podemos pintar la palabra print() tocar **Ctrl + D** varias veces hasta que se posicionen cursores y luego podemos comentar esas líneas con **Ctrl + K + C**.
 
 
 [Contenidos](../Contenidos.md) \| [Anterior (1 Introducción y repaso)](01_Introduccion_y_repaso.md) \| [Próximo (3 Manejo de archivos)](03_Archivos.md)

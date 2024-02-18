@@ -78,7 +78,7 @@ def mi_funcion():
 
 Podés encontrar instrucciones detalladas [acá](https://docs.python.org/3/library/pdb.html) sobre como usarlo. 
 
-Nos resulta más cómodo usar un IDE como VS Code para hacer debugging y ése es el método que describiremos aquí.
+Nos resulta más cómodo usar un IDE como VS Code para hacer debugging y ése es el método que describiremos aquí. También te dejamos un [video](https://youtu.be/Ri7_LF9yntI) de cómo usarlo.
 
 Para poder acceder al debugger primero colocamos un `breakpoint` en donde creemos que está el problema. Para hacerlo tenemos que hacer click a la izquierda del número de línea y vamos a ver que aparece un punto rojo. Luego en el panel izquierdo vamos a donde dice _debugger_ (o tocamos Ctrl + F5) e iniciamos el _debugger_:
 
