@@ -6,6 +6,7 @@ Esta clase comenzamos a utilizar un entorno de desarrollo integrado (IDE).
 
 Para escribir programas útiles, necesitamos aprender a trabajar con algunas estructuras de datos un poco más complejas. En esta clase introducimos las estructuras de datos elementales de Python que nos faltan: tuplas, conjuntos y diccionarios y profundizamos un poco más en las listas y sus usos. También comenzamos a ver cómo estructurar el código usando funciones y a leer archivos.
 
+También vamos a empezar a trabajar con datos, recordá que en el archivo de ejercicios que descomprimiste inicialmente se encuentra una carpeta "Data" donde hay distintos archivos de datos.
 
 
 * [2.1 Introducción y repaso](01_Introduccion_y_repaso.md)

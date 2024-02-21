@@ -289,7 +289,9 @@ Meses:  310
 
 ### Ejercicio 1.11: Hipoteca ajustado
 
-Ya que estamos, corregí el código anterior de forma que el pago del último mes se ajuste a lo adeudado.
+El ejercicio anterior necesita una corrección. David está pagando en el último mes más de lo debido, obteniendo un saldo negativo.
+
+Implementá la lógica en el código para poder corregirlo y que David pague solamente lo que debe.
 
 Asegurate de guardar en el archivo `hipoteca.py` esta última versión en tu directorio `ejercicios_python/Clase01/`. Vamos a volver a trabajar con él.
 

@@ -7,6 +7,10 @@ En esta sección comenzamos a hablar de la terminal, o la línea de comandos del
 > [!CAUTION]
 > En caso que no te funcione descomprimir archivos desde la línea de comandos, no te preocupes, descomprimilos como lo haces normalmente y seguí adelante con las clases.
 
+Actualizacion 21/02/2024: No hace falta que hagan los ejercicios de esta clase. Cada persona tiene distintos sistemas operativos y pueden haber ciertos errores a la hora de instalar unzip o descomprimir por línea de comandos. Solamente bajá el archivo de ejercicios.zip y descomprimilo normalmente en una carpeta que quieras.
+
+Este zip tiene carpetas correspondientes a cada clase y archivos vacíos de ejercicios que son para que los completes vos cuando los hagas.
+
 ### La línea de comandos:
 
 La línea de comandos (command line) suele usarse para pedirle al sistema operativo cosas que se puedan escribir en una o dos líneas, tales como listar un directorio, moverse entre carpetas, borrar un archivo, ejecutar un programa.
