@@ -26,42 +26,42 @@ Si estás en Windows, seguí estos pasos para poder instalarlo correctamente ya 
 
 ### Agregándolo desde el inicio de la instalación
 
-1. Si te aparece una casilla que diga “Add Python to PATH […]” en la parte inferior de la ventana de instalación al inicio, asegurate de tickearla, pero en caso contrario tocamos en “Customize Installation”.
+1. Si te aparece una casilla que diga “Add Python to PATH […]” en la parte inferior de la ventana de instalación al inicio, asegurate de tickearla, pero en caso contrario tocamos en “Customize Installation”.  
 
    ![Instalacion de Python 1](./img/python_ins1.png)
 
-2. Le damos a “Next”.
+2. Le damos a “Next”.  
 
    ![Instalacion de Python 2](./img/python_ins2.png)
 
-3. Y tickeamos la tercer opción que dice “Add Python to environment variables”.
+3. Y tickeamos la tercer opción que dice “Add Python to environment variables”.  
 
    ![Instalacion de Python 3](./img/python_ins3.png)
 
-4. Al final de la instalación va a aparecer una opción para deshabilitar el límite de longitud de los PATH. Podemos darle click si vamos a usar rutas de archivos que tengan más de 260 caracteres. Sino lo dejamos como está.
+4. Al final de la instalación va a aparecer una opción para deshabilitar el límite de longitud de los PATH. Podemos darle click si vamos a usar rutas de archivos que tengan más de 260 caracteres. Sino lo dejamos como está.  
 
    ![Instalacion de Python 4](./img/python_ins4.png)
 
 ### Agregándolo manualmente una vez instalado
 
-1. Lo primero que hacemos va a ser ir al explorar de Windows, tocar en “Vista” que está en al barra superior y le damos en “Elementos ocultos” (es un casillero que está ahí a la derecha).
+1. Lo primero que hacemos va a ser ir al explorar de Windows, tocar en “Vista” que está en al barra superior y le damos en “Elementos ocultos” (es un casillero que está ahí a la derecha).  
 
    ![Untitled](./img/python_path1.png)
 
 2. Lo siguiente va a ser copiar la ruta donde está instalado Python, para eso nos metemos en el disco C (o donde tengan instalado el sistema operativo). Vamos a “usuarios”, nos metemos ahí en la carpeta de nuestrx usuarie. Después vamos a `AppData\Local\Programs\Python\Python310\Scripts`. Debería quedarles una ruta así: `C:\Users\Joaco\AppData\Local\Programs\Python\Python310\Scripts`. En vez de Python310 les puede decir 311 o alguna otra versión que hayan bajado.
-3. Copiamos la ruta y vamos al entorno de variables del sistema. En el buscador ponemos “var” y ya nos aparece. Tocamos ahí.
+3. Copiamos la ruta y vamos al entorno de variables del sistema. En el buscador ponemos “var” y ya nos aparece. Tocamos ahí.  
 
    ![Untitled](./img/python_path2.png)
 
-4. Clickeamos donde dice “Variables de entorno…”.
+4. Clickeamos donde dice “Variables de entorno…”.  
 
    ![Untitled](./img/python_path3.png)
 
-5. Ahora clickeamos 1 vez en donde dice “Path” dentro del recuadro de arriba que son las “Variables de usuario para [usuarie]” y le damos a “Editar…”.
+5. Ahora clickeamos 1 vez en donde dice “Path” dentro del recuadro de arriba que son las “Variables de usuario para [usuarie]” y le damos a “Editar…”.  
 
    ![Untitled](./img/python_path4.png)
 
-6. Dentro del Path vamos a agregar nuestra ruta que copiamos antes. Hacemos click en “Nuevo” y pegamos la ruta que teníamos copiada.
+6. Dentro del Path vamos a agregar nuestra ruta que copiamos antes. Hacemos click en “Nuevo” y pegamos la ruta que teníamos copiada.  
 
    ![Untitled](./img/python_path5.png)
 

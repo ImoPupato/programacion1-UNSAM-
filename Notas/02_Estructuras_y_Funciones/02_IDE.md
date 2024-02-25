@@ -22,11 +22,14 @@ Vamos a listar algunas de las extensiones que vas a precisar y otras que son opc
 
 ## Configuraciones muy útiles:
 
-1. **Formatear tu código al guardar:** esta configuración te permite que cuando guardes tu código se formatee según la convención PEP 8. Para activar esta opción primero tenes que bajarte un formateador como "autopep8" (hay muchos), luego ir a configuración y en la barra de búsqueda de configuraciones escribí: Format On Save, y tickeá la opción que aparece.
+1. **Formatear tu código al guardar:** esta configuración te permite que cuando guardes tu código se formatee según la convención PEP 8. Para activar esta opción primero tenes que bajarte un formateador como "autopep8" (hay muchos), luego ir a configuración y en la barra de búsqueda de configuraciones escribí: Format On Save, y tickeá la opción que aparece.  
 ![format on save](/Notas/02_Estructuras_y_Funciones/img/format_on_save.png)
 
-2. **Guardar al ejecutar el código:** esta configuración permite guardar el script automáticamente al ejecutarlo. **Solo está disponible si tenés la extensión de Code Runner**. Para activarla tenés que ir a configuración y en la barra de búsqueda de configuraciones escribí: Code-runner: Save File Before Run.
+2. **Guardar al ejecutar el código:** esta configuración permite guardar el script automáticamente al ejecutarlo. **Solo está disponible si tenés la extensión de Code Runner**. Para activarla tenés que ir a configuración y en la barra de búsqueda de configuraciones escribí: Code-runner: Save File Before Run.  
 ![save file before run](/Notas/02_Estructuras_y_Funciones/img/save_file_before_run.png)
+
+3. **Abrir código en terminal:** esta configuración es propia de la extensión Code Runner. A veces cuando clickeamos en el icono para correr el código nos aparece solo el output del código y no la terminal, lo cual puede ser molesto para hacer algunas operaciones como input() o interrumpir la ejecución de código con Ctrl + C (haciendo un KeyboardInterrumpt). Para solucionar esto buscamos la opción "Code-runner: Run In Terminal" y la tickeamos.  
+![run in terminal](/Notas/02_Estructuras_y_Funciones/img/run_in_terminal.png)
 
 ## Atajos de teclado
 
