@@ -2,10 +2,7 @@
 
 # 2.1 Introducción y repaso
 
-En este [video]() damos una breve introducción a los temas de la clase. Luego vas a encontrar también algunos videos con mayor nivel de detalle sobre los temas de las secciones.
-
-
-Te dejamos acá además un [video]() con un repaso del [Ejercicio 1.11](../01_Intro_a_Python/04_Numeros.md#ejercicio-111-hipoteca-ajustado) de la hipoteca de David.
+En un futuro pondremos videos de resumen. Sin embargo, no son imprescindibles. Todo el material de estudio está en los ducumentos.
 
 ¡Que disfrutes la clase!
 
