@@ -170,3 +170,14 @@ while saldo>2684.11:
 print('Total pagado:', round(total_pagado,2))
 print('Meses:',mes)
 ```
+#### Ejercicio 1.13: El volumen de una esfera
+*En tu directorio de trabajo de esta clase, escribí un programa llamado esfera.py que le pida a le usuarie que ingrese por teclado el radio r de una esfera y calcule e imprima el volumen de la misma. Sugerencia: recordar que el volumen de una esfera es 4/3 πr^3.*
+```py
+#esfera.py
+import math # importamos el paquete math para solicitar el argumento "pi"
+p=math.pi # asignamos el valor de pi a una veriable
+
+r=input("Ingresá el radio r:") # pedimosa que nos indiquen el valor del radio y lo guardamos en la variable "r"
+volumen= 4/3*p*int(r)**3 # función volumen
+print("El volumen es",volumen) # finalmente indicamos que imprima el número obtenido para el volumen calculado a partir del radio. Vale aclarar que faltan las unidades
+
