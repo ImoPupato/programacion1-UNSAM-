@@ -29,7 +29,7 @@ En cada clase encontrarán bloques de código con ejemplos. Es fundamental que c
 
 ## Ejercicios
 
-En el repositorio van a encontrar un archivo comprimido [Ejercicios.zip](./Ejercicios.zip). Les pedimos que lo descarguen, lo descompriman en sus computadoras y tengan a mano esta carpeta a la hora de hacer los ejercicios. Tiene algunos archivos `.py` de ejemplo y tiene un subdirectorio `ejercicios_python/Data/` con algunos archivos de datos tipo CSV que usaremos en el curso.
+En el repositorio van a encontrar un archivo comprimido [Ejercicios.zip](./Ejercicios.zip). Les pedimos que lo descarguen, lo descompriman en sus computadoras y tengan a mano esta carpeta a la hora de hacer los ejercicios. Tiene algunos archivos `.py` vacíos de ejemplo para que completen ustedes y también tiene un subdirectorio `ejercicios_python/Data/` con algunos archivos de datos tipo CSV que usaremos en el curso.
 
 Es clave que realicen todos los ejercicios, aún aquellos que no se piden en el cierre de clase. 
 
